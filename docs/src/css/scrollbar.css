@@ -1,0 +1,41 @@
+/**
+ * CLOVA Tutor
+ * Copyright (c) 2026-present NAVER Cloud Corp.
+ * MIT
+ */
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-cool-gray-500);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cool-gray-600);
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-thumb {
+  background: var(--color-cool-gray-1200);
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cool-gray-1100);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-cool-gray-500) transparent;
+}
+
+[data-theme='dark'] * {
+  scrollbar-color: var(--color-cool-gray-1200) transparent;
+}

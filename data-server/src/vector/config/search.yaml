@@ -1,0 +1,15 @@
+# CLOVA Tutor
+# Copyright (c) 2026-present NAVER Cloud Corp.
+# MIT
+
+index_name: "Curriculum_course_2015"
+retrieve_info:
+  query: "단원:방정식과 부등식\n세부단원:이차방정식과 이차함수"
+  search_type: "similarity"
+  k: 2
+  alpha: 0.6
+  filter:
+    - property: unit
+      value: 이차함수
+    - property: school
+      value: high

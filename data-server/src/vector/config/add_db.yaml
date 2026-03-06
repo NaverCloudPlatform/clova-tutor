@@ -1,0 +1,8 @@
+# CLOVA Tutor
+# Copyright (c) 2026-present NAVER Cloud Corp.
+# MIT
+
+index_name: "Curriculum_course_2015"
+new_data_paths:
+  - file_path: "rawdata/curriculum/course_add.csv" # example
+    docs_type: "csv"

@@ -1,0 +1,450 @@
+[
+  {
+    "id": "8638ea00-0861-4444-9699-a4f230b5f753",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats?subject=math&size=10",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126530947
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "items": [
+          {
+            "id": 358,
+            "title": "문제: 이차방정식 근 찾기",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:32:03+09:00"
+          },
+          {
+            "id": 357,
+            "title": "테스트 메시지 요청",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:07:48+09:00"
+          },
+          {
+            "id": 351,
+            "title": "문제: 제곱근 계산",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:56:25+09:00"
+          },
+          {
+            "id": 350,
+            "title": "문제풀이 요청: 제곱근 계산",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:53:34+09:00"
+          },
+          {
+            "id": 349,
+            "title": "문제풀이 요청: 제곱근 2",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:52:22+09:00"
+          },
+          {
+            "id": 348,
+            "title": "개념: 제곱근 2",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:41:29+09:00"
+          },
+          {
+            "id": 347,
+            "title": "문제 유형: 테스트 메시지 작성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:21:04+09:00"
+          },
+          {
+            "id": 335,
+            "title": "문제: 이차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 171,
+            "title": "문제 추천 요청",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 334,
+            "title": "문제: 일차방정식 대입",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T10:55:39+09:00"
+          }
+        ],
+        "next_cursor": "eyJsYXRlc3RfdXNlZF9hdCI6IjIwMjUtMTItMThUMTA6NTU6MzkiLCJpZCI6MzM0fQ=="
+      },
+      "timestamp": 1766126530986
+    },
+    "totalDuration": 38.742999995308
+  },
+  {
+    "id": "567931bd-a2c1-4d11-b296-88f65b84a192",
+    "version": "1.1",
+    "request": {
+      "method": "PATCH",
+      "url": "/api/v1/chats/358",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "payload": {
+        "title": "123"
+      },
+      "timestamp": 1766126555023
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 358,
+        "title": "123",
+        "subject": "math",
+        "has_problem": false,
+        "has_active_goal": false,
+        "latest_used_at": "2025-12-19T15:32:03+09:00"
+      },
+      "timestamp": 1766126555097
+    },
+    "totalDuration": 73.6989999984568
+  },
+  {
+    "id": "019ab827-88cd-43e9-8be8-9c32172682f2",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats?subject=math&size=10",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126555101
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "items": [
+          {
+            "id": 358,
+            "title": "123",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:32:03+09:00"
+          },
+          {
+            "id": 357,
+            "title": "테스트 메시지 요청",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:07:48+09:00"
+          },
+          {
+            "id": 351,
+            "title": "문제: 제곱근 계산",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:56:25+09:00"
+          },
+          {
+            "id": 350,
+            "title": "문제풀이 요청: 제곱근 계산",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:53:34+09:00"
+          },
+          {
+            "id": 349,
+            "title": "문제풀이 요청: 제곱근 2",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:52:22+09:00"
+          },
+          {
+            "id": 348,
+            "title": "개념: 제곱근 2",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:41:29+09:00"
+          },
+          {
+            "id": 347,
+            "title": "문제 유형: 테스트 메시지 작성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:21:04+09:00"
+          },
+          {
+            "id": 335,
+            "title": "문제: 이차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 171,
+            "title": "문제 추천 요청",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 334,
+            "title": "문제: 일차방정식 대입",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T10:55:39+09:00"
+          }
+        ],
+        "next_cursor": "eyJsYXRlc3RfdXNlZF9hdCI6IjIwMjUtMTItMThUMTA6NTU6MzkiLCJpZCI6MzM0fQ=="
+      },
+      "timestamp": 1766126555122
+    },
+    "totalDuration": 20.615999994333833
+  },
+  {
+    "id": "80a82962-0c3b-4ee5-9ce9-947cb523c67f",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/358",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126560478
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 358,
+        "title": "123",
+        "subject": "math",
+        "has_problem": false,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1766126560522
+    },
+    "totalDuration": 43.85400000877678
+  },
+  {
+    "id": "261fa03a-731a-4fe9-8d33-ed59dfe76ffc",
+    "version": "1.1",
+    "request": {
+      "method": "DELETE",
+      "url": "/api/v1/chats/358",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126575516
+    },
+    "response": {
+      "mode": "single",
+      "status": 204,
+      "statusText": "No Content",
+      "headers": {},
+      "body": "",
+      "timestamp": 1766126575561
+    },
+    "totalDuration": 45.305999996596945
+  },
+  {
+    "id": "be0f0a40-d820-437a-bace-891eadfba2ac",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats?subject=math&size=10",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126575563
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "items": [
+          {
+            "id": 357,
+            "title": "테스트 메시지 요청",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:07:48+09:00"
+          },
+          {
+            "id": 351,
+            "title": "문제: 제곱근 계산",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:56:25+09:00"
+          },
+          {
+            "id": 350,
+            "title": "문제풀이 요청: 제곱근 계산",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:53:34+09:00"
+          },
+          {
+            "id": 349,
+            "title": "문제풀이 요청: 제곱근 2",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:52:22+09:00"
+          },
+          {
+            "id": 348,
+            "title": "개념: 제곱근 2",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:41:29+09:00"
+          },
+          {
+            "id": 347,
+            "title": "문제 유형: 테스트 메시지 작성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:21:04+09:00"
+          },
+          {
+            "id": 335,
+            "title": "문제: 이차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 171,
+            "title": "문제 추천 요청",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 334,
+            "title": "문제: 일차방정식 대입",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T10:55:39+09:00"
+          },
+          {
+            "id": 268,
+            "title": "개념: 이차함수 꼭짓점 중요성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-16T14:42:55+09:00"
+          }
+        ],
+        "next_cursor": "eyJsYXRlc3RfdXNlZF9hdCI6IjIwMjUtMTItMTZUMTQ6NDI6NTUiLCJpZCI6MjY4fQ=="
+      },
+      "timestamp": 1766126575584
+    },
+    "totalDuration": 21.181000003707595
+  },
+  {
+    "id": "170c759f-8b4b-41e4-b830-b30620aa6551",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users/452395d2-8832-41d5-976f-857e9ad2dcb8",
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126575760
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "name": "e2e-playwright",
+        "grade": 10,
+        "memo": null,
+        "created_at": "2025-12-03T15:54:17+09:00",
+        "updated_at": "2025-12-03T16:15:51+09:00"
+      },
+      "timestamp": 1766126575796
+    },
+    "totalDuration": 36.448999991989695
+  }
+]

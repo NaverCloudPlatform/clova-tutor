@@ -1,0 +1,1581 @@
+[
+  {
+    "id": "f026e770-48ce-48ac-b502-3ace8b1b7f52",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats?subject=english&size=10",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126058192
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "items": [
+          {
+            "id": 359,
+            "title": "",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:33:10+09:00"
+          },
+          {
+            "id": 136,
+            "title": "단어 의미: consistently",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:56:39+09:00"
+          },
+          {
+            "id": 146,
+            "title": "의미 불명확한 입력",
+            "subject": "english",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:56:23+09:00"
+          },
+          {
+            "id": 247,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:57:20+09:00"
+          },
+          {
+            "id": 245,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:52:31+09:00"
+          },
+          {
+            "id": 242,
+            "title": "개념: to부정사 부사적용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:48:20+09:00"
+          },
+          {
+            "id": 238,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:43:34+09:00"
+          },
+          {
+            "id": 236,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:30:36+09:00"
+          },
+          {
+            "id": 233,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:24:53+09:00"
+          },
+          {
+            "id": 228,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:12:48+09:00"
+          }
+        ],
+        "next_cursor": "eyJsYXRlc3RfdXNlZF9hdCI6IjIwMjUtMTItMTVUMDE6MTI6NDgiLCJpZCI6MjI4fQ=="
+      },
+      "timestamp": 1766126058229
+    },
+    "totalDuration": 36.61699999556225
+  },
+  {
+    "id": "0ce756f5-5a62-4c13-a228-37f2e1a161a5",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users/452395d2-8832-41d5-976f-857e9ad2dcb8",
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126058192
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "name": "e2e-playwright",
+        "grade": 10,
+        "memo": null,
+        "created_at": "2025-12-03T15:54:17+09:00",
+        "updated_at": "2025-12-03T16:15:51+09:00"
+      },
+      "timestamp": 1766126058228
+    },
+    "totalDuration": 36.41100000061467
+  },
+  {
+    "id": "0ce2a8df-1f2d-4933-9cb0-6cbd0782b10f",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "payload": {
+        "title": "",
+        "subject": "english",
+        "grade": "10"
+      },
+      "timestamp": 1766126062022
+    },
+    "response": {
+      "mode": "single",
+      "status": 201,
+      "statusText": "Created",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 361,
+        "title": "",
+        "subject": "english",
+        "has_problem": false,
+        "has_active_goal": false,
+        "latest_used_at": "2025-12-19T15:34:22+09:00"
+      },
+      "timestamp": 1766126062043
+    },
+    "totalDuration": 21.037999998952728
+  },
+  {
+    "id": "96aa9d3a-2610-40b3-9af9-e878d78680bd",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats?subject=english&size=10",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126062044
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "items": [
+          {
+            "id": 361,
+            "title": "",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:34:22+09:00"
+          },
+          {
+            "id": 359,
+            "title": "",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:33:10+09:00"
+          },
+          {
+            "id": 136,
+            "title": "단어 의미: consistently",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:56:39+09:00"
+          },
+          {
+            "id": 146,
+            "title": "의미 불명확한 입력",
+            "subject": "english",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:56:23+09:00"
+          },
+          {
+            "id": 247,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:57:20+09:00"
+          },
+          {
+            "id": 245,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:52:31+09:00"
+          },
+          {
+            "id": 242,
+            "title": "개념: to부정사 부사적용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:48:20+09:00"
+          },
+          {
+            "id": 238,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:43:34+09:00"
+          },
+          {
+            "id": 236,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:30:36+09:00"
+          },
+          {
+            "id": 233,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:24:53+09:00"
+          }
+        ],
+        "next_cursor": "eyJsYXRlc3RfdXNlZF9hdCI6IjIwMjUtMTItMTVUMDE6MjQ6NTMiLCJpZCI6MjMzfQ=="
+      },
+      "timestamp": 1766126062063
+    },
+    "totalDuration": 19.32200000010198
+  },
+  {
+    "id": "9cd0c8e9-f649-42fc-b421-58c31023a838",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats/361/messages",
+      "headers": {
+        "Accept": "*/*",
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "content-type": "application/json"
+      },
+      "payload": {
+        "contents": [
+          {
+            "m_type": "text",
+            "value": {
+              "text": "\"If it rains, I will stay home.\"는 어떤 의미의 문장이야?"
+            }
+          }
+        ],
+        "metadata": {}
+      },
+      "timestamp": 1766126062071
+    },
+    "response": {
+      "mode": "event-stream",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "text/event-stream; charset=utf-8"
+      },
+      "body": [
+        {
+          "event": "message_start",
+          "data": {
+            "id": -1,
+            "chat_id": 361,
+            "created_at": "2025-12-19T15:34:38+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 문"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "장은"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " '**"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "비가"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 오"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "면"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 집에"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 머물"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 것이다"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "**"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "'"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "라는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 의미를"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 가지고"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있어"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ".\n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "1"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " **"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "조건"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "절"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "**:"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " '"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "It"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " rains"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "'("
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "비가"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 온"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "다면"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ")"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이라는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 조건"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 부여"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "되어"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있어"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ".\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " **"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "결과"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 절"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "**:"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 그"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 조건"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "에"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 따른"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 결과가"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " '"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "I"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " will"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " stay"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " home"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "'("
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "집"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "에"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 머"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "무"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "르"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "겠다"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ")"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "으로"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 나타나"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있지"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ".\n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "즉"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 비가"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 오는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 상황을"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 가정"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하고"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 그에"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 따라"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 집에서"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 지내"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "겠다는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 의지를"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 나타내는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 거"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "야"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이처럼"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " if"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "가"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이끄는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 조건"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "절"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "에서는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 특정"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 조건을"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 설정"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하고"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 그"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 조건"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 충족"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "될"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 경우에"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 대한"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 결과를"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 서"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "술"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 패턴"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 일반"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "적이"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "야"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ".\n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 문"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "장을"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 통해"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 날씨"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "에"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 따라"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 계획을"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 조정"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하거나"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 행"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "동을"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 결정"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 상황"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "에서도"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 사용할"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있어"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 예를"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 들면"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 약속"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 시간에"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 비가"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 올"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 것"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 같"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "으면"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 실내"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "에서"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 만나"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "기로"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 한다"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "든지"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 야외"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 활동을"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 취소"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하고"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 집에서"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 쉬"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "기로"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 할"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 때도"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 쓸"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있겠"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "지"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "?\n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "더"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 궁금"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "한"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 게"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있으면"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 언제"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "든"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 물어"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "봐"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 😊"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\n\n> [!TRANSLATION]-\n> ```json\n> {\n>   \"type\": \"translation\",\n>   \"content\": [\n>     {\n>       \"en\": \"If it rains\",\n>       \"ko\": \"비가 오면\"\n>     },\n>     {\n>       \"en\": \"I will stay home\",\n>       \"ko\": \"집에 머물 것이다\"\n>     }\n>   ]\n> }\n> ```\n"
+          }
+        },
+        {
+          "event": "message_end",
+          "data": {
+            "id": -1,
+            "chat_id": 361,
+            "created_at": "2025-12-19T15:34:43+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "이 문장은 '**비가 오면 집에 머물 것이다**'라는 의미를 가지고 있어.\n\n1. **조건절**: 'It rains'(비가 온다면)이라는 조건이 부여되어 있어.\n2. **결과 절**: 그 조건에 따른 결과가 'I will stay home'(집에 머무르겠다)으로 나타나 있지.\n\n즉, 비가 오는 상황을 가정하고 그에 따라 집에서 지내겠다는 의지를 나타내는 거야. 이처럼 if가 이끄는 조건절에서는 특정 조건을 설정하고, 그 조건이 충족될 경우에 대한 결과를 서술하는 패턴이 일반적이야.\n\n이 문장을 통해 날씨에 따라 계획을 조정하거나 행동을 결정하는 상황에서도 사용할 수 있어. 예를 들면 약속 시간에 비가 올 것 같으면 실내에서 만나기로 한다든지, 야외 활동을 취소하고 집에서 쉬기로 할 때도 쓸 수 있겠지?\n\n더 궁금한 게 있으면 언제든 물어봐! 😊\n\n> [!TRANSLATION]-\n> ```json\n> {\n>   \"type\": \"translation\",\n>   \"content\": [\n>     {\n>       \"en\": \"If it rains\",\n>       \"ko\": \"비가 오면\"\n>     },\n>     {\n>       \"en\": \"I will stay home\",\n>       \"ko\": \"집에 머물 것이다\"\n>     }\n>   ]\n> }\n> ```\n"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "translation",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        }
+      ],
+      "timestamp": 1766126083333
+    },
+    "totalDuration": 21261.533999997482
+  },
+  {
+    "id": "fedd3333-af78-49ed-b064-a91726830876",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/361",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126062074
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 361,
+        "title": "",
+        "subject": "english",
+        "has_problem": false,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1766126062120
+    },
+    "totalDuration": 46.01299999922048
+  },
+  {
+    "id": "db950e45-d088-4902-8840-9e25be021bab",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/361/problems",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126062646
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": [],
+      "timestamp": 1766126062727
+    },
+    "totalDuration": 80.5640000035055
+  },
+  {
+    "id": "eca31c23-4a72-4b1b-9992-0c931434a92f",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/361/messages",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126083792
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 3150,
+            "chat_id": 361,
+            "created_at": "2025-12-19T15:34:22+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-19"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3151,
+            "chat_id": 361,
+            "created_at": "2025-12-19T15:34:22+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "\"If it rains, I will stay home.\"는 어떤 의미의 문장이야?"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3152,
+            "chat_id": 361,
+            "created_at": "2025-12-19T15:34:43+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "이 문장은 '**비가 오면 집에 머물 것이다**'라는 의미를 가지고 있어.\n\n1. **조건절**: 'It rains'(비가 온다면)이라는 조건이 부여되어 있어.\n2. **결과 절**: 그 조건에 따른 결과가 'I will stay home'(집에 머무르겠다)으로 나타나 있지.\n\n즉, 비가 오는 상황을 가정하고 그에 따라 집에서 지내겠다는 의지를 나타내는 거야. 이처럼 if가 이끄는 조건절에서는 특정 조건을 설정하고, 그 조건이 충족될 경우에 대한 결과를 서술하는 패턴이 일반적이야.\n\n이 문장을 통해 날씨에 따라 계획을 조정하거나 행동을 결정하는 상황에서도 사용할 수 있어. 예를 들면 약속 시간에 비가 올 것 같으면 실내에서 만나기로 한다든지, 야외 활동을 취소하고 집에서 쉬기로 할 때도 쓸 수 있겠지?\n\n더 궁금한 게 있으면 언제든 물어봐! 😊\n\n> [!TRANSLATION]-\n> ```json\n> {\n>   \"type\": \"translation\",\n>   \"content\": [\n>     {\n>       \"en\": \"If it rains\",\n>       \"ko\": \"비가 오면\"\n>     },\n>     {\n>       \"en\": \"I will stay home\",\n>       \"ko\": \"집에 머물 것이다\"\n>     }\n>   ]\n> }\n> ```\n"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "translation",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1766126083820
+    },
+    "totalDuration": 27.93000000383472
+  }
+]

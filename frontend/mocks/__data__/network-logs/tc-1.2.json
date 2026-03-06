@@ -1,0 +1,97 @@
+[
+  {
+    "id": "9bdd7dff-41d6-4c59-9071-5d6a87cd425f",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users",
+      "headers": {},
+      "timestamp": 1764740657106
+    },
+    "totalDuration": 36,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "855",
+        "content-type": "application/json",
+        "date": "Wed, 03 Dec 2025 05:44:16 GMT",
+        "server": "uvicorn"
+      },
+      "body": [],
+      "timestamp": 1764740657142
+    }
+  },
+  {
+    "id": "38e41c46-dbeb-4852-9810-af9ca7de8acd",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/users",
+      "headers": {},
+      "timestamp": 1764740680605
+    },
+    "totalDuration": 37,
+    "response": {
+      "mode": "single",
+      "status": 201,
+      "statusText": "Created",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "92",
+        "content-type": "application/json",
+        "date": "Wed, 03 Dec 2025 05:44:40 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": "66990aa7-9ad1-496b-81db-59ab7ecb6781",
+        "name": "e2e-playwright",
+        "grade": 10,
+        "memo": null
+      },
+      "timestamp": 1764740680642
+    }
+  },
+  {
+    "id": "109c0d9b-3c55-400c-85d5-cbe7b3675a96",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users",
+      "headers": {},
+      "timestamp": 1764740680646
+    },
+    "totalDuration": 16,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "1205",
+        "content-type": "application/json",
+        "date": "Wed, 03 Dec 2025 05:44:40 GMT",
+        "server": "uvicorn"
+      },
+      "body": [
+        {
+          "id": "b2167db8-a340-4f36-855f-18e84595d307",
+          "name": "e2e-playwright",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-12-03T14:44:27+09:00",
+          "updated_at": "2025-12-03T14:44:27+09:00"
+        }
+      ],
+      "timestamp": 1764740680662
+    }
+  }
+]

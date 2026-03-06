@@ -1,0 +1,9 @@
+{
+  "position": 1,
+  "label": "Introduction",
+  "link": {
+    "type": "generated-index",
+    "description": "Introduction to CLOVA Tutor"
+  },
+  "collapsed": false
+}

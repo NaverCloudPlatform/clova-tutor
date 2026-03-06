@@ -1,0 +1,33 @@
+# Nginx 웹 서버용 Dockerfile
+# Stage 1: Build React App
+FROM node:22.4.0-alpine AS build
+
+WORKDIR /app
+
+# Corepack 활성화 및 Yarn Berry 설정
+RUN npm install -g corepack && corepack enable
+RUN corepack prepare yarn@stable --activate
+
+# Yarn Berry 환경 설정 및 Zero-Install 적용
+COPY .yarn .yarn
+COPY .yarnrc.yml package.json yarn.lock ./
+
+# React 앱 빌드에 필요한 파일 복사
+COPY src ./src
+COPY public ./public
+COPY mocks ./mocks
+COPY index.html tsconfig.json tsconfig.app.json tsconfig.node.json vite.config.ts components.json ./
+COPY .env.production ./
+
+RUN yarn install --immutable --inline-builds
+RUN yarn build
+
+# Stage 2: Serve with Nginx
+FROM nginx:1.25.3-alpine
+
+# 빌드된 파일 복사
+COPY --from=build /app/dist /usr/share/nginx/html
+COPY nginx.docker.conf /etc/nginx/nginx.conf
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

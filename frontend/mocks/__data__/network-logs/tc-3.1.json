@@ -1,0 +1,2134 @@
+[
+  {
+    "id": "677dfe8c-1b57-4106-8e70-55cc27d36115",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users/452395d2-8832-41d5-976f-857e9ad2dcb8",
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766125080200
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "name": "e2e-playwright",
+        "grade": 10,
+        "memo": null,
+        "created_at": "2025-12-03T15:54:17+09:00",
+        "updated_at": "2025-12-03T16:15:51+09:00"
+      },
+      "timestamp": 1766125080256
+    },
+    "totalDuration": 55.66499999986263
+  },
+  {
+    "id": "b24d5e1a-d0e2-4a98-9b92-0fc80514daa6",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats?subject=math&size=10",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766125901737
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "items": [
+          {
+            "id": 357,
+            "title": "테스트 메시지 요청",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:07:48+09:00"
+          },
+          {
+            "id": 351,
+            "title": "문제: 제곱근 계산",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:56:25+09:00"
+          },
+          {
+            "id": 350,
+            "title": "문제풀이 요청: 제곱근 계산",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:53:34+09:00"
+          },
+          {
+            "id": 349,
+            "title": "문제풀이 요청: 제곱근 2",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:52:22+09:00"
+          },
+          {
+            "id": 348,
+            "title": "개념: 제곱근 2",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:41:29+09:00"
+          },
+          {
+            "id": 347,
+            "title": "문제 유형: 테스트 메시지 작성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:21:04+09:00"
+          },
+          {
+            "id": 335,
+            "title": "문제: 이차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 171,
+            "title": "문제 추천 요청",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 334,
+            "title": "문제: 일차방정식 대입",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T10:55:39+09:00"
+          },
+          {
+            "id": 268,
+            "title": "개념: 이차함수 꼭짓점 중요성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-16T14:42:55+09:00"
+          }
+        ],
+        "next_cursor": "eyJsYXRlc3RfdXNlZF9hdCI6IjIwMjUtMTItMTZUMTQ6NDI6NTUiLCJpZCI6MjY4fQ=="
+      },
+      "timestamp": 1766125901777
+    },
+    "totalDuration": 40.12200000173226
+  },
+  {
+    "id": "3257f1a7-adb8-453c-80a3-fc9a9d18fcdc",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users/452395d2-8832-41d5-976f-857e9ad2dcb8",
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766125901737
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "name": "e2e-playwright",
+        "grade": 10,
+        "memo": null,
+        "created_at": "2025-12-03T15:54:17+09:00",
+        "updated_at": "2025-12-03T16:15:51+09:00"
+      },
+      "timestamp": 1766125901775
+    },
+    "totalDuration": 37.89399999926798
+  },
+  {
+    "id": "489a8ef2-8b92-4091-98a0-e6257a6218eb",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "payload": {
+        "title": "",
+        "subject": "math",
+        "grade": "10"
+      },
+      "timestamp": 1766125903849
+    },
+    "response": {
+      "mode": "single",
+      "status": 201,
+      "statusText": "Created",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 358,
+        "title": "",
+        "subject": "math",
+        "has_problem": false,
+        "has_active_goal": false,
+        "latest_used_at": "2025-12-19T15:31:43+09:00"
+      },
+      "timestamp": 1766125903900
+    },
+    "totalDuration": 50.64199999469565
+  },
+  {
+    "id": "5cb4613b-dbbe-4c08-8053-b0f84b253b9e",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats?subject=math&size=10",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766125903901
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "items": [
+          {
+            "id": 358,
+            "title": "",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:31:44+09:00"
+          },
+          {
+            "id": 357,
+            "title": "테스트 메시지 요청",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:07:48+09:00"
+          },
+          {
+            "id": 351,
+            "title": "문제: 제곱근 계산",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:56:25+09:00"
+          },
+          {
+            "id": 350,
+            "title": "문제풀이 요청: 제곱근 계산",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:53:34+09:00"
+          },
+          {
+            "id": 349,
+            "title": "문제풀이 요청: 제곱근 2",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:52:22+09:00"
+          },
+          {
+            "id": 348,
+            "title": "개념: 제곱근 2",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:41:29+09:00"
+          },
+          {
+            "id": 347,
+            "title": "문제 유형: 테스트 메시지 작성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:21:04+09:00"
+          },
+          {
+            "id": 335,
+            "title": "문제: 이차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 171,
+            "title": "문제 추천 요청",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 334,
+            "title": "문제: 일차방정식 대입",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T10:55:39+09:00"
+          }
+        ],
+        "next_cursor": "eyJsYXRlc3RfdXNlZF9hdCI6IjIwMjUtMTItMThUMTA6NTU6MzkiLCJpZCI6MzM0fQ=="
+      },
+      "timestamp": 1766125903920
+    },
+    "totalDuration": 18.99799999955576
+  },
+  {
+    "id": "96020a4a-9d8a-4976-a936-9b8a4d9f57d9",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats/358/messages",
+      "headers": {
+        "Accept": "*/*",
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "content-type": "application/json"
+      },
+      "payload": {
+        "contents": [
+          {
+            "m_type": "text",
+            "value": {
+              "text": "x² - 5x + 6 = 0의 해는 어떻게 찾는 거야?"
+            }
+          }
+        ],
+        "metadata": {}
+      },
+      "timestamp": 1766125903928
+    },
+    "response": {
+      "mode": "event-stream",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "text/event-stream; charset=utf-8"
+      },
+      "body": [
+        {
+          "event": "message_start",
+          "data": {
+            "id": -1,
+            "chat_id": 358,
+            "created_at": "2025-12-19T15:31:56+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "오"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "케이"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 문제는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "차"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "방"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "정"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "식"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " x"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "²"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " -"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " "
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "5"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "x"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " +"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " "
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "6"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " ="
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " "
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "0"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "의"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 근"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "을"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 구"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 문제"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "야"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이런"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 유형"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "의"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 문제를"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 풀"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 때는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " '**"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "근"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "의"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 공식"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "**"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "'"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "을"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 사용하면"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 편"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "해"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " \n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "근"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "의"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 공식"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "은"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 아래와"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 같아"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ":\n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "$$"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "x"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " ="
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " \\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "frac"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{-"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "b"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " \\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "pm"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " \\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "sqrt"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "b"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "^{"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "}-"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "4"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "ac"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "}}"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "a"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "}"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "$$"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "주"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "어진"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 방"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "정"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "식에서"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " a"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "="
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "1"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " b"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "=-"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "5"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " c"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "="
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "6"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "거든"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 값을"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 공식"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "에"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 대"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "입"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하면"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ",\n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "$$"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "x"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " ="
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " \\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "frac"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{-"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "(-"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "5"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ")"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " \\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "pm"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " \\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "sqrt"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "(-"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "5"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ")^"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "}-"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "4"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "cdot"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "1"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "cdot"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "6"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "}}"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "cdot"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "1"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "}"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "$$"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이렇게"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 되고"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 계"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "산을"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 하면"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ",\n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "$$"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "x"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " ="
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " \\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "frac"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "5"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " \\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "pm"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " \\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "sqrt"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "25"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "-"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "24"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "}}"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "}"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "$$"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "$$"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "x"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " ="
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " \\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "frac"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "5"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " \\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "pm"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " \\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "sqrt"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "1"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "}}"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "}"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "$$"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "그래서"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " √"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "1"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "="
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "1"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 되"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "니까"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " x"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " ="
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " ("
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "5"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "+"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "1"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ")/"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 또는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " x"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "=("
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "5"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "-"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "1"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ")/"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 가"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 되어"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 결국"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " x"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "="
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "3"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 또는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " x"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "="
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "가"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 나오는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "거"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "야"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!\n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "결"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "론"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "적으로"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "차"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "방"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "정"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "식의"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 해"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " **"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "x"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "="
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "**"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 또는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " **"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "x"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "="
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "3"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "**"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이야"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이해가"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 됐"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "어"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "?"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 😊"
+          }
+        },
+        {
+          "event": "message_end",
+          "data": {
+            "id": -1,
+            "chat_id": 358,
+            "created_at": "2025-12-19T15:32:02+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "오케이! 이 문제는 이차방정식 x² - 5x + 6 = 0의 근을 구하는 문제야. 이런 유형의 문제를 풀 때는 '**근의 공식**'을 사용하면 편해. \n\n근의 공식은 아래와 같아:\n\n$$x = \\frac{-b \\pm \\sqrt{b^{2}-4ac}}{2a}$$\n\n주어진 방정식에서 a=1, b=-5, c=6이거든. 이 값을 공식에 대입하면,\n\n$$x = \\frac{-(-5) \\pm \\sqrt{(-5)^{2}-4\\cdot1\\cdot6}}{2\\cdot1}$$\n\n이렇게 되고, 계산을 하면,\n\n$$x = \\frac{5 \\pm \\sqrt{25-24}}{2}$$\n\n$$x = \\frac{5 \\pm \\sqrt{1}}{2}$$\n\n그래서, √1=1이 되니까, x = (5+1)/2 또는 x=(5-1)/2 가 되어 결국 x=3 또는 x=2가 나오는거야!\n\n결론적으로, 이 이차방정식의 해는 **x=2** 또는 **x=3**이야. 이해가 됐어? 😊"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "solution_demonstration",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        }
+      ],
+      "timestamp": 1766125930484
+    },
+    "totalDuration": 26556.156000006013
+  },
+  {
+    "id": "133be2e7-a0ca-4445-af66-057757eab689",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/358",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766125903930
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 358,
+        "title": "",
+        "subject": "math",
+        "has_problem": false,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1766125903983
+    },
+    "totalDuration": 52.85600000206614
+  },
+  {
+    "id": "4973ba10-c2c9-4e4a-a323-f7d3f9516694",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/358/problems",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766125904827
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": [],
+      "timestamp": 1766125905042
+    },
+    "totalDuration": 215.2879999994184
+  },
+  {
+    "id": "5415ce36-6ed2-47ff-bdcf-d90548f9ef5d",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/358/messages",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766125931628
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 3147,
+            "chat_id": 358,
+            "created_at": "2025-12-19T15:31:44+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-19"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3148,
+            "chat_id": 358,
+            "created_at": "2025-12-19T15:31:44+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "x² - 5x + 6 = 0의 해는 어떻게 찾는 거야?"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3149,
+            "chat_id": 358,
+            "created_at": "2025-12-19T15:32:03+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "오케이! 이 문제는 이차방정식 x² - 5x + 6 = 0의 근을 구하는 문제야. 이런 유형의 문제를 풀 때는 '**근의 공식**'을 사용하면 편해. \n\n근의 공식은 아래와 같아:\n\n$$x = \\frac{-b \\pm \\sqrt{b^{2}-4ac}}{2a}$$\n\n주어진 방정식에서 a=1, b=-5, c=6이거든. 이 값을 공식에 대입하면,\n\n$$x = \\frac{-(-5) \\pm \\sqrt{(-5)^{2}-4\\cdot1\\cdot6}}{2\\cdot1}$$\n\n이렇게 되고, 계산을 하면,\n\n$$x = \\frac{5 \\pm \\sqrt{25-24}}{2}$$\n\n$$x = \\frac{5 \\pm \\sqrt{1}}{2}$$\n\n그래서, √1=1이 되니까, x = (5+1)/2 또는 x=(5-1)/2 가 되어 결국 x=3 또는 x=2가 나오는거야!\n\n결론적으로, 이 이차방정식의 해는 **x=2** 또는 **x=3**이야. 이해가 됐어? 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "solution_demonstration",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1766125931665
+    },
+    "totalDuration": 37.18000000425894
+  }
+]

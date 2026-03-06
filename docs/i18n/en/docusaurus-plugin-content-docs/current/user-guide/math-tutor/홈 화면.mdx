@@ -1,0 +1,74 @@
+---
+sidebar_position: 1
+---
+
+# Home Screen
+
+![Math Tutor Home Screen](@site/docs/user-guide/math-tutor/img/수학튜터홈화면.png)
+
+## <div className="inline-flex items-center "><span className="bg-accent-blue-400 size-[1.3em] text-[0.7em] rounded-full inline-flex items-center justify-center text-white font-semibold">0</span>&nbsp;Math Tutor essential features</div>
+
+When you first enter the application, an introductory guide explains the core features of the Math Tutor.
+
+---
+
+## <div className="inline-flex items-center "><span className="bg-accent-blue-400 size-[1.3em] text-[0.7em] rounded-full inline-flex items-center justify-center text-white font-semibold">1</span>&nbsp;Example questions</div>
+
+You can start a conversation by selecting **predefined example questions** without typing your own.
+
+Example questions help first-time users become familiar with how to interact with the tutor.
+
+![Math Example Questions](@site/docs/user-guide/math-tutor/img/수학예시질문.png)
+
+---
+
+## <div className="inline-flex items-center "><span className="bg-accent-blue-400 size-[1.3em] text-[0.7em] rounded-full inline-flex items-center justify-center text-white font-semibold">2</span>&nbsp;Chat input</div>
+
+### Attaching problem images
+
+<img src={require('@site/docs/user-guide/img/이미지첨부.png').default} width={50} />
+
+- You can upload up to one problem image.
+- Image requirements:
+  - Aspect ratio between 1:5 and 5:1
+  - File size under 20MB
+  - Longest side up to 2240px, shortest side at least 4px
+  - Supported formats: jpeg, jpg, png
+- The tutor analyzes the image and responds to your question.
+- Images copied to the clipboard can be pasted using `Ctrl + V`.
+
+### Inserting math input blocks
+
+<img src={require('@site/docs/user-guide/math-tutor/img/수식삽입.png').default} width={50} />
+
+Click the math input block button to activate the math keyboard and enter mathematical expressions.
+
+---
+
+## <div className="inline-flex items-center "><span className="bg-accent-blue-400 size-[1.3em] text-[0.7em] rounded-full inline-flex items-center justify-center text-white font-semibold">3</span>&nbsp;Subject tutor selection</div>
+
+- Select between **Math** and **English** tutors using the dropdown.
+- For accurate solutions and explanations, choose the tutor that matches the subject of your question.
+
+---
+
+## <div className="inline-flex items-center "><span className="bg-accent-blue-400 size-[1.3em] text-[0.7em] rounded-full inline-flex items-center justify-center text-white font-semibold">4</span>&nbsp;Chat history</div>
+
+{/* TODO: Replace chat history image */}
+
+- View the 10 most recent chat rooms in the sidebar.
+- The first message sent in a chat room becomes the chat room title.
+- Click **All Chats** to view the full chat history.
+
+:::note Badge meanings
+- <span className="bg-cool-gray-200 text-cool-gray-1400 text-xs px-2 py-1 rounded-md font-semibold">Drafting</span>: A message is currently being written in the chat input
+- <span className="bg-accent-blue-100 text-cool-gray-1400 text-xs px-2 py-1 rounded-md font-semibold">Learning Problem Recommended</span>: The tutor has recommended learning problems in this chat room
+- <p class="inline-flex items-center gap-x-1 text-primary font-semibold text-xs my-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-goal stroke-primary size-3" aria-hidden="true"><path d="M12 13V2l8 4-8 4"></path><path d="M20.561 10.222a9 9 0 1 1-12.55-5.29"></path><path d="M8.002 9.997a5 5 0 1 0 8.9 2.02"></path></svg>Goal in progress</p>: A learning goal has been created in this chat room
+- Blinking chat room title: The tutor is currently generating a response
+:::
+
+---
+
+## <div className="inline-flex items-center "><span className="bg-accent-blue-400 size-[1.3em] text-[0.7em] rounded-full inline-flex items-center justify-center text-white font-semibold">5</span>&nbsp;User information and settings</div>
+
+Access user information, log out, or switch the application theme (light / dark mode).

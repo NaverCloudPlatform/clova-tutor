@@ -1,0 +1,50 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "editor.formatOnSave": true,
+  "files.autoSave": "onFocusChange",
+  "eslint.enable": false,
+  "explorer.compactFolders": false,
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "eslint.nodePath": ".yarn/sdks",
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "explicit",
+    "source.fixAll.biome": "explicit"
+  },
+  "playwright.env": {
+    "NODE_OPTIONS": "-r ./.pnp.cjs --experimental-loader ./.pnp.loader.mjs"
+  },
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "@radix-ui/*"
+  ],
+  "material-icon-theme.folders.associations": {
+    "-components": "React-components",
+    "-utils": "utils",
+    "-hooks": "hook",
+    "-lib": "lib",
+    "-services": "services",
+    "-types": "typescript",
+    "-constants": "Constant"
+  },
+  "material-icon-theme.files.associations": {
+    "routeTree.gen.ts": "routing"
+  }
+}

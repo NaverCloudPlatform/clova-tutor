@@ -1,0 +1,1237 @@
+[
+  {
+    "id": "c39c5b91-3d76-406f-97a2-7b6db2ad1a34",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats",
+      "headers": {},
+      "timestamp": 1765159750550
+    },
+    "totalDuration": 47,
+    "response": {
+      "mode": "single",
+      "status": 201,
+      "statusText": "Created",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "130",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:09:10 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": 134,
+        "title": "",
+        "subject": "english",
+        "has_problem": false,
+        "has_active_goal": false,
+        "latest_used_at": "2025-12-08T11:09:10+09:00"
+      },
+      "timestamp": 1765159750597
+    }
+  },
+  {
+    "id": "a3a749e0-0f6c-4501-95fe-a1f2549e97b2",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats/134/messages",
+      "headers": {},
+      "timestamp": 1765159750614
+    },
+    "totalDuration": 20935,
+    "response": {
+      "mode": "event-stream",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "text/event-stream",
+        "cache-control": "no-cache",
+        "connection": "keep-alive"
+      },
+      "body": [
+        {
+          "event": "message_start",
+          "data": {
+            "id": -1,
+            "chat_id": 134,
+            "created_at": "2025-12-08T11:09:29+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          "delay": 17708
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "알"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "겠"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "어"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!"
+          },
+          "delay": 100
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 문"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "장을"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 직"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "역"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하면"
+          },
+          "delay": 106
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이렇게"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 돼"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ".\n\n"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\""
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "작은"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 발"
+          },
+          "delay": 59
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "걸"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "음"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "들이"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 꾸"
+          },
+          "delay": 6
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "준"
+          },
+          "delay": 127
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "히"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 취"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "해질"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 때"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 의"
+          },
+          "delay": 124
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "외"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "의"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 큰"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 변화를"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이끌"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수"
+          },
+          "delay": 239
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있다"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ".\"\n\n"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "여기"
+          },
+          "delay": 11
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "서"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 중요한"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 부분은"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " '"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "small"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " steps"
+          },
+          "delay": 141
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "'"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "가"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 단순히"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 물리"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "적인"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 걸"
+          },
+          "delay": 86
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "음이"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 아니라"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          },
+          "delay": 6
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 작"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "고"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 사"
+          },
+          "delay": 81
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "소한"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 노력"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이나"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 행"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "동"
+          },
+          "delay": 246
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "들을"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 의미"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "한다는"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 거"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "야"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 35
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 그리고"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " '"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "cons"
+          },
+          "delay": 5
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "ist"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "ently"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "'"
+          },
+          "delay": 150
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "는"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 꾸"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "준"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "함을"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 나타"
+          },
+          "delay": 105
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "내"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "니까"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 결국"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 조금씩"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이라도"
+          },
+          "delay": 149
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 지속적으로"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 노력"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하다"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 보면"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 예상"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "치"
+          },
+          "delay": 151
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 못한"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 큰"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 변화가"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 생길"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있다는"
+          },
+          "delay": 169
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 긍정적인"
+          },
+          "delay": 5
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 메시지를"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 담고"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있는"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 문"
+          },
+          "delay": 8
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "장이"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "야"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이해"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "됐"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "어"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "?"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 더"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 설명"
+          },
+          "delay": 5
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "해"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "줄"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "까"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "?"
+          },
+          "delay": 6
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 😊"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\n\n> [!TRANSLATION]-\n> ```json\n> {\n>   \"type\": \"translation\",\n>   \"content\": [\n>     {\n>       \"en\": \"Small steps\",\n>       \"ko\": \"작은 발걸음들이\"\n>     },\n>     {\n>       \"en\": \"taken consistently\",\n>       \"ko\": \"꾸준히 취해질 때\"\n>     },\n>     {\n>       \"en\": \"can lead to\",\n>       \"ko\": \"비상식적인 큰 변화를 이끌 수 있다.\"\n>     },\n>     {\n>       \"en\": \"surprisingly big changes\",\n>       \"ko\": \"의외로 큰 변화들\"\n>     }\n>   ]\n> }\n> ```\n"
+          },
+          "delay": 72
+        },
+        {
+          "event": "message_end",
+          "data": {
+            "id": -1,
+            "chat_id": 134,
+            "created_at": "2025-12-08T11:09:32+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "알겠어! 이 문장을 직역하면 이렇게 돼.\n\n\"작은 발걸음들이 꾸준히 취해질 때, 의외의 큰 변화를 이끌 수 있다.\"\n\n여기서 중요한 부분은 'small steps'가 단순히 물리적인 걸음이 아니라, 작고 사소한 노력이나 행동들을 의미한다는 거야. 그리고 'consistently'는 꾸준함을 나타내니까, 결국 조금씩이라도 지속적으로 노력하다 보면 예상치 못한 큰 변화가 생길 수 있다는 긍정적인 메시지를 담고 있는 문장이야. 이해됐어? 더 설명해줄까? 😊\n\n> [!TRANSLATION]-\n> ```json\n> {\n>   \"type\": \"translation\",\n>   \"content\": [\n>     {\n>       \"en\": \"Small steps\",\n>       \"ko\": \"작은 발걸음들이\"\n>     },\n>     {\n>       \"en\": \"taken consistently\",\n>       \"ko\": \"꾸준히 취해질 때\"\n>     },\n>     {\n>       \"en\": \"can lead to\",\n>       \"ko\": \"비상식적인 큰 변화를 이끌 수 있다.\"\n>     },\n>     {\n>       \"en\": \"surprisingly big changes\",\n>       \"ko\": \"의외로 큰 변화들\"\n>     }\n>   ]\n> }\n> ```\n"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "translation",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          },
+          "delay": 978
+        }
+      ],
+      "timestamp": 1765159772556
+    }
+  },
+  {
+    "id": "43fd5ce2-7660-4efa-b9ff-a6f0b41707ec",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/134",
+      "headers": {},
+      "timestamp": 1765159750617
+    },
+    "totalDuration": 46,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "104",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:09:10 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": 134,
+        "title": "",
+        "subject": "english",
+        "has_problem": false,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1765159750663
+    }
+  },
+  {
+    "id": "760c0a08-906d-41cc-bc2d-fe6aca1e1463",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/134/problems",
+      "headers": {},
+      "timestamp": 1765159750749
+    },
+    "totalDuration": 36,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "2",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:09:10 GMT",
+        "server": "uvicorn"
+      },
+      "body": [],
+      "timestamp": 1765159750785
+    }
+  },
+  {
+    "id": "3be12d61-f2e4-47c0-a1b3-55d8a5d391c6",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/134/messages",
+      "headers": {},
+      "timestamp": 1765159772688
+    },
+    "totalDuration": 22,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "1879",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:09:32 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1224,
+            "chat_id": 134,
+            "created_at": "2025-12-08T11:09:11+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-08"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1225,
+            "chat_id": 134,
+            "created_at": "2025-12-08T11:09:11+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "Small steps taken consistently can lead to surprisingly big changes. 이 문장 해석해줘"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1226,
+            "chat_id": 134,
+            "created_at": "2025-12-08T11:09:33+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "알겠어! 이 문장을 직역하면 이렇게 돼.\n\n\"작은 발걸음들이 꾸준히 취해질 때, 의외의 큰 변화를 이끌 수 있다.\"\n\n여기서 중요한 부분은 'small steps'가 단순히 물리적인 걸음이 아니라, 작고 사소한 노력이나 행동들을 의미한다는 거야. 그리고 'consistently'는 꾸준함을 나타내니까, 결국 조금씩이라도 지속적으로 노력하다 보면 예상치 못한 큰 변화가 생길 수 있다는 긍정적인 메시지를 담고 있는 문장이야. 이해됐어? 더 설명해줄까? 😊\n\n> [!TRANSLATION]-\n> ```json\n> {\n>   \"type\": \"translation\",\n>   \"content\": [\n>     {\n>       \"en\": \"Small steps\",\n>       \"ko\": \"작은 발걸음들이\"\n>     },\n>     {\n>       \"en\": \"taken consistently\",\n>       \"ko\": \"꾸준히 취해질 때\"\n>     },\n>     {\n>       \"en\": \"can lead to\",\n>       \"ko\": \"비상식적인 큰 변화를 이끌 수 있다.\"\n>     },\n>     {\n>       \"en\": \"surprisingly big changes\",\n>       \"ko\": \"의외로 큰 변화들\"\n>     }\n>   ]\n> }\n> ```\n"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "translation",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1765159772710
+    }
+  },
+  {
+    "id": "0968dc89-e5ed-4221-a366-c2b96add166f",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/134/messages",
+      "headers": {},
+      "timestamp": 1765159772689
+    },
+    "totalDuration": 40,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "1879",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:09:32 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1224,
+            "chat_id": 134,
+            "created_at": "2025-12-08T11:09:11+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-08"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1225,
+            "chat_id": 134,
+            "created_at": "2025-12-08T11:09:11+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "Small steps taken consistently can lead to surprisingly big changes. 이 문장 해석해줘"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1226,
+            "chat_id": 134,
+            "created_at": "2025-12-08T11:09:33+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "알겠어! 이 문장을 직역하면 이렇게 돼.\n\n\"작은 발걸음들이 꾸준히 취해질 때, 의외의 큰 변화를 이끌 수 있다.\"\n\n여기서 중요한 부분은 'small steps'가 단순히 물리적인 걸음이 아니라, 작고 사소한 노력이나 행동들을 의미한다는 거야. 그리고 'consistently'는 꾸준함을 나타내니까, 결국 조금씩이라도 지속적으로 노력하다 보면 예상치 못한 큰 변화가 생길 수 있다는 긍정적인 메시지를 담고 있는 문장이야. 이해됐어? 더 설명해줄까? 😊\n\n> [!TRANSLATION]-\n> ```json\n> {\n>   \"type\": \"translation\",\n>   \"content\": [\n>     {\n>       \"en\": \"Small steps\",\n>       \"ko\": \"작은 발걸음들이\"\n>     },\n>     {\n>       \"en\": \"taken consistently\",\n>       \"ko\": \"꾸준히 취해질 때\"\n>     },\n>     {\n>       \"en\": \"can lead to\",\n>       \"ko\": \"비상식적인 큰 변화를 이끌 수 있다.\"\n>     },\n>     {\n>       \"en\": \"surprisingly big changes\",\n>       \"ko\": \"의외로 큰 변화들\"\n>     }\n>   ]\n> }\n> ```\n"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "translation",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1765159772729
+    }
+  },
+  {
+    "id": "b94127d8-2a3d-4090-be9c-c417c1108bd5",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/134",
+      "headers": {},
+      "timestamp": 1765159772689
+    },
+    "totalDuration": 32,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "131",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:09:32 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": 134,
+        "title": "영어 문장 해석 연습",
+        "subject": "english",
+        "has_problem": false,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1765159772721
+    }
+  },
+  {
+    "id": "6a71d8e9-5ffd-4a28-99dc-98baaf6f338e",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/134/problems",
+      "headers": {},
+      "timestamp": 1765159772689
+    },
+    "totalDuration": 31,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "2",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:09:32 GMT",
+        "server": "uvicorn"
+      },
+      "body": [],
+      "timestamp": 1765159772720
+    }
+  }
+]

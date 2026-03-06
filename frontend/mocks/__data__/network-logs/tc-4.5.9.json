@@ -1,0 +1,56 @@
+[
+  {
+    "id": "d6da0582-d2e3-4664-b4d6-e4c95a8c7290",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/uploads",
+      "headers": {},
+      "timestamp": 1765180229828
+    },
+    "totalDuration": 48,
+    "response": {
+      "mode": "single",
+      "status": 201,
+      "statusText": "Created",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "528",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 07:50:29 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "presigned_url": "https://kr.object.ncloudstorage.com/edu-bucket/chat-upload/0e1d87c4-1663-4175-ac3a-32fff5b50489.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=2oeWi5zPIrTmdREEj95L%2F20251208%2Fkr-standard%2Fs3%2Faws4_request&X-Amz-Date=20251208T075029Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=content-type%3Bhost%3Bx-amz-acl&X-Amz-Signature=a00f5e659396d641a4aa8a838bf9c901f2d509f3a30536531b160324a1516d10",
+        "file_url": "https://kr.object.ncloudstorage.com/edu-bucket/chat-upload/0e1d87c4-1663-4175-ac3a-32fff5b50489.png"
+      },
+      "timestamp": 1765180229876
+    }
+  },
+  {
+    "id": "3ff2b52d-319d-4108-b6ed-ad7e029eed92",
+    "version": "1.1",
+    "request": {
+      "method": "PUT",
+      "url": "/edu-bucket/chat-upload/%7Bdata%7D",
+      "headers": {
+        "Content-Type": "image/png",
+        "x-amz-acl": "public-read"
+      },
+      "timestamp": 1765180229878
+    },
+    "totalDuration": 125,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-length": "0",
+        "etag": "\"da836f7a4d4a95257b85fd2ac7646acf\""
+      },
+      "timestamp": 1765180230003
+    }
+  }
+]

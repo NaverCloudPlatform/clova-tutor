@@ -1,0 +1,15 @@
+# CLOVA Tutor
+# Copyright (c) 2026-present NAVER Cloud Corp.
+# MIT
+
+evolution_prompt: |
+  evolution_memory를 사용하여 new_memory를 분석해줘
+  The new memory context:
+  {context}
+  content: {content}
+  keywords: {keywords}
+
+  The nearest neighbors memories:
+  {nearest_neighbors_memories}
+
+  The number of neighbors is {neighbor_number}.

@@ -1,0 +1,11 @@
+# Security Policy
+
+## Notes
+
+- Clova Tutor does not have internal authenticaton. Caution is required when using it in an actual service.
+
+- clova tutor does not encrypt local storage data.
+  
+## Reporting a Vulnerability
+
+Please report any security issues.

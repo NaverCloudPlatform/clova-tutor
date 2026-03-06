@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  # Nginx 웹 서버
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    image: clova-tutor-fe:latest
+    container_name: clova-tutor-fe
+    ports:
+      - "3000:80"
+    restart: on-failure

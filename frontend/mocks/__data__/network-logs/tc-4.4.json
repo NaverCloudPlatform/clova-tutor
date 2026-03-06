@@ -1,0 +1,1963 @@
+[
+  {
+    "id": "04573063-7fa2-40ef-a6c5-d1209aced6e5",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats?subject=math&size=10",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766457961276
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "items": [
+          {
+            "id": 390,
+            "title": "문제 추천 요청",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-22T18:47:41+09:00"
+          },
+          {
+            "id": 347,
+            "title": "문제 유형: 테스트 메시지 작성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T16:36:13+09:00"
+          },
+          {
+            "id": 375,
+            "title": "개념: 일차함수 그래프",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": true,
+            "latest_used_at": "2025-12-19T11:46:22+09:00"
+          },
+          {
+            "id": 335,
+            "title": "문제: 이차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 334,
+            "title": "문제: 일차방정식 대입",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T10:55:39+09:00"
+          },
+          {
+            "id": 268,
+            "title": "개념: 이차함수 꼭짓점 중요성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-16T14:42:55+09:00"
+          },
+          {
+            "id": 258,
+            "title": "문제: 일차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T20:23:23+09:00"
+          },
+          {
+            "id": 257,
+            "title": "문제: 일차부등식 풀이",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T17:59:40+09:00"
+          },
+          {
+            "id": 252,
+            "title": "개념: 이차방정식 해의 개수",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T16:46:11+09:00"
+          },
+          {
+            "id": 256,
+            "title": "문제: 일차부등식 풀이",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T13:38:33+09:00"
+          }
+        ],
+        "next_cursor": "eyJsYXRlc3RfdXNlZF9hdCI6IjIwMjUtMTItMTVUMTM6Mzg6MzMiLCJpZCI6MjU2fQ=="
+      },
+      "timestamp": 1766457961373
+    },
+    "totalDuration": 96.68899999053589
+  },
+  {
+    "id": "7131b7cc-00ed-41ee-beed-66599c083259",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users/452395d2-8832-41d5-976f-857e9ad2dcb8",
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766457961276
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "name": "e2e-playwright",
+        "grade": 10,
+        "memo": null,
+        "created_at": "2025-12-03T15:54:17+09:00",
+        "updated_at": "2025-12-03T16:15:51+09:00"
+      },
+      "timestamp": 1766457961372
+    },
+    "totalDuration": 96.12399999368283
+  },
+  {
+    "id": "be8be699-7917-4e93-89e6-7cb55f54ab58",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "payload": {
+        "title": "",
+        "subject": "math",
+        "grade": "10"
+      },
+      "timestamp": 1766457963720
+    },
+    "response": {
+      "mode": "single",
+      "status": 201,
+      "statusText": "Created",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 391,
+        "title": "",
+        "subject": "math",
+        "has_problem": false,
+        "has_active_goal": false,
+        "latest_used_at": "2025-12-23T11:46:03+09:00"
+      },
+      "timestamp": 1766457963793
+    },
+    "totalDuration": 72.92399999278132
+  },
+  {
+    "id": "8a3c7003-9781-4c17-931f-2f900053caa2",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats?subject=math&size=10",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766457963794
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "items": [
+          {
+            "id": 391,
+            "title": "",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-23T11:46:04+09:00"
+          },
+          {
+            "id": 390,
+            "title": "문제 추천 요청",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-22T18:47:41+09:00"
+          },
+          {
+            "id": 347,
+            "title": "문제 유형: 테스트 메시지 작성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T16:36:13+09:00"
+          },
+          {
+            "id": 375,
+            "title": "개념: 일차함수 그래프",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": true,
+            "latest_used_at": "2025-12-19T11:46:22+09:00"
+          },
+          {
+            "id": 335,
+            "title": "문제: 이차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 334,
+            "title": "문제: 일차방정식 대입",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T10:55:39+09:00"
+          },
+          {
+            "id": 268,
+            "title": "개념: 이차함수 꼭짓점 중요성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-16T14:42:55+09:00"
+          },
+          {
+            "id": 258,
+            "title": "문제: 일차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T20:23:23+09:00"
+          },
+          {
+            "id": 257,
+            "title": "문제: 일차부등식 풀이",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T17:59:40+09:00"
+          },
+          {
+            "id": 252,
+            "title": "개념: 이차방정식 해의 개수",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T16:46:11+09:00"
+          }
+        ],
+        "next_cursor": "eyJsYXRlc3RfdXNlZF9hdCI6IjIwMjUtMTItMTVUMTY6NDY6MTEiLCJpZCI6MjUyfQ=="
+      },
+      "timestamp": 1766457963817
+    },
+    "totalDuration": 23.010999997495674
+  },
+  {
+    "id": "fc1d666a-74f0-4db6-8005-24f5a567c0bf",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats/391/messages",
+      "headers": {
+        "Accept": "*/*",
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "content-type": "application/json"
+      },
+      "payload": {
+        "contents": [
+          {
+            "m_type": "text",
+            "value": {
+              "text": " $ \\sqrt2 $ "
+            }
+          }
+        ],
+        "metadata": {}
+      },
+      "timestamp": 1766457963828
+    },
+    "response": {
+      "mode": "event-stream",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "text/event-stream; charset=utf-8"
+      },
+      "body": [
+        {
+          "event": "message_start",
+          "data": {
+            "id": -1,
+            "chat_id": 391,
+            "created_at": "2025-12-23T11:46:14+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "알"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "겠"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "어"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " $\\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "sqrt"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "}$"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "에"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 대해"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 쉽게"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 설명"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "해"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 줄"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "게"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!\n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "###"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " "
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "1"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 제"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "곱"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "근"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "의"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 뜻"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "$\\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "sqrt"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "}$"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " '**"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "제"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "곱"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "해서"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " "
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "가"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 되는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "**"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "'"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "를"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 의미"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "해"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 좀"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 더"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 풀"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "어서"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 말하면"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 어떤"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수를"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 제"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "곱"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "했을"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 때"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 그"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 결과가"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " "
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "가"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 되는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "지를"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 나타내는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 거"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "야"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ".\n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "###"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " "
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "식으로"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 표현"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하기"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이를"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "식으로"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 표현"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하면"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 다음과"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 같아"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ":\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "$$"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "x"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "^"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " ="
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " "
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "$$"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "여기"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "서"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " $"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "x"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "$"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "가"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 바로"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " $\\"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "sqrt"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "}$"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "인"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 셈"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이지"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ".\n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "###"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " "
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "3"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 무"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "리"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "수"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "란"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "?\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "그런"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "데"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 문제는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이런"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수가"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 실"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "수"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 중에서"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 정확하게"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 딱"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 맞아"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "떨어"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "지는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 숫자"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "로는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 존"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "재"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하지"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 않는다는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 거"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "야"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 그래서"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 우리는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이를"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " '**"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "무"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "리"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "수"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "**"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "'"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "라고"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 부르"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "지"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ".\n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "###"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " "
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "4"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 근"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "삿"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "값"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "무"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "리"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "수를"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 소수"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "점"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "까지"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 정확히"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 나타"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "내"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "긴"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 힘들"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "지만"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 대략"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "적인"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 근"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "삿"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "값"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "으로는"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 약"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " **"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "1"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "414"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "**"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 정도로"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 볼"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있어"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ".\n\n"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "해가"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 됐"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "을까"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "?"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 혹시"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 더"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 알고"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 싶은"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 게"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있으면"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 말해"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "줘"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!"
+          }
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 😊"
+          }
+        },
+        {
+          "event": "message_end",
+          "data": {
+            "id": -1,
+            "chat_id": 391,
+            "created_at": "2025-12-23T11:46:19+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "알겠어! $\\sqrt{2}$에 대해 쉽게 설명해 줄게!\n\n### 1. 제곱근의 뜻\n$\\sqrt{2}$는 '**제곱해서 2가 되는 수**'를 의미해. 좀 더 풀어서 말하면, 어떤 수를 제곱했을 때 그 결과가 2가 되는지를 나타내는 거야.\n\n### 2. 수식으로 표현하기\n이를 수식으로 표현하면 다음과 같아:\n$$x^2 = 2$$\n여기서 $x$가 바로 $\\sqrt{2}$인 셈이지.\n\n### 3. 무리수란?\n그런데 문제는 이런 수가 실수 중에서 정확하게 딱 맞아떨어지는 숫자로는 존재하지 않는다는 거야. 그래서 우리는 이를 '**무리수**'라고 부르지.\n\n### 4. 근삿값\n무리수를 소수점까지 정확히 나타내긴 힘들지만, 대략적인 근삿값으로는 약 **1.414** 정도로 볼 수 있어.\n\n이해가 됐을까? 혹시 더 알고 싶은 게 있으면 말해줘! 😊"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "math_concept",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        }
+      ],
+      "timestamp": 1766457979688
+    },
+    "totalDuration": 15860.381999998935
+  },
+  {
+    "id": "9f270280-add6-422d-b6ce-0921054f9941",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/391",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766457963831
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 391,
+        "title": "",
+        "subject": "math",
+        "has_problem": false,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1766457963988
+    },
+    "totalDuration": 156.85900000971742
+  },
+  {
+    "id": "051fb429-0282-4ce5-b323-c6f5fc38296c",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/391/problems",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766457965064
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": [],
+      "timestamp": 1766457965174
+    },
+    "totalDuration": 109.73300000478048
+  },
+  {
+    "id": "e2d388ed-3906-4ecb-8493-3628298f7d7d",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats?subject=math&size=10",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766457980670
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "items": [
+          {
+            "id": 391,
+            "title": "개념: 제곱근 2",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-23T11:46:20+09:00"
+          },
+          {
+            "id": 390,
+            "title": "문제 추천 요청",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-22T18:47:41+09:00"
+          },
+          {
+            "id": 347,
+            "title": "문제 유형: 테스트 메시지 작성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T16:36:13+09:00"
+          },
+          {
+            "id": 375,
+            "title": "개념: 일차함수 그래프",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": true,
+            "latest_used_at": "2025-12-19T11:46:22+09:00"
+          },
+          {
+            "id": 335,
+            "title": "문제: 이차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 334,
+            "title": "문제: 일차방정식 대입",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T10:55:39+09:00"
+          },
+          {
+            "id": 268,
+            "title": "개념: 이차함수 꼭짓점 중요성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-16T14:42:55+09:00"
+          },
+          {
+            "id": 258,
+            "title": "문제: 일차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T20:23:23+09:00"
+          },
+          {
+            "id": 257,
+            "title": "문제: 일차부등식 풀이",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T17:59:40+09:00"
+          },
+          {
+            "id": 252,
+            "title": "개념: 이차방정식 해의 개수",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T16:46:11+09:00"
+          }
+        ],
+        "next_cursor": "eyJsYXRlc3RfdXNlZF9hdCI6IjIwMjUtMTItMTVUMTY6NDY6MTEiLCJpZCI6MjUyfQ=="
+      },
+      "timestamp": 1766457980754
+    },
+    "totalDuration": 83.5650000080932
+  },
+  {
+    "id": "117c39e6-fbc0-4a2d-afe7-c8a57b3a6d9d",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/391",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766457980670
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 391,
+        "title": "개념: 제곱근 2",
+        "subject": "math",
+        "has_problem": false,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1766457980767
+    },
+    "totalDuration": 96.55100000202562
+  },
+  {
+    "id": "4d03463d-a08a-4ec0-9812-98e8a37b1fad",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/391/problems",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766457980670
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": [],
+      "timestamp": 1766457980768
+    },
+    "totalDuration": 98.19999999799114
+  },
+  {
+    "id": "5c6f0830-705a-4dfa-a1f0-998c5e9f41b4",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/391/messages",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766457984374
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 3318,
+            "chat_id": 391,
+            "created_at": "2025-12-23T11:46:04+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-23"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3319,
+            "chat_id": 391,
+            "created_at": "2025-12-23T11:46:04+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": " $ \\sqrt2 $ "
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3320,
+            "chat_id": 391,
+            "created_at": "2025-12-23T11:46:20+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "알겠어! $\\sqrt{2}$에 대해 쉽게 설명해 줄게!\n\n### 1. 제곱근의 뜻\n$\\sqrt{2}$는 '**제곱해서 2가 되는 수**'를 의미해. 좀 더 풀어서 말하면, 어떤 수를 제곱했을 때 그 결과가 2가 되는지를 나타내는 거야.\n\n### 2. 수식으로 표현하기\n이를 수식으로 표현하면 다음과 같아:\n$$x^2 = 2$$\n여기서 $x$가 바로 $\\sqrt{2}$인 셈이지.\n\n### 3. 무리수란?\n그런데 문제는 이런 수가 실수 중에서 정확하게 딱 맞아떨어지는 숫자로는 존재하지 않는다는 거야. 그래서 우리는 이를 '**무리수**'라고 부르지.\n\n### 4. 근삿값\n무리수를 소수점까지 정확히 나타내긴 힘들지만, 대략적인 근삿값으로는 약 **1.414** 정도로 볼 수 있어.\n\n이해가 됐을까? 혹시 더 알고 싶은 게 있으면 말해줘! 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "math_concept",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1766457984441
+    },
+    "totalDuration": 66.84199999053311
+  }
+]

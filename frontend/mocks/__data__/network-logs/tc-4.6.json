@@ -1,0 +1,865 @@
+[
+  {
+    "id": "8f361e0f-4b8d-43f2-9f00-4d5dafc5de33",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/uploads",
+      "headers": {},
+      "timestamp": 1765182465242
+    },
+    "totalDuration": 36,
+    "response": {
+      "mode": "single",
+      "status": 201,
+      "statusText": "Created",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "528",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 08:27:45 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "presigned_url": "https://kr.object.ncloudstorage.com/edu-bucket/chat-upload/a459b02a-354c-4f2f-b167-1e83c54e39bd.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=2oeWi5zPIrTmdREEj95L%2F20251208%2Fkr-standard%2Fs3%2Faws4_request&X-Amz-Date=20251208T082745Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=content-type%3Bhost%3Bx-amz-acl&X-Amz-Signature=7d9ede0d84e59cf69edfa8a130e71a2535a928020ee349805df6a04cf1ec7807",
+        "file_url": "https://kr.object.ncloudstorage.com/edu-bucket/chat-upload/a459b02a-354c-4f2f-b167-1e83c54e39bd.jpg"
+      },
+      "timestamp": 1765182465278
+    }
+  },
+  {
+    "id": "9cc1684a-d01b-48db-bd4d-aa03714fdbb0",
+    "version": "1.1",
+    "request": {
+      "method": "PUT",
+      "url": "/edu-bucket/chat-upload/%7Bdata%7D",
+      "headers": {
+        "Content-Type": "image/jpeg",
+        "x-amz-acl": "public-read"
+      },
+      "timestamp": 1765182465279
+    },
+    "totalDuration": 141,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-length": "0",
+        "etag": "\"3d48edd016d9c8d748fc4b6f7d9883e6\""
+      },
+      "timestamp": 1765182465420
+    }
+  },
+  {
+    "id": "14e9f011-da1f-445b-8fbe-5bf864f89b24",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats",
+      "headers": {},
+      "timestamp": 1765182471141
+    },
+    "totalDuration": 57,
+    "response": {
+      "mode": "single",
+      "status": 201,
+      "statusText": "Created",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "130",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 08:27:51 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": 146,
+        "title": "",
+        "subject": "english",
+        "has_problem": false,
+        "has_active_goal": false,
+        "latest_used_at": "2025-12-08T17:27:51+09:00"
+      },
+      "timestamp": 1765182471198
+    }
+  },
+  {
+    "id": "cfa600ad-c2f0-4e12-a4b2-f7796d621743",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats/146/messages",
+      "headers": {},
+      "timestamp": 1765182471221
+    },
+    "totalDuration": 11318,
+    "response": {
+      "mode": "event-stream",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "text/event-stream",
+        "cache-control": "no-cache",
+        "connection": "keep-alive"
+      },
+      "body": [
+        {
+          "event": "message_start",
+          "data": {
+            "id": -1,
+            "chat_id": 146,
+            "created_at": "2025-12-08T17:28:01+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          "delay": 9912
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이미"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "지는"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 그냥"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 분"
+          },
+          "delay": 4
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "홍"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "색"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 배경"
+          },
+          "delay": 67
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "화면"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "인"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 것"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 같아"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 아"
+          },
+          "delay": 229
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "무"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "런"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 그림"
+          },
+          "delay": 4
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이나"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 텍"
+          },
+          "delay": 68
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "스트"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 없이"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 깔끔"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하고"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 단순한"
+          },
+          "delay": 114
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 디자인"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이야"
+          },
+          "delay": 4
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이런"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 스타"
+          },
+          "delay": 162
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "일은"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 보통"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 배경"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "화"
+          },
+          "delay": 139
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "면으로"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 쓰"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "거나"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 다른"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 디자인을"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 위한"
+          },
+          "delay": 99
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 기본"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 배경으로"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 많이"
+          },
+          "delay": 4
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 활용"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "돼"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 원하는"
+          },
+          "delay": 18
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 대로"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 꾸"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "밀"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있어서"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 좋아"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 😊"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_end",
+          "data": {
+            "id": -1,
+            "chat_id": 146,
+            "created_at": "2025-12-08T17:28:03+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "이미지는 그냥 분홍색 배경화면인 것 같아. 아무런 그림이나 텍스트 없이 깔끔하고 단순한 디자인이야. 이런 스타일은 보통 배경화면으로 쓰거나 다른 디자인을 위한 기본 배경으로 많이 활용돼. 원하는 대로 꾸밀 수 있어서 좋아! 😊"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          "delay": 486
+        }
+      ],
+      "timestamp": 1765182483443
+    }
+  },
+  {
+    "id": "aa7bd00c-dbb1-477c-ac3d-5e174e6eb3df",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/%7Bchat_id%7D",
+      "headers": {},
+      "timestamp": 1765182471223
+    },
+    "totalDuration": 78,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "104",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 08:27:51 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": 146,
+        "title": "",
+        "subject": "english",
+        "has_problem": false,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1765182471301
+    }
+  },
+  {
+    "id": "dd90f584-8be7-4041-8503-19b11a8fb491",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/%7Bchat_id%7D/problems",
+      "headers": {},
+      "timestamp": 1765182471349
+    },
+    "totalDuration": 39,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "2",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 08:27:51 GMT",
+        "server": "uvicorn"
+      },
+      "body": [],
+      "timestamp": 1765182471388
+    }
+  },
+  {
+    "id": "f9ae5166-389d-4d58-a2c1-f62198f49c36",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/%7Bchat_id%7D/messages",
+      "headers": {},
+      "timestamp": 1765182483568
+    },
+    "totalDuration": 24,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "1086",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 08:28:03 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1328,
+            "chat_id": 146,
+            "created_at": "2025-12-08T17:27:51+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-08"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1329,
+            "chat_id": 146,
+            "created_at": "2025-12-08T17:27:51+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "images",
+                "value": {
+                  "sources": [
+                    "https://kr.object.ncloudstorage.com/edu-bucket/chat-upload/a459b02a-354c-4f2f-b167-1e83c54e39bd.jpg"
+                  ]
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "s"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1330,
+            "chat_id": 146,
+            "created_at": "2025-12-08T17:28:03+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "이미지는 그냥 분홍색 배경화면인 것 같아. 아무런 그림이나 텍스트 없이 깔끔하고 단순한 디자인이야. 이런 스타일은 보통 배경화면으로 쓰거나 다른 디자인을 위한 기본 배경으로 많이 활용돼. 원하는 대로 꾸밀 수 있어서 좋아! 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1765182483592
+    }
+  },
+  {
+    "id": "dbd8f7f6-b878-47b6-b3af-2afcdf54571e",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/%7Bchat_id%7D/messages",
+      "headers": {},
+      "timestamp": 1765182483569
+    },
+    "totalDuration": 51,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "1086",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 08:28:03 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1328,
+            "chat_id": 146,
+            "created_at": "2025-12-08T17:27:51+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-08"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1329,
+            "chat_id": 146,
+            "created_at": "2025-12-08T17:27:51+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "images",
+                "value": {
+                  "sources": [
+                    "https://kr.object.ncloudstorage.com/edu-bucket/chat-upload/a459b02a-354c-4f2f-b167-1e83c54e39bd.jpg"
+                  ]
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "s"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1330,
+            "chat_id": 146,
+            "created_at": "2025-12-08T17:28:03+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "이미지는 그냥 분홍색 배경화면인 것 같아. 아무런 그림이나 텍스트 없이 깔끔하고 단순한 디자인이야. 이런 스타일은 보통 배경화면으로 쓰거나 다른 디자인을 위한 기본 배경으로 많이 활용돼. 원하는 대로 꾸밀 수 있어서 좋아! 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1765182483620
+    }
+  },
+  {
+    "id": "e8dcdf3a-b027-47fb-8461-583198d96869",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/%7Bchat_id%7D",
+      "headers": {},
+      "timestamp": 1765182483569
+    },
+    "totalDuration": 45,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "130",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 08:28:03 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": 146,
+        "title": "의미 불명확한 입력",
+        "subject": "english",
+        "has_problem": false,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1765182483614
+    }
+  },
+  {
+    "id": "5858a9e1-9166-4305-9dc7-c5fe6389c0aa",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/%7Bchat_id%7D/problems",
+      "headers": {},
+      "timestamp": 1765182483569
+    },
+    "totalDuration": 45,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "2",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 08:28:03 GMT",
+        "server": "uvicorn"
+      },
+      "body": [],
+      "timestamp": 1765182483614
+    }
+  }
+]

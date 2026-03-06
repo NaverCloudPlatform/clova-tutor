@@ -1,0 +1,175 @@
+version: "3.9"
+
+services:
+
+  # Backend
+  edu_service_backend:
+    build:
+      context: backend/
+    image: edu-server
+    container_name: edu-server
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      MYSQL_HOST: mysql-container
+    restart: on-failure
+    depends_on:
+      mysql:
+        condition: service_healthy
+      edu_service_model:
+        condition: service_healthy
+    command: >
+      /edu/.venv/bin/python -m uvicorn main:app
+      --host 0.0.0.0
+      --port 8000
+    networks:
+      - backend-net
+      - redis-net
+
+  # MySQL
+  mysql:
+    image: mysql:8.0.40
+    container_name: mysql-container
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: local_password
+      MYSQL_DATABASE: local
+      MYSQL_USER: local
+      MYSQL_PASSWORD: local_password
+    volumes:
+      - mysql_data:/var/lib/mysql
+    restart: always
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-ulocal", "-plocal_password"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    networks:
+      - backend-net
+
+  # ================= REDIS CLUSTER =================
+
+  redis:
+    image: redis:6.2
+    container_name: redis-container
+    ports:
+      - "6379:6379"
+    command: redis-server --requirepass local_password
+    networks:
+      - redis-net
+  
+  # Model
+  edu_service_model:
+    build:
+      context: model-server/
+    image: edu-model
+    container_name: edu-model-server
+    depends_on:
+      edu_service_data:
+        condition: service_healthy
+    ports:
+      - "8002:8002"
+      - "8051:8051"
+    env_file:
+      - .env
+    restart: on-failure
+    command: >
+      /edu/.venv/bin/python -m uvicorn main:app
+      --host 0.0.0.0
+      --port 8002
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8002/health || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 120s
+    networks:
+      - redis-net
+      - data-net
+
+  edu_service_data:
+    build:
+      context: data-server/
+    image: edu-data
+    depends_on:
+      weaviate:
+        condition: service_healthy
+    container_name: edu-data-server
+    ports:
+      - "8001:8001"
+    env_file:
+      - .env
+    environment:
+      WEAVIATE_HOST: data-weaviate-container
+      WEAVIATE_PORT: 8080
+    volumes:
+      - ./data-server/src:/edu/app
+    restart: on-failure
+    command: >
+      /edu/.venv/bin/python -m uvicorn main:app
+        --host 0.0.0.0
+        --port 8001
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8001/health || exit 1"]
+      interval: 30s
+      timeout: 15s
+      retries: 10         
+      start_period: 300s
+    networks:
+      - data-net
+
+  weaviate:
+    image: cr.weaviate.io/semitechnologies/weaviate:1.29.2
+    container_name: data-weaviate-container
+    ports:
+      - 8080:8080
+      - 50051:50051
+    volumes:
+      - weaviate_data:/var/lib/weaviate
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://localhost:8080/v1/meta"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    environment:
+      QUERY_DEFAULTS_LIMIT: 25
+      AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED: 'true'
+      PERSISTENCE_DATA_PATH: '/var/lib/weaviate'
+      ENABLE_API_BASED_MODULES: 'true'
+      CLUSTER_HOSTNAME: 'node1'
+      HUGGINGFACE_INFERENCE_API: "https://api-inference.huggingface.co"
+    command:
+      - --host
+      - 0.0.0.0
+      - --port
+      - '8080'
+      - --scheme
+      - http
+    networks:
+      - data-net
+
+  web:
+    build:
+      context: frontend
+      dockerfile: Dockerfile.web
+    image: clova-tutor-fe:latest
+    container_name: clova-tutor-fe
+    ports:
+      - "3000:80"
+    restart: on-failure
+
+networks:
+  backend-net:
+    driver: bridge
+  redis-net:
+    driver: bridge
+  data-net:
+    driver: bridge
+
+volumes:
+  mysql_data:
+  weaviate_data:

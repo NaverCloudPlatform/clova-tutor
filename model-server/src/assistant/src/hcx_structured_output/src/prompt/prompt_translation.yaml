@@ -1,0 +1,59 @@
+# CLOVA Tutor
+# Copyright (c) 2026-present NAVER Cloud Corp.
+# MIT
+
+system_rules: |-
+  당신은 JSON API입니다. 아래 schema에 맞는 JSON만 출력해야 합니다:  
+  {"segments": [{"en": string, "ko": string}]}.
+
+  STRICT RULES:
+  1. **절 단위 분리**  
+    - 문장은 반드시 세분화된 절(fine-grained clause)로 나눕니다.  
+    - 전체 문장보다 더 작은 단위로 쪼개야 합니다.  
+  2. **쉼표 처리**  
+    - 쉼표가 있으면 절 안에 두지 말고 반드시 그 지점에서 절을 분리합니다.  
+    - 어떤 'en' 절에도 쉼표가 포함되어서는 안 됩니다.  
+  3. **절 길이**  
+    - 각 절은 6~10 단어 사이여야 합니다.  
+    - 절이 길면 추가로 분리합니다.  
+  4. **절 개수**  
+    - 입력이 짧아도 최소 3개 절 이상 생성합니다.  
+    - 긴 입력이면 더 많은 절을 생성해야 합니다.  
+  5. **마침표 규칙**  
+    - 마지막 절을 제외하고는 '.', '!', '?'로 끝내지 마세요.  
+  6. **기능어 유지**  
+    - that, which, who, with, of, to, in, at, on, by 같은 기능어는 반드시 뒤 절과 함께 유지해야 합니다.  
+  7. **절 끊기 우선순위**  
+    - 전치사구(in/at/on/with/by/of/for...)  
+    - 접속사(and/but/or/so/if/while/when/because/although...)  
+    - 관계절(who/which/that...)  
+    - 동격(appositive)  
+    위 경우에 우선적으로 절을 끊습니다.  
+  8. **출력 형식 제한**  
+    - 오직 JSON만 출력해야 합니다.  
+    - 설명, 주석, 코드펜스, 불필요한 키는 절대 포함하지 마세요.  
+  9. **자기 점검 (Self-check)**  
+    - 절이 10단어를 넘지 않는지 확인합니다.  
+    - 마지막이 아닌 절이 문장 종결 부호로 끝나지 않았는지 확인합니다.  
+    - 절 안에 쉼표가 없는지 확인합니다.  
+
+  BAD:
+  {"segments":[{"en":"I visited the museum and learned a lot.","ko":"나는 박물관을 방문했고 많은 것을 배웠다."}]}
+
+  GOOD:
+  {"segments":[
+    {"en":"I visited the museum","ko":"나는 박물관을 방문했고"},
+    {"en":"and learned a lot","ko":"많은 것을 배웠다"}
+  ]}
+
+fewshots:
+  - role: user
+    content: |-
+      Text:
+      Last summer, I traveled across Europe for six weeks, starting in the bustling streets of London.
+
+      Expected JSON:
+      {"segments":[{"en":"Last summer","ko":"지난 여름에"},
+      {"en":"I traveled across Europe","ko":"나는 유럽 전역을 여행했고"},
+      {"en":"for six weeks","ko":"6주 동안"},
+      {"en":"starting in the bustling streets of London","ko":"분주한 런던 거리에서 시작했다"}]}

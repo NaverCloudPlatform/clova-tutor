@@ -1,0 +1,795 @@
+[
+  {
+    "id": "ca8e393b-d60d-40c1-acb0-bf7d7bdc34df",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/380",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766390206929
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 380,
+        "title": "문제 추천 요청",
+        "subject": "math",
+        "has_problem": true,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1766390206951
+    },
+    "totalDuration": 21.86900000378955
+  },
+  {
+    "id": "e472a1cb-b374-4ec1-93b8-1d71feca5de0",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/380/stream-status",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766390208178
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "status": "COMPLETE"
+      },
+      "timestamp": 1766390208257
+    },
+    "totalDuration": 78.98799999874831
+  },
+  {
+    "id": "dce0ad71-acf6-4aa6-9a35-b60bfff69a29",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/380/messages",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766390208178
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 3281,
+            "chat_id": 380,
+            "created_at": "2025-12-22T14:58:43+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-22"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3282,
+            "chat_id": 380,
+            "created_at": "2025-12-22T14:58:43+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "문제 추천해줘"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3283,
+            "chat_id": 380,
+            "created_at": "2025-12-22T14:58:49+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "problem_recommended",
+                "value": {
+                  "problem_id": "H1-M-004",
+                  "category": "곱셈 계산",
+                  "status": "풀지 않음"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "좋아! 다항식 단원에서 문제를 하나 가져왔어! 한번 풀어볼래? 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "recommend_problem",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3284,
+            "chat_id": 380,
+            "created_at": "2025-12-22T14:59:20+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "problem_link",
+                "value": {
+                  "problem_id": "H1-M-004"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "다른 문제 더 추천해줘"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3285,
+            "chat_id": 380,
+            "created_at": "2025-12-22T14:59:24+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "problem_recommended",
+                "value": {
+                  "problem_id": "H1-M-002",
+                  "category": "곱셈 계산",
+                  "status": "풀지 않음"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "좋아! 다항식 단원에서 문제를 하나 가져왔어! 한번 풀어볼래? 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "recommend_problem",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3286,
+            "chat_id": 380,
+            "created_at": "2025-12-22T16:56:40+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "problem_link",
+                "value": {
+                  "problem_id": "H1-M-002"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "문제 하나 더 추천해줘"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3287,
+            "chat_id": 380,
+            "created_at": "2025-12-22T16:56:43+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "problem_recommended",
+                "value": {
+                  "problem_id": "H1-M-092",
+                  "category": "계산",
+                  "status": "풀지 않음"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "딱 맞는 문제는 아니지만, 이 문제도 꽤 괜찮아 보여! 한 번 풀어볼래?"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "recommend_problem",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1766390208257
+    },
+    "totalDuration": 78.84299999500904
+  },
+  {
+    "id": "0e041ab9-87bd-4dca-b517-0b1889146b25",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/380/problems",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766390208178
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": [
+        {
+          "id": "H1-M-002",
+          "number": 2,
+          "status": "정답",
+          "category": "곱셈 계산",
+          "grade": 10,
+          "level": 2
+        },
+        {
+          "id": "H1-M-004",
+          "number": 1,
+          "status": "오답",
+          "category": "곱셈 계산",
+          "grade": 10,
+          "level": 2
+        },
+        {
+          "id": "H1-M-092",
+          "number": 3,
+          "status": "풀지 않음",
+          "category": "계산",
+          "grade": 10,
+          "level": 2
+        }
+      ],
+      "timestamp": 1766390208257
+    },
+    "totalDuration": 78.79399999957158
+  },
+  {
+    "id": "0fb181b5-bfe2-464a-9f5a-f8bd78ca88e7",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/380/problems/H1-M-092",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766390208179
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "number": 3,
+        "status": "풀지 않음",
+        "last_answer": null,
+        "is_bookmarked": false,
+        "problem_info": {
+          "id": "H1-M-092",
+          "type": "단일응답 주관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "함수와 그래프",
+            "secondary": "함수",
+            "specific": "함수의 합성",
+            "category": "계산",
+            "problem": "f(x)=x+2, g(x)=2x라 할 때, (f∘g)(x)를 구하시오.",
+            "tags": [
+              "합성함수",
+              "계산"
+            ],
+            "hint": "‘f∘g’는 f(g(x))를 뜻합니다.",
+            "explanation": "g(x)를 f에 대입 → f(g(x))=2x+2"
+          }
+        }
+      },
+      "timestamp": 1766390208257
+    },
+    "totalDuration": 78.4280000003744
+  },
+  {
+    "id": "9db38aa9-72e2-4290-beb7-78a85e351e6a",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/380",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766390208179
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 380,
+        "title": "문제 추천 요청",
+        "subject": "math",
+        "has_problem": true,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1766390208257
+    },
+    "totalDuration": 77.95099999862536
+  },
+  {
+    "id": "e8c95935-57a6-4ece-a01e-6ece11184623",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/380/problems/H1-M-004",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766390208383
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "number": 1,
+        "status": "오답",
+        "last_answer": "4",
+        "is_bookmarked": false,
+        "problem_info": {
+          "id": "H1-M-004",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "((x - 2)(x + 1))의 전개식은?",
+            "tags": [
+              "다항식",
+              "전개"
+            ],
+            "hint": "FOIL 적용",
+            "explanation": "(x² - x - 2)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² - x - 2"
+              },
+              {
+                "no": 2,
+                "inst": "x² - x + 2"
+              },
+              {
+                "no": 3,
+                "inst": "x² + x - 2"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 3x + 2"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1766390208406
+    },
+    "totalDuration": 22.966000004089437
+  },
+  {
+    "id": "3fe151dd-1013-4b58-8344-ab5f7555e656",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/380/problems/H1-M-002",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766390208404
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "number": 2,
+        "status": "정답",
+        "last_answer": "2",
+        "is_bookmarked": false,
+        "problem_info": {
+          "id": "H1-M-002",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "((x + 3)(x + 5))의 전개식은?",
+            "tags": [
+              "다항식",
+              "전개"
+            ],
+            "hint": "FOIL 법칙 활용",
+            "explanation": "(x×x + 5x + 3x + 15)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 15"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 8x + 15"
+              },
+              {
+                "no": 3,
+                "inst": "x² + 5x + 8"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 3x + 15"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1766390208426
+    },
+    "totalDuration": 22.477000005892478
+  },
+  {
+    "id": "5f5bc1ca-0f66-4957-9067-9c850c261ba8",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/problem-bookmarks/problem/H1-M-092/check",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766390208437
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "status": "unique"
+      },
+      "timestamp": 1766390208457
+    },
+    "totalDuration": 20.3239999973448
+  },
+  {
+    "id": "8790fb04-976e-40ab-9db7-6069d01b07b6",
+    "version": "1.1",
+    "request": {
+      "method": "PATCH",
+      "url": "/api/v1/problem-bookmarks",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "payload": {
+        "chat_id": 380,
+        "problem_id": "H1-M-092",
+        "is_bookmarked": true
+      },
+      "timestamp": 1766390211217
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 344,
+        "chat_id": 380,
+        "problem_id": "H1-M-092",
+        "is_bookmarked": true,
+        "bookmarked_at": "2025-12-22T16:56:51+09:00"
+      },
+      "timestamp": 1766390211257
+    },
+    "totalDuration": 39.995999992243014
+  },
+  {
+    "id": "68e1d3f6-2675-4e6b-a494-dba63540a524",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/problem-bookmarks/problem/H1-M-092/check",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766390211259
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "status": "duplicate"
+      },
+      "timestamp": 1766390211277
+    },
+    "totalDuration": 18.37099999829661
+  },
+  {
+    "id": "c12bf0a2-a6de-49b5-892d-bb1798ce084c",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/380/problems/H1-M-092",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766390211278
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "number": 3,
+        "status": "풀지 않음",
+        "last_answer": null,
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-092",
+          "type": "단일응답 주관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "함수와 그래프",
+            "secondary": "함수",
+            "specific": "함수의 합성",
+            "category": "계산",
+            "problem": "f(x)=x+2, g(x)=2x라 할 때, (f∘g)(x)를 구하시오.",
+            "tags": [
+              "합성함수",
+              "계산"
+            ],
+            "hint": "‘f∘g’는 f(g(x))를 뜻합니다.",
+            "explanation": "g(x)를 f에 대입 → f(g(x))=2x+2"
+          }
+        }
+      },
+      "timestamp": 1766390211299
+    },
+    "totalDuration": 21.215000000665896
+  },
+  {
+    "id": "71d57337-9948-4747-a901-eed05d2918fc",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/problem-bookmarks/problem/H1-M-002/check",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766390218987
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "status": "duplicate"
+      },
+      "timestamp": 1766390219102
+    },
+    "totalDuration": 115.12200000220723
+  },
+  {
+    "id": "e6a624a3-abab-47f2-b6a7-c22f0aba34b7",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/380/problems/H1-M-002",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766390218987
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "number": 2,
+        "status": "정답",
+        "last_answer": "2",
+        "is_bookmarked": false,
+        "problem_info": {
+          "id": "H1-M-002",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "((x + 3)(x + 5))의 전개식은?",
+            "tags": [
+              "다항식",
+              "전개"
+            ],
+            "hint": "FOIL 법칙 활용",
+            "explanation": "(x×x + 5x + 3x + 15)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 15"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 8x + 15"
+              },
+              {
+                "no": 3,
+                "inst": "x² + 5x + 8"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 3x + 15"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1766390219103
+    },
+    "totalDuration": 115.76300000685174
+  }
+]

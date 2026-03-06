@@ -1,0 +1,49 @@
+[project]
+name = "edu-max-model"
+version = "0.2.0"
+description = "Edu MAX model app"
+readme = "README.md"
+requires-python = "==3.11.*"
+dependencies = [
+  "graphviz==0.21",
+  "json-repair==0.47.6",
+  "langchain==0.3.27",
+  "langchain-community==0.3.27",
+  "langchain-naver==0.1.1",         
+  "langchain-openai==0.3.14",
+  "langchain-huggingface==0.3.1",
+  "langgraph==0.5.3",
+  "mlflow==3.3.1",
+  "nest_asyncio==1.6.0",
+  "omegaconf==2.3.0",
+  "openpyxl==3.1.5",
+  "pandas==2.2.3",
+  "redis==5.3.0",
+  "rich==13.9.4",
+  "weaviate-client==4.14.4",
+  
+  # --- from backend ---
+  "fastapi>=0.115.8",
+  "uvloop==0.21.0",
+  "watchfiles==1.0.4",
+  "grpcio>=1.74.0",
+  "grpcio-tools>=1.74.0",
+  "boto3==1.37.35",
+  "python-multipart>=0.0.20",
+  "pydantic-settings>=2.8.0",
+  "uvicorn>=0.34.0",
+
+  # --- from hcx_structured_output ---
+  "instructor==1.10.0",
+  "pydantic==2.11.7",
+  "python-dotenv==1.1.1",
+  "PyYAML==6.0.2",
+  "typing-extensions==4.14.1",
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.uv]
+python-preference = "managed"
+managed = true

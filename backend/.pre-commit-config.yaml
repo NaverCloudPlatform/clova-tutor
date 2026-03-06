@@ -1,0 +1,28 @@
+# 프로젝트의 python 버전을 명시합니다.
+default_language_version:
+  python: python3.11
+
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks # pre-commit hooks 사용
+    rev: v4.2.0 # pre-commit 버전 명시
+    hooks:
+      - id: detect-private-key # private key가 프로젝트 상 명시된 걸 감지합니다.
+      - id: check-merge-conflict # 머지 상 conflict 존재하면 막힙니다.
+      - id: trailing-whitespace # 불필요한 공백이나 탭 등이 있다면 지웁니다.
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.11.4
+    hooks:
+      - id: ruff
+        args: [--exit-non-zero-on-fix]
+        exclude: '^(alembic|scripts)/'
+
+  - repo: local
+    hooks:
+    - id: mypy
+      name: mypy
+      entry: uv run mypy --config-file=pyproject.toml
+      language: python
+      types: [python]
+      exclude: '^(alembic/|scripts/|test/|src/chats/infra/assistant/grpc_stubs/)'

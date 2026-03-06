@@ -1,0 +1,67 @@
+// CLOVA Tutor
+// Copyright (c) 2026-present NAVER Cloud Corp.
+// MIT
+
+syntax = "proto3";
+
+package modelchat;
+
+// ────────────────────────────────
+// 요청(Request)
+// ────────────────────────────────
+message ModelRequest {
+  int64  chat_id                     = 1;  // 채팅 id
+  string subject                     = 2;  // 과목명
+  int32  grade                       = 3;  // 학년
+  string user_id                     = 4;  // 유저 uuid
+  string user_name                   = 5;  // 학생 이름
+  string user_query                  = 6;  // 사용자 질의
+  repeated string image_url          = 7;  // 이미지 URL (없으면 빈 배열)
+  optional string vector_problem_id  = 8;  // Vector DB ID
+  bool translation_button            = 9; // 직독직해 버튼 클릭 여부
+  string request_id                  = 10; // request_id
+}
+
+message CreateChatTitleRequest {
+  string user_input                  = 1;
+}
+
+// ────────────────────────────────
+// 응답(Response)
+// ────────────────────────────────
+message RecommendationInfo {
+  bool    recommend_tool         = 1;  // 문제 추천 기능 사용 여부
+  string  recommended_problem_id = 2;  // 추천한 문제 ID
+}
+
+message PresentationOption {
+  string          response_style      = 1;  // 모델 응답 스타일
+  optional bool   has_translation_response = 2; // 직독직해 응답 여부
+}
+
+message ModelResponse {
+  // 공통 메타 데이터
+  string id      = 1;   // UUID
+  int64  created = 2;   // epoch(ms)
+  bool   finish  = 3;   // 최종 메시지 여부
+
+  // 본문
+  string               model_response            = 4;  // 모델 응답
+  optional string      subject                   = 5;  // 과목명
+  repeated string      reference_image_document  = 6;  // 모델이 제공한 이미지
+
+  RecommendationInfo           recommendation = 7;   // 문제 추천
+  repeated PresentationOption  presentation   = 8;   // 모델 응답 스타일
+}
+
+message CreateChatTitleResponse {
+  string title                  = 1;
+}
+
+// ────────────────────────────────
+// 서비스 정의
+// ────────────────────────────────
+service ModelService {
+  rpc GenerateResponse(ModelRequest) returns (stream ModelResponse);
+  rpc GenerateChatTitle(CreateChatTitleRequest) returns (CreateChatTitleResponse);
+}

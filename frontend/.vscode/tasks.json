@@ -1,0 +1,82 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+    {
+      "type": "npm",
+      "script": "dev",
+      "problemMatcher": [],
+      "label": "dev",
+      "detail": "개발 서버 시작"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "problemMatcher": [],
+      "label": "build",
+      "detail": "프로덕션 빌드"
+    },
+    {
+      "type": "npm",
+      "script": "build:dev",
+      "problemMatcher": [],
+      "label": "build:dev",
+      "detail": "개발 환경 빌드"
+    },
+    {
+      "type": "npm",
+      "script": "format",
+      "problemMatcher": [],
+      "label": "format",
+      "detail": "코드 포맷팅 (Biome)"
+    },
+    {
+      "type": "npm",
+      "script": "api:fetch",
+      "problemMatcher": [],
+      "label": "api:fetch",
+      "detail": "Swagger 스펙 가져오기"
+    },
+    {
+      "type": "npm",
+      "script": "api:generate",
+      "problemMatcher": [],
+      "label": "api:generate",
+      "detail": "Swagger로 API 클라이언트 생성"
+    },
+    {
+      "type": "npm",
+      "script": "mock:convert",
+      "problemMatcher": [],
+      "label": "mock:convert",
+      "detail": "HAR 파일을 Mock JSON으로 변환"
+    },
+    {
+      "type": "npm",
+      "script": "router:generate",
+      "problemMatcher": ["$gcc"],
+      "label": "router:generate",
+      "detail": "TanStack Router 라우트 생성"
+    },
+    {
+      "type": "npm",
+      "script": "test:e2e",
+      "problemMatcher": [],
+      "label": "test:e2e",
+      "detail": "E2E 테스트 실행 (Playwright)"
+    },
+    {
+      "type": "npm",
+      "script": "test:codegen",
+      "problemMatcher": [],
+      "label": "test:codegen",
+      "detail": "Playwright 테스트 코드 생성기"
+    },
+    {
+      "type": "npm",
+      "script": "test:generate-stubs",
+      "problemMatcher": [],
+      "label": "test:generate-stubs",
+      "detail": "E2E 테스트 스텁 생성"
+    }
+  ]
+}

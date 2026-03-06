@@ -1,0 +1,8 @@
+# CLOVA Tutor
+# Copyright (c) 2026-present NAVER Cloud Corp.
+# MIT
+
+index_name: "Problem_ebs_math_eng_sync_be"
+data_paths:
+  - file_path: "rawdata/problem/ebs_math_eng_sync_be.parquet"
+    docs_type: "parquet"

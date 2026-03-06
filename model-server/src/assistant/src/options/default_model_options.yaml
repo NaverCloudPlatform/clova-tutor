@@ -1,0 +1,14 @@
+# CLOVA Tutor
+# Copyright (c) 2026-present NAVER Cloud Corp.
+# MIT
+
+hcx-005:
+  max_tokens: 1024
+  top_k: 0
+  top_p: 0.8
+  temperature: 0.1
+  repetition_penalty: 1.1
+
+gpt-4o:
+  max_tokens: 1024
+  temperature: 0.1

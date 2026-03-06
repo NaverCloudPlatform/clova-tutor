@@ -1,0 +1,315 @@
+[
+  {
+    "id": "532ff297-2929-4c0c-83a8-e24ec1190fa0",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/373",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766381022413
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 373,
+        "title": "시제 질문: I have lived here for three years.",
+        "subject": "english",
+        "has_problem": false,
+        "has_active_goal": true,
+        "active_goal": {
+          "id": 103,
+          "goal_count": 4,
+          "solved_count": 0
+        }
+      },
+      "timestamp": 1766381022437
+    },
+    "totalDuration": 24.348999999347143
+  },
+  {
+    "id": "a4ca9d50-bf25-4086-ac23-7918b9df5059",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats?subject=english&size=10",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766381023045
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "items": [
+          {
+            "id": 378,
+            "title": "영어 번역 연습",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-22T11:19:09+09:00"
+          },
+          {
+            "id": 373,
+            "title": "시제 질문: I have lived here for three years.",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": true,
+            "latest_used_at": "2025-12-19T16:51:30+09:00"
+          },
+          {
+            "id": 362,
+            "title": "구조 분석: tell+목적어+to부정사",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:52:48+09:00"
+          },
+          {
+            "id": 361,
+            "title": "영어 문장 해석 요청",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:34:43+09:00"
+          },
+          {
+            "id": 359,
+            "title": "",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:33:10+09:00"
+          },
+          {
+            "id": 136,
+            "title": "단어 의미: consistently",
+            "subject": "english",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T11:46:22+09:00"
+          },
+          {
+            "id": 146,
+            "title": "의미 불명확한 입력",
+            "subject": "english",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:56:23+09:00"
+          },
+          {
+            "id": 247,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:57:20+09:00"
+          },
+          {
+            "id": 245,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:52:31+09:00"
+          },
+          {
+            "id": 242,
+            "title": "개념: to부정사 부사적용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:48:20+09:00"
+          }
+        ],
+        "next_cursor": "eyJsYXRlc3RfdXNlZF9hdCI6IjIwMjUtMTItMTVUMDE6NDg6MjAiLCJpZCI6MjQyfQ=="
+      },
+      "timestamp": 1766381023142
+    },
+    "totalDuration": 97.22200000159722
+  },
+  {
+    "id": "5e61a690-96fa-4da2-ad1b-5c34ade2cd6b",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/373/stream-status",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766381023046
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "status": "COMPLETE"
+      },
+      "timestamp": 1766381023143
+    },
+    "totalDuration": 97.32299999382627
+  },
+  {
+    "id": "b180f5a6-fe74-472a-bc99-7d1a1df79dc9",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/373/messages",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766381023046
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 3227,
+            "chat_id": 373,
+            "created_at": "2025-12-19T16:51:15+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-19"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3228,
+            "chat_id": 373,
+            "created_at": "2025-12-19T16:51:15+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "\"I have lived here for three years.\"에서 have lived는 어떤 시제야?"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3231,
+            "chat_id": 373,
+            "created_at": "2025-12-19T16:51:30+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "\"I have lived here for three years.\"에서 **have lived**는 **현재완료 시제**야.\n\n📌 현재완료는 과거에 시작된 일이 현재까지 영향을 미칠 때 사용해. 그래서 이 문장은 \"나는 여기서 3년 동안 살아왔다\"라는 의미로, 과거부터 지금까지 쭉 이어져 온 상태를 나타내고 있어. \n\n이때 중요한 건 'for'이라는 전치사가 함께 쓰여서 기간을 나타낸다는 점이야. 이런 식으로 현재완료 시제는 경험, 계속되는 상태 등을 표현하는 데 유용하게 쓰여. 이해됐어? 더 설명해줄까? 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1766381023143
+    },
+    "totalDuration": 97.12500000717026
+  },
+  {
+    "id": "d2ebcf17-d033-42ce-bb27-d10a03b2cdc4",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/373/problems",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766381023046
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": [],
+      "timestamp": 1766381023140
+    },
+    "totalDuration": 93.66299999931269
+  },
+  {
+    "id": "960bb507-6465-4cb3-96fb-7fe2301fe958",
+    "version": "1.1",
+    "request": {
+      "method": "DELETE",
+      "url": "/api/v1/goals/103",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766381034395
+    },
+    "response": {
+      "mode": "single",
+      "status": 204,
+      "statusText": "No Content",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": "",
+      "timestamp": 1766381034445
+    },
+    "totalDuration": 50.18700000073295
+  }
+]

@@ -1,0 +1,38 @@
+/**
+ * CLOVA Tutor
+ * Copyright (c) 2026-present NAVER Cloud Corp.
+ * MIT
+ */
+
+math-field::part(container) {
+  height: 100%;
+}
+
+math-field::part(menu-toggle),
+math-field::part(virtual-keyboard-toggle) {
+  display: none;
+}
+
+math-field::part(container) {
+  --contains-highlight-background-color: var(--color-accent-blue-100);
+}
+
+/* next-themes의 .dark 클래스에 대응 */
+.dark math-field::part(container) {
+  --contains-highlight-background-color: var(--color-accent-blue-800);
+}
+
+math-field::part(content) {
+  flex: 1;
+  display: flex !important;
+  align-items: center !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  white-space: nowrap !important;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+math-field::part(content)::-webkit-scrollbar {
+  display: none;
+}

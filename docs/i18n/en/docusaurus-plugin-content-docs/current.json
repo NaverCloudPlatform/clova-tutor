@@ -1,0 +1,46 @@
+{
+  "version.label": {
+    "message": "Current",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.소개": {
+    "message": "Introduction",
+    "description": "The label for category Introduction in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.소개.link.generated-index.description": {
+    "message": "Introduction to CLOVA Tutor",
+    "description": "The generated-index page description for category Introduction"
+  },
+  "sidebar.tutorialSidebar.category.사용자 가이드": {
+    "message": "User Guide",
+    "description": "The label for category User Guide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.사용자 가이드.link.generated-index.description": {
+    "message": "CLOVA Tutor User Guide",
+    "description": "The generated-index page description for category User Guide"
+  },
+  "sidebar.tutorialSidebar.category.수학 튜터": {
+    "message": "Math Tutor",
+    "description": "The label for category Math Tutor in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.수학 튜터.link.generated-index.description": {
+    "message": "CLOVA Tutor Math Tutor User Guide",
+    "description": "The generated-index page description for category Math Tutor"
+  },
+  "sidebar.tutorialSidebar.category.영어 튜터": {
+    "message": "English Tutor",
+    "description": "The label for category English Tutor in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.영어 튜터.link.generated-index.description": {
+    "message": "CLOVA Tutor English Tutor User Guide",
+    "description": "The generated-index page description for category English Tutor"
+  },
+  "sidebar.tutorialSidebar.category.개발자 가이드": {
+    "message": "Developer Guide",
+    "description": "The label for category Developer Guide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.개발자 가이드.link.generated-index.description": {
+    "message": "CLOVA Tutor Developer Guide",
+    "description": "The generated-index page description for category Developer Guide"
+  }
+}

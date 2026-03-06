@@ -1,0 +1,2613 @@
+openapi: 3.1.0
+info:
+  title: edu-max BE
+  version: 0.0.1
+paths:
+  /chats:
+    get:
+      tags:
+        - chats
+      summary: Get Chats
+      description: 모든 채팅 목록을 반환합니다.
+      operationId: get_chats_chats_get
+      parameters:
+        - name: subject
+          in: query
+          required: false
+          schema:
+            anyOf:
+              - type: array
+                items:
+                  $ref: '#/components/schemas/SubjectEnum'
+              - type: 'null'
+            title: Subject
+        - name: cursor
+          in: query
+          required: false
+          schema:
+            anyOf:
+              - type: string
+              - type: 'null'
+            title: Cursor
+        - name: size
+          in: query
+          required: false
+          schema:
+            type: integer
+            maximum: 100
+            minimum: 1
+            default: 10
+            title: Size
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CursorPaginateResponse_ChatResponse_'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+    post:
+      tags:
+        - chats
+      summary: Create Chat
+      description: 새로운 채팅을 생성합니다.
+      operationId: create_chat_chats_post
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChatCreateRequestBody'
+      responses:
+        '201':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChatResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /chats/{chat_id}:
+    get:
+      tags:
+        - chats
+      summary: Get Chat
+      description: 특정 채팅의 정보를 반환합니다.
+      operationId: get_chat_chats__chat_id__get
+      parameters:
+        - name: chat_id
+          in: path
+          required: true
+          schema:
+            type: integer
+            title: Chat Id
+      x-staleTime: Infinity
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChatDetailResponse'
+        '404':
+          description: 해당 채팅이 존재하지 않을 경우 반환됩니다.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+    patch:
+      tags:
+        - chats
+      summary: Update Chat Title
+      description: 특정 채팅의 제목을 수정합니다.
+      operationId: update_chat_title_chats__chat_id__patch
+      parameters:
+        - name: chat_id
+          in: path
+          required: true
+          schema:
+            type: integer
+            title: Chat Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChatTitleUpdateRequestBody'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChatResponse'
+        '404':
+          description: 해당 채팅이 존재하지 않을 경우 반환됩니다.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+    delete:
+      tags:
+        - chats
+      summary: Delete Chat
+      description: 특정 채팅을 삭제합니다.
+      operationId: delete_chat_chats__chat_id__delete
+      parameters:
+        - name: chat_id
+          in: path
+          required: true
+          schema:
+            type: integer
+            title: Chat Id
+      responses:
+        '204':
+          description: Successful Response
+        '404':
+          description: 해당 채팅이 존재하지 않을 경우 반환됩니다.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /chats/{chat_id}/stream-status:
+    get:
+      tags:
+        - chats
+      summary: Get Chat Stream Status
+      description: 현재 채팅방의 스트림 상태를 확인합니다.
+      operationId: get_chat_stream_status_chats__chat_id__stream_status_get
+      parameters:
+        - name: chat_id
+          in: path
+          required: true
+          schema:
+            type: integer
+            title: Chat Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChatStreamStatusResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /chats/{chat_id}/resume:
+    post:
+      tags:
+        - chats
+      summary: Resume Chat Stream
+      description: 중단된 채팅 스트림을 재개합니다.
+      operationId: resume_chat_stream_chats__chat_id__resume_post
+      parameters:
+        - name: chat_id
+          in: path
+          required: true
+          schema:
+            type: integer
+            title: Chat Id
+      responses:
+        '200':
+          description: SSE 이벤트 메시지 스트림
+          content:
+            text/event-stream:
+              schema:
+                type: string
+                example: |
+                  event: message_start
+                  data: {
+                    "id": -1,
+                    "chat_id": 1,
+                    "created_at": "현재시간",
+                    "type": "message",
+                    "author": {
+                      "role": "assistant",
+                      "user_id": -1
+                    },
+                    "content": {
+                      "m_type": "text",
+                      "value": {
+                        "text": ""
+                      }
+                    }
+                  }
+
+                  event: message_delta
+                  data: {"text": "string"}
+
+                  event: message_end
+        '404':
+          description: 해당 채팅이 존재하지 않을 경우 반환됩니다.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /chats/{chat_id}/stop-conversation:
+    post:
+      tags:
+        - chats
+      summary: Stop Stream
+      description: 현재 스트리밍 중인 대화를 중지합니다.
+      operationId: stop_stream_chats__chat_id__stop_conversation_post
+      parameters:
+        - name: chat_id
+          in: path
+          required: true
+          schema:
+            type: integer
+            title: Chat Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChatMessageStopResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /chats/{chat_id}/messages:
+    get:
+      tags:
+        - chats
+      summary: Get Messages
+      description: 특정 채팅의 메시지 목록을 반환합니다.
+      operationId: get_messages_chats__chat_id__messages_get
+      parameters:
+        - name: chat_id
+          in: path
+          required: true
+          schema:
+            type: integer
+            title: Chat Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MessageListResponse'
+        '404':
+          description: 해당 채팅이 존재하지 않을 경우 반환됩니다.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+    post:
+      tags:
+        - chats
+      summary: Send Message
+      description: 특정 채팅에 메세지를 전송합니다.
+      operationId: send_message_chats__chat_id__messages_post
+      parameters:
+        - name: chat_id
+          in: path
+          required: true
+          schema:
+            type: integer
+            title: Chat Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChatMessageCreateRequestBody'
+      responses:
+        '200':
+          description: SSE 이벤트 메시지 스트림
+          content:
+            text/event-stream:
+              schema:
+                type: string
+                example: |
+                  event: message_start
+                  data: {
+                    "id": -1,
+                    "chat_id": 1,
+                    "created_at": "현재시간",
+                    "type": "message",
+                    "author": {
+                      "role": "assistant",
+                      "user_id": -1
+                    },
+                    "content": {
+                      "m_type": "text",
+                      "value": {
+                        "text": ""
+                      }
+                    }
+                  }
+
+                  event: message_delta
+                  data: {"text": "string"}
+
+                  event: message_end
+        '404':
+          description: 해당 채팅이 존재하지 않을 경우 반환됩니다.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /chats/{chat_id}/problems:
+    get:
+      tags:
+        - chats
+      summary: Get Chat Problems
+      description: |-
+        특정 채팅의 문제 목록을 조회합니다.
+
+        Args:
+            service (ChatProblemService): 채팅 문제 서비스 객체
+
+        Returns:
+            List[ChatProblemResponse]: 채팅 문제 목록
+
+        Raises:
+            ChatNotFoundException: 채팅을 찾을 수 없는 경우
+      operationId: get_chat_problems_chats__chat_id__problems_get
+      parameters:
+        - name: chat_id
+          in: path
+          required: true
+          schema:
+            type: integer
+            title: Chat Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ChatProblemResponse'
+                title: Response Get Chat Problems Chats  Chat Id  Problems Get
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /chats/{chat_id}/problems/{problem_id}:
+    get:
+      tags:
+        - chats
+      summary: Get Chat Problem
+      description: |-
+        특정 채팅의 특정 문제 상세 정보를 조회합니다.
+
+        Args:
+            service (ChatProblemService): 채팅 문제 서비스 객체
+            problem_id (int): 문제 ID
+
+        Returns:
+            ChatProblemDetailResponse: 문제 상세 정보
+
+        Raises:
+            ChatNotFoundException: 채팅을 찾을 수 없는 경우
+            ChatProblemNotFoundException: 문제를 찾을 수 없는 경우
+      operationId: get_chat_problem_chats__chat_id__problems__problem_id__get
+      parameters:
+        - name: chat_id
+          in: path
+          required: true
+          schema:
+            type: integer
+            title: Chat Id
+        - name: problem_id
+          in: path
+          required: true
+          schema:
+            type: string
+            title: Problem Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChatProblemDetailResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /chats/{chat_id}/problems/{problem_id}/submit:
+    post:
+      tags:
+        - chats
+      summary: Submit Chat Problem
+      description: |-
+        특정 채팅의 특정 문제에 대한 답안을 제출합니다.
+
+        Args:
+            problem_id (int): 문제 ID
+            submit (ChatProblemSubmitRequest): 답안 제출 요청 데이터
+            service (ChatProblemService): 채팅 문제 서비스 객체
+
+        Returns:
+            ChatProblemSubmitResponse: 답안 제출 결과
+
+        Raises:
+            ChatNotFoundException: 채팅을 찾을 수 없는 경우
+            ChatProblemNotFoundException: 문제를 찾을 수 없는 경우
+            AlreadySolvedException: 이미 해결된 문제인 경우
+      operationId: submit_chat_problem_chats__chat_id__problems__problem_id__submit_post
+      parameters:
+        - name: chat_id
+          in: path
+          required: true
+          schema:
+            type: integer
+            title: Chat Id
+        - name: problem_id
+          in: path
+          required: true
+          schema:
+            type: string
+            title: Problem Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChatProblemSubmitRequestBody'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChatProblemSubmitResponse'
+        '400':
+          description: 이미 정답/복습 처리된 문제에 답안을 다시 제출할 때 반환됩니다.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /problems/{problem_id}:
+    get:
+      tags:
+        - problems
+      summary: Get Problem
+      description: problem_id에 해당하는 문제 정보를 반환합니다.
+      operationId: get_problem_problems__problem_id__get
+      parameters:
+        - name: problem_id
+          in: path
+          required: true
+          schema:
+            type: string
+            title: Problem Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProblemResponse'
+        '404':
+          description: 해당 문제가 존재하지 않을 경우 반환됩니다.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /problems:
+    post:
+      tags:
+        - problems
+      summary: Create Problems
+      description: 문제 생성 API 입니다.
+      operationId: create_problems_problems_post
+      parameters:
+        - name: x-api-key
+          in: header
+          required: false
+          schema:
+            anyOf:
+              - type: string
+              - type: 'null'
+            title: X-Api-Key
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProblemCreateRequestBody'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProblemCreateResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /uploads:
+    post:
+      tags:
+        - upload
+      summary: Create Upload Url
+      description: 파일 업로드 위한 url을 반환합니다.
+      operationId: create_upload_url_uploads_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UploadUrlRequest'
+        required: true
+      responses:
+        '201':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UploadUrlResponse'
+        '400':
+          description: 지원하지 않는 mime type 요청 시 반환됩니다.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /uploads/{key}:
+    put:
+      tags:
+        - upload
+      summary: Upload File
+      operationId: upload_file_uploads__key__put
+      parameters:
+        - name: key
+          in: path
+          required: true
+          schema:
+            type: string
+            title: Key
+        - name: expires
+          in: query
+          required: true
+          schema:
+            type: integer
+            title: Expires
+        - name: signature
+          in: query
+          required: true
+          schema:
+            type: string
+            title: Signature
+        - name: mime
+          in: query
+          required: true
+          schema:
+            type: string
+            title: Mime
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /users:
+    get:
+      tags:
+        - users
+      summary: Get Users
+      description: 전체 사용자 목록 조회
+      operationId: get_users_users_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/UserResponse'
+                type: array
+                title: Response Get Users Users Get
+      x-staleTime: Infinity
+      x-gcTime: Infinity 
+    post:
+      tags:
+        - users
+      summary: Create User
+      description: 신규 사용자 생성
+      operationId: create_user_users_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserCreateRequestBody'
+        required: true
+      responses:
+        '201':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserCreateResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /users/{user_id}:
+    get:
+      tags:
+        - users
+      summary: Get User
+      description: 특정 사용자 정보 조회
+      operationId: get_user_users__user_id__get
+      parameters:
+        - name: user_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+            title: User Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserResponse'
+        '404':
+          description: 사용자를 찾을 수 없는 경우
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      x-staleTime: Infinity
+      x-gcTime: Infinity
+    patch:
+      tags:
+        - users
+      summary: Patch User
+      description: 유저 정보를 수정합니다.
+      operationId: patch_user_users__user_id__patch
+      parameters:
+        - name: user_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+            title: User Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserUpdateRequestBody'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserUpdateResponse'
+        '404':
+          description: 사용자를 찾을 수 없는 경우
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+    delete:
+      tags:
+        - users
+      summary: Delete User
+      description: 특정 사용자 삭제
+      operationId: delete_user_users__user_id__delete
+      parameters:
+        - name: user_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+            title: User Id
+      responses:
+        '204':
+          description: Successful Response
+        '404':
+          description: 사용자를 찾을 수 없는 경우
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /users/{user_id}/unknown-concepts:
+    get:
+      x-ignore: true
+      tags:
+        - users
+      summary: Get Unknown Concepts List
+      description: 사용자의 이해하지 못한 개념 목록 조회
+      operationId: get_unknown_concepts_list_users__user_id__unknown_concepts_get
+      parameters:
+        - name: user_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+            title: User Id
+        - name: subject
+          in: query
+          required: false
+          schema:
+            anyOf:
+              - type: string
+              - type: 'null'
+            title: Subject
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/UnknownConceptResponse'
+                title: >-
+                  Response Get Unknown Concepts List Users  User Id  Unknown
+                  Concepts Get
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+    put:
+      x-ignore: true
+      tags:
+        - users
+      summary: Upsert Unknown Concept
+      description: 사용자의 이해하지 못한 개념 생성 또는 갱신
+      operationId: upsert_unknown_concept_users__user_id__unknown_concepts_put
+      parameters:
+        - name: user_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+            title: User Id
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UnknownConceptCreateRequestBody'
+      responses:
+        '201':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UnknownConceptResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+    delete:
+      x-ignore: true
+      tags:
+        - users
+      summary: Delete Unknown Concept
+      description: 사용자의 이해하지 못한 개념 삭제
+      operationId: delete_unknown_concept_users__user_id__unknown_concepts_delete
+      parameters:
+        - name: user_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+            title: User Id
+        - name: subject
+          in: query
+          required: false
+          schema:
+            anyOf:
+              - type: string
+              - type: 'null'
+            title: Subject
+        - name: key_concept
+          in: query
+          required: false
+          schema:
+            anyOf:
+              - type: string
+              - type: 'null'
+            title: Key Concept
+      responses:
+        '204':
+          description: Successful Response
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /goals:
+    post:
+      tags:
+        - goals
+      summary: Create Goal
+      description: 채팅 방에 맞는 목표를 생성합니다.
+      operationId: create_goal_goals_post
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GoalCreateRequestBody'
+        required: true
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GoalResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /goals/{goal_id}:
+    delete:
+      tags:
+        - goals
+      summary: Delete Goal
+      description: Active 한 목표를 Cancelled 로 바꿉니다.
+      operationId: delete_goal_goals__goal_id__delete
+      parameters:
+        - name: goal_id
+          in: path
+          required: true
+          schema:
+            type: integer
+            title: Goal Id
+      responses:
+        '204':
+          description: Successful Response
+        '404':
+          description: 목표 기록을 찾을 수 없습니다.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /problem-bookmarks:
+    get:
+      tags:
+        - problem-bookmarks
+      summary: Get Problem Bookmarks
+      description: 사용자가 등록한 문제 학습 노트 리스트 조회
+      operationId: get_problem_bookmarks_problem_bookmarks_get
+      parameters:
+        - name: subject
+          in: query
+          required: true
+          schema:
+            $ref: '#/components/schemas/SubjectEnum'
+        - name: status
+          in: query
+          required: false
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/ProblemStatus'
+            default: []
+            title: Status
+        - name: cursor
+          in: query
+          required: false
+          schema:
+            anyOf:
+              - type: string
+              - type: 'null'
+            title: Cursor
+        - name: size
+          in: query
+          required: false
+          schema:
+            type: integer
+            maximum: 100
+            minimum: 1
+            default: 10
+            title: Size
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: >-
+                  #/components/schemas/CursorPaginateResponse_ProblemBookmarkResponse_
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+    patch:
+      tags:
+        - problem-bookmarks
+      summary: Bookmark Problem
+      description: 현재 채팅방의 문제를 북마크로 등록합니다.
+      operationId: bookmark_problem_problem_bookmarks_patch
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProblemBookmarkCreateRequestBody'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProblemBookmarkCreateResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /problem-bookmarks/problem/{problem_id}/check:
+    get:
+      tags:
+        - problem-bookmarks
+      summary: Check Problem Bookmark Duplicate
+      description: 현재 문제가 학습 노트에 이미 중복되어 저장되어 있는지 판단합니다.(chat_id와 무관)
+      operationId: >-
+        check_problem_bookmark_duplicate_problem_bookmarks_problem__problem_id__check_get
+      parameters:
+        - name: problem_id
+          in: path
+          required: true
+          schema:
+            type: string
+            title: Problem Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProblemBookmarkCheckResponse'
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /health:
+    get:
+      x-ignore: true
+      summary: Health Check
+      operationId: health_check_health_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+components:
+  schemas:
+    ActiveGoalResponse:
+      properties:
+        id:
+          type: integer
+          title: Id
+        goal_count:
+          type: integer
+          title: Goal Count
+        solved_count:
+          type: integer
+          title: Solved Count
+      type: object
+      required:
+        - id
+        - goal_count
+        - solved_count
+      title: ActiveGoalResponse
+    ChatCreateRequestBody:
+      properties:
+        title:
+          type: string
+          title: Title
+        grade:
+          type: string
+          title: Grade
+        subject:
+          type: string
+          title: Subject
+      type: object
+      required:
+        - title
+        - grade
+        - subject
+      title: ChatCreateRequestBody
+    ChatDetailResponse:
+      properties:
+        id:
+          type: integer
+          title: Id
+        title:
+          type: string
+          title: Title
+        subject:
+          type: string
+          title: Subject
+        has_problem:
+          type: boolean
+          title: Has Problem
+        has_active_goal:
+          type: boolean
+          title: Has Active Goal
+        active_goal:
+          anyOf:
+            - $ref: '#/components/schemas/ActiveGoalResponse'
+            - type: 'null'
+      type: object
+      required:
+        - id
+        - title
+        - subject
+        - has_problem
+        - has_active_goal
+        - active_goal
+      title: ChatDetailResponse
+    ChatMessageCreateRequestBody:
+      properties:
+        contents:
+          items:
+            oneOf:
+              - $ref: '#/components/schemas/TextContent'
+              - $ref: '#/components/schemas/ProblemLinkContent'
+              - $ref: '#/components/schemas/ImagesContent'
+              - $ref: '#/components/schemas/QuoteContent'
+              - $ref: '#/components/schemas/ProblemRecommendedContent'
+            discriminator:
+              propertyName: m_type
+              mapping:
+                images: '#/components/schemas/ImagesContent'
+                problem_link: '#/components/schemas/ProblemLinkContent'
+                problem_recommended: '#/components/schemas/ProblemRecommendedContent'
+                quote: '#/components/schemas/QuoteContent'
+                text: '#/components/schemas/TextContent'
+          type: array
+          title: Contents
+        metadata:
+          $ref: '#/components/schemas/ChatMessageMetadataRequest'
+      type: object
+      required:
+        - contents
+        - metadata
+      title: ChatMessageCreateRequestBody
+    ChatMessageMetadataRequest:
+      properties:
+        system_hints:
+          anyOf:
+            - items:
+                $ref: '#/components/schemas/SystemHint'
+              type: array
+            - type: 'null'
+          title: System Hints
+      type: object
+      title: ChatMessageMetadataRequest
+    ChatMessageResponse:
+      properties:
+        id:
+          type: integer
+          title: Id
+        chat_id:
+          type: integer
+          title: Chat Id
+        created_at:
+          type: string
+          format: date-time
+          title: Created At
+        type:
+          type: string
+          const: chat
+          title: Type
+        author:
+          $ref: '#/components/schemas/MessageAuthor'
+        contents:
+          items:
+            oneOf:
+              - $ref: '#/components/schemas/TextContent'
+              - $ref: '#/components/schemas/ProblemLinkContent'
+              - $ref: '#/components/schemas/ImagesContent'
+              - $ref: '#/components/schemas/QuoteContent'
+              - $ref: '#/components/schemas/ProblemRecommendedContent'
+            discriminator:
+              propertyName: m_type
+              mapping:
+                images: '#/components/schemas/ImagesContent'
+                problem_link: '#/components/schemas/ProblemLinkContent'
+                problem_recommended: '#/components/schemas/ProblemRecommendedContent'
+                quote: '#/components/schemas/QuoteContent'
+                text: '#/components/schemas/TextContent'
+          type: array
+          title: Contents
+        metadata:
+          $ref: '#/components/schemas/MessageMetadataResponse'
+      type: object
+      required:
+        - id
+        - chat_id
+        - created_at
+        - type
+        - author
+        - contents
+        - metadata
+      title: ChatMessageResponse
+    ChatMessageStopResponse:
+      properties:
+        status:
+          $ref: '#/components/schemas/StopResponseStatusValue'
+      type: object
+      required:
+        - status
+      title: ChatMessageStopResponse
+    ChatProblemDetailResponse:
+      properties:
+        number:
+          type: integer
+          title: Number
+        status:
+          $ref: '#/components/schemas/ProblemStatus'
+        last_answer:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Last Answer
+        is_bookmarked:
+          type: boolean
+          title: Is Bookmarked
+        problem_info:
+          $ref: '#/components/schemas/ProblemResponse'
+      type: object
+      required:
+        - number
+        - status
+        - last_answer
+        - is_bookmarked
+        - problem_info
+      title: ChatProblemDetailResponse
+    ChatProblemResponse:
+      properties:
+        id:
+          type: string
+          title: Id
+        number:
+          type: integer
+          title: Number
+        status:
+          $ref: '#/components/schemas/ProblemStatus'
+        category:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Category
+        grade:
+          type: integer
+          title: Grade
+        level:
+          type: integer
+          title: Level
+      type: object
+      required:
+        - id
+        - number
+        - status
+        - grade
+        - level
+      title: ChatProblemResponse
+    ChatProblemSubmitRequestBody:
+      properties:
+        answer:
+          oneOf:
+            - $ref: '#/components/schemas/SingleChoiceAnswer'
+            - $ref: '#/components/schemas/MultipleChoiceAnswer'
+            - $ref: '#/components/schemas/SingleShortAnswer'
+            - $ref: '#/components/schemas/MultipleShortAnswer'
+          title: Answer
+          discriminator:
+            propertyName: type
+            mapping:
+              다중선택 객관식: '#/components/schemas/MultipleChoiceAnswer'
+              다중응답 주관식: '#/components/schemas/MultipleShortAnswer'
+              단일선택 객관식: '#/components/schemas/SingleChoiceAnswer'
+              단일응답 주관식: '#/components/schemas/SingleShortAnswer'
+      type: object
+      required:
+        - answer
+      title: ChatProblemSubmitRequestBody
+    ChatProblemSubmitResponse:
+      properties:
+        is_correct:
+          type: boolean
+          title: Is Correct
+        active_goal:
+          anyOf:
+            - $ref: '#/components/schemas/ActiveGoalResponse'
+            - type: 'null'
+      type: object
+      required:
+        - is_correct
+        - active_goal
+      title: ChatProblemSubmitResponse
+    ChatQuoteSource:
+      properties:
+        type:
+          type: string
+          const: chat
+          title: Type
+        chat_id:
+          type: integer
+          title: Chat Id
+      type: object
+      required:
+        - type
+        - chat_id
+      title: ChatQuoteSource
+    ChatResponse:
+      properties:
+        id:
+          type: integer
+          title: Id
+        title:
+          type: string
+          title: Title
+        subject:
+          type: string
+          title: Subject
+        has_problem:
+          type: boolean
+          title: Has Problem
+        has_active_goal:
+          type: boolean
+          title: Has Active Goal
+        latest_used_at:
+          type: string
+          format: date-time
+          title: Latest Used At
+      type: object
+      required:
+        - id
+        - title
+        - subject
+        - has_problem
+        - has_active_goal
+        - latest_used_at
+      title: ChatResponse
+    ChatStreamStatus:
+      type: string
+      enum:
+        - IS_STREAMING
+        - COMPLETE
+      title: ChatStreamStatus
+    ChatStreamStatusResponse:
+      properties:
+        status:
+          $ref: '#/components/schemas/ChatStreamStatus'
+      type: object
+      required:
+        - status
+      title: ChatStreamStatusResponse
+    ChatTitleUpdateRequestBody:
+      properties:
+        title:
+          type: string
+          title: Title
+      type: object
+      required:
+        - title
+      title: ChatTitleUpdateRequestBody
+    ChoiceProblemContent:
+      properties:
+        subject:
+          type: string
+          title: Subject
+        grade:
+          type: integer
+          title: Grade
+        semester:
+          anyOf:
+            - type: integer
+            - type: 'null'
+          title: Semester
+        level:
+          type: integer
+          title: Level
+        primary:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Primary
+        secondary:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Secondary
+        specific:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Specific
+        category:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Category
+        problem:
+          type: string
+          title: Problem
+        tags:
+          anyOf:
+            - items:
+                type: string
+              type: array
+            - type: 'null'
+          title: Tags
+        hint:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Hint
+        explanation:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Explanation
+        choices:
+          items:
+            $ref: '#/components/schemas/ProblemChoice'
+          type: array
+          title: Choices
+          default: []
+      type: object
+      required:
+        - subject
+        - grade
+        - semester
+        - level
+        - primary
+        - secondary
+        - specific
+        - category
+        - problem
+        - hint
+        - explanation
+      title: ChoiceProblemContent
+    CursorPaginateResponse_ChatResponse_:
+      properties:
+        items:
+          items:
+            $ref: '#/components/schemas/ChatResponse'
+          type: array
+          title: Items
+        next_cursor:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Next Cursor
+      type: object
+      required:
+        - items
+        - next_cursor
+      title: CursorPaginateResponse[ChatResponse]
+    CursorPaginateResponse_ProblemBookmarkResponse_:
+      properties:
+        items:
+          items:
+            $ref: '#/components/schemas/ProblemBookmarkResponse'
+          type: array
+          title: Items
+        next_cursor:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Next Cursor
+      type: object
+      required:
+        - items
+        - next_cursor
+      title: CursorPaginateResponse[ProblemBookmarkResponse]
+    DateContent:
+      properties:
+        m_type:
+          type: string
+          const: date
+          title: M Type
+        value:
+          $ref: '#/components/schemas/DateValue'
+      type: object
+      required:
+        - m_type
+        - value
+      title: DateContent
+    DateValue:
+      properties:
+        text:
+          type: string
+          title: Text
+      type: object
+      required:
+        - text
+      title: DateValue
+    ErrorResponse:
+      properties:
+        message:
+          type: string
+          title: Message
+        detail:
+          anyOf:
+            - additionalProperties: true
+              type: object
+            - type: 'null'
+          title: Detail
+      type: object
+      required:
+        - message
+      title: ErrorResponse
+    GoalCreateRequestBody:
+      properties:
+        chat_id:
+          type: integer
+          title: Chat Id
+        goal_count:
+          type: integer
+          title: Goal Count
+      type: object
+      required:
+        - chat_id
+        - goal_count
+      title: GoalCreateRequestBody
+    GoalResponse:
+      properties:
+        id:
+          type: integer
+          title: Id
+        goal_count:
+          type: integer
+          title: Goal Count
+        solved_count:
+          type: integer
+          title: Solved Count
+      type: object
+      required:
+        - id
+        - goal_count
+        - solved_count
+      title: GoalResponse
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError
+    ImagesContent:
+      properties:
+        m_type:
+          type: string
+          const: images
+          title: M Type
+        value:
+          $ref: '#/components/schemas/ImagesValue'
+      type: object
+      required:
+        - m_type
+        - value
+      title: ImagesContent
+    ImagesValue:
+      properties:
+        sources:
+          items:
+            type: string
+          type: array
+          title: Sources
+      type: object
+      required:
+        - sources
+      title: ImagesValue
+    MessageAuthor:
+      properties:
+        role:
+          $ref: '#/components/schemas/MessageRole'
+      type: object
+      required:
+        - role
+      title: MessageAuthor
+    MessageListResponse:
+      properties:
+        data:
+          items:
+            oneOf:
+              - $ref: '#/components/schemas/ChatMessageResponse'
+              - $ref: '#/components/schemas/SystemMessageResponse'
+            discriminator:
+              propertyName: type
+              mapping:
+                chat: '#/components/schemas/ChatMessageResponse'
+                system: '#/components/schemas/SystemMessageResponse'
+          type: array
+          title: Data
+      type: object
+      required:
+        - data
+      title: MessageListResponse
+    MessageMetadataResponse:
+      properties:
+        tools:
+          items:
+            $ref: '#/components/schemas/ToolInfo'
+          type: array
+          title: Tools
+          default: []
+        system_hints:
+          anyOf:
+            - items:
+                $ref: '#/components/schemas/SystemHint'
+              type: array
+            - type: 'null'
+          title: System Hints
+      type: object
+      title: MessageMetadataResponse
+    MessageRole:
+      type: string
+      enum:
+        - user
+        - assistant
+        - system
+      title: MessageRole
+      description: |-
+        메시지 작성자의 역할을 정의하는 열거형 클래스입니다.
+
+        Attributes:
+            USER: 사용자가 작성한 메시지
+            ASSISTANT: AI 어시스턴트가 작성한 메시지
+            SYSTEM: 시스템이 작성한 메시지
+    MultipleChoiceAnswer:
+      properties:
+        type:
+          type: string
+          const: 다중선택 객관식
+          title: Type
+        answer:
+          items:
+            type: integer
+          type: array
+          title: Answer
+      type: object
+      required:
+        - type
+        - answer
+      title: MultipleChoiceAnswer
+    MultipleChoiceProblemResponse:
+      properties:
+        id:
+          type: string
+          title: Id
+        type:
+          type: string
+          const: 다중선택 객관식
+          title: Type
+        content:
+          $ref: '#/components/schemas/ChoiceProblemContent'
+      type: object
+      required:
+        - id
+        - type
+        - content
+      title: MultipleChoiceProblemResponse
+    MultipleShortAnswer:
+      properties:
+        type:
+          type: string
+          const: 다중응답 주관식
+          title: Type
+        answer:
+          items:
+            type: string
+          type: array
+          title: Answer
+      type: object
+      required:
+        - type
+        - answer
+      title: MultipleShortAnswer
+    MultipleShortAnswerProblemResponse:
+      properties:
+        id:
+          type: string
+          title: Id
+        type:
+          type: string
+          const: 다중응답 주관식
+          title: Type
+        content:
+          $ref: '#/components/schemas/ShortAnswerProblemContent'
+      type: object
+      required:
+        - id
+        - type
+        - content
+      title: MultipleShortAnswerProblemResponse
+    ProblemBookmarkChatProblemResponse:
+      properties:
+        number:
+          type: integer
+          title: Number
+        status:
+          $ref: '#/components/schemas/ProblemStatus'
+        last_answer:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Last Answer
+        problem_info:
+          $ref: '#/components/schemas/ProblemResponse'
+      type: object
+      required:
+        - number
+        - status
+        - last_answer
+        - problem_info
+      title: ProblemBookmarkChatProblemResponse
+    ProblemBookmarkChatResponse:
+      properties:
+        id:
+          type: integer
+          title: Id
+        has_active_goal:
+          type: boolean
+          title: Has Active Goal
+      type: object
+      required:
+        - id
+        - has_active_goal
+      title: ProblemBookmarkChatResponse
+    ProblemBookmarkCheckResponse:
+      properties:
+        status:
+          $ref: '#/components/schemas/ProblemDuplicateStatus'
+      type: object
+      required:
+        - status
+      title: ProblemBookmarkCheckResponse
+    ProblemBookmarkCreateRequestBody:
+      properties:
+        chat_id:
+          type: integer
+          title: Chat Id
+        problem_id:
+          type: string
+          title: Problem Id
+        is_bookmarked:
+          type: boolean
+          title: Is Bookmarked
+        bookmarked_at:
+          anyOf:
+            - type: string
+              format: date-time
+            - type: 'null'
+          title: Bookmarked At
+      type: object
+      required:
+        - chat_id
+        - problem_id
+        - is_bookmarked
+      title: ProblemBookmarkCreateRequestBody
+    ProblemBookmarkCreateResponse:
+      properties:
+        id:
+          type: integer
+          title: Id
+        chat_id:
+          type: integer
+          title: Chat Id
+        problem_id:
+          type: string
+          title: Problem Id
+        is_bookmarked:
+          type: boolean
+          title: Is Bookmarked
+        bookmarked_at:
+          anyOf:
+            - type: string
+              format: date-time
+            - type: 'null'
+          title: Bookmarked At
+      type: object
+      required:
+        - id
+        - chat_id
+        - problem_id
+        - is_bookmarked
+        - bookmarked_at
+      title: ProblemBookmarkCreateResponse
+    ProblemBookmarkResponse:
+      properties:
+        bookmarked_at:
+          type: string
+          format: date-time
+          title: Bookmarked At
+        chat:
+          $ref: '#/components/schemas/ProblemBookmarkChatResponse'
+        problem:
+          $ref: '#/components/schemas/ProblemBookmarkChatProblemResponse'
+      type: object
+      required:
+        - bookmarked_at
+        - chat
+        - problem
+      title: ProblemBookmarkResponse
+    ProblemChoice:
+      properties:
+        'no':
+          type: integer
+          title: 'No'
+        inst:
+          type: string
+          title: Inst
+      type: object
+      required:
+        - 'no'
+        - inst
+      title: ProblemChoice
+    ProblemCreateAnswerRequest:
+      properties:
+        answer:
+          type: string
+          title: Answer
+        accepted_answers:
+          anyOf:
+            - items:
+                type: string
+              type: array
+            - type: 'null'
+          title: Accepted Answers
+      type: object
+      required:
+        - answer
+      title: ProblemCreateAnswerRequest
+    ProblemCreateChoiceRequest:
+      properties:
+        'no':
+          type: integer
+          title: 'No'
+        inst:
+          type: string
+          title: Inst
+      type: object
+      required:
+        - 'no'
+        - inst
+      title: ProblemCreateChoiceRequest
+    ProblemCreateRequest:
+      properties:
+        id:
+          type: string
+          title: Id
+        subject:
+          type: string
+          title: Subject
+        grade:
+          type: integer
+          title: Grade
+        type:
+          type: string
+          title: Type
+        level:
+          type: integer
+          title: Level
+        url:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Url
+        semester:
+          anyOf:
+            - type: integer
+            - type: 'null'
+          title: Semester
+        primary:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Primary
+        secondary:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Secondary
+        specific:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Specific
+        category:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Category
+        problem:
+          type: string
+          title: Problem
+        choices:
+          anyOf:
+            - items:
+                $ref: '#/components/schemas/ProblemCreateChoiceRequest'
+              type: array
+            - type: 'null'
+          title: Choices
+        correct_answers:
+          items:
+            $ref: '#/components/schemas/ProblemCreateAnswerRequest'
+          type: array
+          title: Correct Answers
+        explanation:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Explanation
+        hint:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Hint
+        tags:
+          anyOf:
+            - items:
+                type: string
+              type: array
+            - type: 'null'
+          title: Tags
+      type: object
+      required:
+        - id
+        - subject
+        - grade
+        - type
+        - level
+        - url
+        - semester
+        - primary
+        - secondary
+        - specific
+        - category
+        - problem
+        - choices
+        - correct_answers
+        - explanation
+        - hint
+        - tags
+      title: ProblemCreateRequest
+    ProblemCreateRequestBody:
+      properties:
+        problems:
+          items:
+            $ref: '#/components/schemas/ProblemCreateRequest'
+          type: array
+          title: Problems
+      type: object
+      required:
+        - problems
+      title: ProblemCreateRequestBody
+    ProblemCreateResponse:
+      properties:
+        ids:
+          items:
+            type: string
+          type: array
+          title: Ids
+      type: object
+      required:
+        - ids
+      title: ProblemCreateResponse
+    ProblemDuplicateStatus:
+      type: string
+      enum:
+        - duplicate
+        - unique
+      title: ProblemDuplicateStatus
+    ProblemLinkContent:
+      properties:
+        m_type:
+          type: string
+          const: problem_link
+          title: M Type
+        value:
+          $ref: '#/components/schemas/ProblemLinkValue'
+      type: object
+      required:
+        - m_type
+        - value
+      title: ProblemLinkContent
+    ProblemLinkValue:
+      properties:
+        problem_id:
+          type: string
+          title: Problem Id
+      type: object
+      required:
+        - problem_id
+      title: ProblemLinkValue
+    ProblemQuoteSource:
+      properties:
+        type:
+          type: string
+          const: problem
+          title: Type
+        problem_id:
+          type: string
+          title: Problem Id
+      type: object
+      required:
+        - type
+        - problem_id
+      title: ProblemQuoteSource
+    ProblemRecommendedContent:
+      properties:
+        m_type:
+          type: string
+          const: problem_recommended
+          title: M Type
+        value:
+          $ref: '#/components/schemas/ProblemRecommendedValue'
+      type: object
+      required:
+        - m_type
+        - value
+      title: ProblemRecommendedContent
+    ProblemRecommendedValue:
+      properties:
+        problem_id:
+          type: string
+          title: Problem Id
+        category:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Category
+        status:
+          $ref: '#/components/schemas/ProblemStatus'
+      type: object
+      required:
+        - problem_id
+        - category
+        - status
+      title: ProblemRecommendedValue
+    ProblemResponse:
+      oneOf:
+        - $ref: '#/components/schemas/SingleChoiceProblemResponse'
+        - $ref: '#/components/schemas/MultipleChoiceProblemResponse'
+        - $ref: '#/components/schemas/SingleShortAnswerProblemResponse'
+        - $ref: '#/components/schemas/MultipleShortAnswerProblemResponse'
+      title: ProblemResponse
+      discriminator:
+        propertyName: type
+        mapping:
+          다중선택 객관식: '#/components/schemas/MultipleChoiceProblemResponse'
+          다중응답 주관식: '#/components/schemas/MultipleShortAnswerProblemResponse'
+          단일선택 객관식: '#/components/schemas/SingleChoiceProblemResponse'
+          단일응답 주관식: '#/components/schemas/SingleShortAnswerProblemResponse'
+    ProblemStatus:
+      type: string
+      enum:
+        - 풀지 않음
+        - 정답
+        - 오답
+        - 복습 완료
+      title: ProblemStatus
+    QuoteContent:
+      properties:
+        m_type:
+          type: string
+          const: quote
+          title: M Type
+        value:
+          $ref: '#/components/schemas/QuoteValue'
+      type: object
+      required:
+        - m_type
+        - value
+      title: QuoteContent
+    QuoteValue:
+      properties:
+        text:
+          type: string
+          title: Text
+        source:
+          anyOf:
+            - $ref: '#/components/schemas/ProblemQuoteSource'
+            - $ref: '#/components/schemas/ChatQuoteSource'
+          title: Source
+      type: object
+      required:
+        - text
+        - source
+      title: QuoteValue
+    ReActModelToolType:
+      type: string
+      enum:
+        - translation
+        - eng_voca
+        - eng_grammar
+        - table_fetch
+        - answer_included
+        - math_concept
+        - stepwise_solution
+        - solution_demonstration
+        - recommend_problem
+        - default_chat
+      title: ReActModelToolType
+    ShortAnswerProblemContent:
+      properties:
+        subject:
+          type: string
+          title: Subject
+        grade:
+          type: integer
+          title: Grade
+        semester:
+          anyOf:
+            - type: integer
+            - type: 'null'
+          title: Semester
+        level:
+          type: integer
+          title: Level
+        primary:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Primary
+        secondary:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Secondary
+        specific:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Specific
+        category:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Category
+        problem:
+          type: string
+          title: Problem
+        tags:
+          anyOf:
+            - items:
+                type: string
+              type: array
+            - type: 'null'
+          title: Tags
+        hint:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Hint
+        explanation:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Explanation
+      type: object
+      required:
+        - subject
+        - grade
+        - semester
+        - level
+        - primary
+        - secondary
+        - specific
+        - category
+        - problem
+        - hint
+        - explanation
+      title: ShortAnswerProblemContent
+    SingleChoiceAnswer:
+      properties:
+        type:
+          type: string
+          const: 단일선택 객관식
+          title: Type
+        answer:
+          type: integer
+          title: Answer
+      type: object
+      required:
+        - type
+        - answer
+      title: SingleChoiceAnswer
+    SingleChoiceProblemResponse:
+      properties:
+        id:
+          type: string
+          title: Id
+        type:
+          type: string
+          const: 단일선택 객관식
+          title: Type
+        content:
+          $ref: '#/components/schemas/ChoiceProblemContent'
+      type: object
+      required:
+        - id
+        - type
+        - content
+      title: SingleChoiceProblemResponse
+    SingleShortAnswer:
+      properties:
+        type:
+          type: string
+          const: 단일응답 주관식
+          title: Type
+        answer:
+          type: string
+          title: Answer
+      type: object
+      required:
+        - type
+        - answer
+      title: SingleShortAnswer
+    SingleShortAnswerProblemResponse:
+      properties:
+        id:
+          type: string
+          title: Id
+        type:
+          type: string
+          const: 단일응답 주관식
+          title: Type
+        content:
+          $ref: '#/components/schemas/ShortAnswerProblemContent'
+      type: object
+      required:
+        - id
+        - type
+        - content
+      title: SingleShortAnswerProblemResponse
+    StopResponseStatusValue:
+      type: string
+      enum:
+        - ok
+      title: StopResponseStatusValue
+    SubjectEnum:
+      type: string
+      enum:
+        - math
+        - english
+      title: SubjectEnum
+    SystemHint:
+      type: string
+      enum:
+        - translation_button
+      title: SystemHint
+      description: |-
+        시스템 힌트 플래그를 정의하는 열거형 클래스입니다.
+            
+    SystemMessageResponse:
+      properties:
+        id:
+          type: integer
+          title: Id
+        chat_id:
+          type: integer
+          title: Chat Id
+        created_at:
+          type: string
+          format: date-time
+          title: Created At
+        type:
+          type: string
+          const: system
+          title: Type
+        author:
+          $ref: '#/components/schemas/MessageAuthor'
+        contents:
+          items:
+            oneOf:
+              - $ref: '#/components/schemas/DateContent'
+            discriminator:
+              propertyName: m_type
+              mapping:
+                date: '#/components/schemas/DateContent'
+          type: array
+          title: Contents
+        metadata:
+          $ref: '#/components/schemas/MessageMetadataResponse'
+      type: object
+      required:
+        - id
+        - chat_id
+        - created_at
+        - type
+        - author
+        - contents
+        - metadata
+      title: SystemMessageResponse
+    TextContent:
+      properties:
+        m_type:
+          type: string
+          const: text
+          title: M Type
+        value:
+          $ref: '#/components/schemas/TextValue'
+      type: object
+      required:
+        - m_type
+        - value
+      title: TextContent
+    TextValue:
+      properties:
+        text:
+          type: string
+          title: Text
+      type: object
+      required:
+        - text
+      title: TextValue
+    ToolInfo:
+      properties:
+        name:
+          $ref: '#/components/schemas/ReActModelToolType'
+        value:
+          $ref: '#/components/schemas/ToolValueDict'
+      type: object
+      required:
+        - name
+        - value
+      title: ToolInfo
+    ToolValueDict:
+      properties:
+        translation_button_visible:
+          type: boolean
+          title: Translation Button Visible
+      type: object
+      title: ToolValueDict
+    UnknownConceptCreateRequestBody:
+      properties:
+        subject:
+          type: string
+          title: Subject
+        key_concept:
+          type: string
+          title: Key Concept
+        unknown_concept:
+          type: string
+          title: Unknown Concept
+        unknown_concept_reason:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Unknown Concept Reason
+      type: object
+      required:
+        - subject
+        - key_concept
+        - unknown_concept
+      title: UnknownConceptCreateRequestBody
+    UnknownConceptResponse:
+      properties:
+        id:
+          type: integer
+          title: Id
+        subject:
+          type: string
+          title: Subject
+        key_concept:
+          type: string
+          title: Key Concept
+        unknown_concept:
+          type: string
+          title: Unknown Concept
+        unknown_concept_reason:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Unknown Concept Reason
+        created_at:
+          type: string
+          format: date-time
+          title: Created At
+        updated_at:
+          type: string
+          format: date-time
+          title: Updated At
+      type: object
+      required:
+        - id
+        - subject
+        - key_concept
+        - unknown_concept
+        - created_at
+        - updated_at
+      title: UnknownConceptResponse
+    UploadUrlRequest:
+      properties:
+        mime_type:
+          type: string
+          title: Mime Type
+      type: object
+      required:
+        - mime_type
+      title: UploadUrlRequest
+    UploadUrlResponse:
+      properties:
+        presigned_url:
+          type: string
+          title: Presigned Url
+        file_url:
+          type: string
+          title: File Url
+      type: object
+      required:
+        - presigned_url
+        - file_url
+      title: UploadUrlResponse
+    UserCreateRequestBody:
+      properties:
+        name:
+          type: string
+          title: Name
+        grade:
+          type: integer
+          title: Grade
+        memo:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Memo
+      type: object
+      required:
+        - name
+        - grade
+      title: UserCreateRequestBody
+    UserCreateResponse:
+      properties:
+        id:
+          type: string
+          format: uuid
+          title: Id
+        name:
+          type: string
+          title: Name
+        grade:
+          type: integer
+          title: Grade
+        memo:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Memo
+      type: object
+      required:
+        - id
+        - name
+        - grade
+        - memo
+      title: UserCreateResponse
+    UserResponse:
+      properties:
+        id:
+          type: string
+          format: uuid
+          title: Id
+        name:
+          type: string
+          title: Name
+        grade:
+          type: integer
+          title: Grade
+        memo:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Memo
+        created_at:
+          type: string
+          format: date-time
+          title: Created At
+        updated_at:
+          type: string
+          format: date-time
+          title: Updated At
+      type: object
+      required:
+        - id
+        - name
+        - grade
+        - memo
+        - created_at
+        - updated_at
+      title: UserResponse
+    UserUpdateRequestBody:
+      properties:
+        name:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Name
+        grade:
+          anyOf:
+            - type: integer
+            - type: 'null'
+          title: Grade
+        memo:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Memo
+      type: object
+      title: UserUpdateRequestBody
+    UserUpdateResponse:
+      properties:
+        id:
+          type: string
+          format: uuid
+          title: Id
+        name:
+          type: string
+          title: Name
+        grade:
+          type: integer
+          title: Grade
+        memo:
+          anyOf:
+            - type: string
+            - type: 'null'
+          title: Memo
+      type: object
+      required:
+        - id
+        - name
+        - grade
+        - memo
+      title: UserUpdateResponse
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+              - type: string
+              - type: integer
+          type: array
+          title: Location
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+      type: object
+      required:
+        - loc
+        - msg
+        - type
+      title: ValidationError

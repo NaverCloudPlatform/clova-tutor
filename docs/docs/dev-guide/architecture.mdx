@@ -1,0 +1,75 @@
+---
+slug: architecture
+sidebar_position: 3
+---
+
+# Model Architecture
+
+CLOVA Tutor는 **과목별 ReAct 에이전트 + Tool 기반 대화 처리 구조**를 사용합니다.
+
+본 문서는 해당 구조를 구성하는 아키텍처 다이어그램과 사용 도구 목록을 정리합니다.
+
+---
+
+## Overall Flow
+
+사용자 입력은 공통 Pre-Pipeline 단계를 거친 후, 학습 과목에 따라 서로 다른 ReAct 에이전트로 분기됩니다.
+
+---
+
+## Math ReAct Agent Architecture
+
+import MathAgent from '@site/static/img/math-react-agent.png';
+
+<img
+  src={MathAgent}
+  alt="Math ReAct Agent Architecture"
+/>
+
+---
+
+## English ReAct Agent Architecture
+
+import EnglishAgent from '@site/static/img/english-react-agent.png';
+
+<img
+  src={EnglishAgent}
+  alt="English ReAct Agent Architecture"
+/>
+
+---
+
+## Tool Reference
+
+### 공통 (Pre-Pipeline)
+
+| <span style={{ whiteSpace: 'nowrap' }}>과목</span> | Tool | Tool Intent |
+|--------|------|-------------|
+| 공통 | `problem_info_tool` | 학습이 **새로운 문제/주제/단어/유형**으로 전환될 때 호출.<br/>트리거 예시: "새 문제", "다른 문제", "새 주제", "주제 바꾸자", "뜻 알려줘", "설명해줘", "처음부터", "유형 바꿔줘" |
+| 공통 | `persuasion_tool` | 학습 주제에서 벗어나려는 대화를 **원래 주제로 되돌릴 때** 호출. |
+| 공통 | `make_problem_summary_tool` | 학생과의 대화가 **하나의 문제 단위로 정리되었을 때**, 사용자가 **요약을 원할 때** 호출. |
+| 수학 | `detect_unknown_concept_math_tool` | 수학 개념에 대한 **이해 부족·혼란 신호**가 보일 때 호출.<br/>트리거 예시: "이게 뭐야", "설명해줘", "정의가 뭐야", "개념 알려줘", "모르겠어", "어려워", "헷갈려", "이해 안 돼", "공식 뭐야", "원리 설명", "뜻이 뭐야", "개념 설명 좀", "용어 정리해줘" |
+
+---
+
+### 수학 (Math) — React Agent
+
+| <span style={{ whiteSpace: 'nowrap' }}>과목</span> | Tool | Tool Intent |
+|--------|------|-------------|
+| 수학 | `concept_note_tool` | **특정 수학 개념**에 대해 질의할 때 호출.<br/>트리거 표현: "정의 알려줘", "조건은 뭐야?", "성질이 뭐야?", "공식/수식 정리해줘", "개념 설명해줘" |
+| 수학 | `stepwise_solution_tool` | 학생이 **스스로 문제를 풀고자 할 때** 단계별 안내가 필요할 때 호출.<br/>트리거: "직접 풀어 보여줘", "같이 풀자", "정답 알려줘", "어디서 틀렸는지 알려줘".<br/>**유의:** "내가 풀어볼래"처럼 자율 풀이를 원하면 본 툴 호출; 단순 개념 설명은 `concept_note_tool` 호출. |
+| 수학 | `recommend_problem_tool` | 1) 학생이 **새 문제 추천**을 요청함 2) 학생의 답이 **정답으로 판단**되는 경우.<br/>산술식 등 객관 검증 가능하면 검증; 검증이 어려워도 강한 단정 신호 시 호출. 오답 신호 시 `demonstrate_solution_tool` 호출.<br/>정답 단정 예: "정답이야", "맞췄어", "맞았네", "풀었다", "해결했어". 산술/식·숫자 단답은 맥락·직전 대화와 정합되면 정답 가능. "맞지?", "아닌가?" 등 불확실 어미는 가중치 낮게. 명백한 불일치·부정 표현 시 호출 금지. |
+| 수학 | `default_chat_tool` | **수학과 무관한** 질문 처리. |
+
+---
+
+### 영어 (Eng) — React Agent
+
+| <span style={{ whiteSpace: 'nowrap' }}>과목</span> | Tool | Tool Intent |
+|--------|------|-------------|
+| 영어 | `translation_tool` | 사용자가 **해석**을 요청한 경우. |
+| 영어 | `table_fetch_tool` | **단어/문법 정보** 요청 시. |
+| 영어 | `answer_included_tool` | 사용자가 **영어 문제에 대한 해설**을 요청했을 때. |
+| 영어 | `recommend_problem_tool` | 1) 학생이 **새 문제 추천**을 요청함 2) 학생의 답이 **정답으로 판단**되는 경우. |
+| 영어 | `default_chat_tool` | **영어 학습과 무관한** 질문 처리. |
+

@@ -1,0 +1,322 @@
+[
+  {
+    "id": "4b38eae4-d40d-4b2e-bf15-d34439fff74a",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats?subject=math&size=10",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126229575
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "items": [
+          {
+            "id": 358,
+            "title": "문제: 이차방정식 근 찾기",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:32:03+09:00"
+          },
+          {
+            "id": 357,
+            "title": "테스트 메시지 요청",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:07:48+09:00"
+          },
+          {
+            "id": 351,
+            "title": "문제: 제곱근 계산",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:56:25+09:00"
+          },
+          {
+            "id": 350,
+            "title": "문제풀이 요청: 제곱근 계산",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:53:34+09:00"
+          },
+          {
+            "id": 349,
+            "title": "문제풀이 요청: 제곱근 2",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:52:22+09:00"
+          },
+          {
+            "id": 348,
+            "title": "개념: 제곱근 2",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:41:29+09:00"
+          },
+          {
+            "id": 347,
+            "title": "문제 유형: 테스트 메시지 작성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:21:04+09:00"
+          },
+          {
+            "id": 335,
+            "title": "문제: 이차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 171,
+            "title": "문제 추천 요청",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 334,
+            "title": "문제: 일차방정식 대입",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T10:55:39+09:00"
+          }
+        ],
+        "next_cursor": "eyJsYXRlc3RfdXNlZF9hdCI6IjIwMjUtMTItMThUMTA6NTU6MzkiLCJpZCI6MzM0fQ=="
+      },
+      "timestamp": 1766126229615
+    },
+    "totalDuration": 40.158000001737385
+  },
+  {
+    "id": "961fdbff-a3b2-48c9-a07d-efd6da2e0673",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users/452395d2-8832-41d5-976f-857e9ad2dcb8",
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126229576
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "name": "e2e-playwright",
+        "grade": 10,
+        "memo": null,
+        "created_at": "2025-12-03T15:54:17+09:00",
+        "updated_at": "2025-12-03T16:15:51+09:00"
+      },
+      "timestamp": 1766126229615
+    },
+    "totalDuration": 39.33600000096298
+  },
+  {
+    "id": "79e47028-e40a-43f6-b7e1-ebb6ba7d4006",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/358",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126234079
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 358,
+        "title": "문제: 이차방정식 근 찾기",
+        "subject": "math",
+        "has_problem": false,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1766126234114
+    },
+    "totalDuration": 34.921999997898936
+  },
+  {
+    "id": "71e55ab5-84dd-4b4b-9ce2-2f4e142e3700",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/358/stream-status",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126234748
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "status": "COMPLETE"
+      },
+      "timestamp": 1766126234892
+    },
+    "totalDuration": 143.9440000031027
+  },
+  {
+    "id": "3014e573-5c8d-4ab4-8da1-b485ea767b6d",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/358/messages",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126234749
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 3147,
+            "chat_id": 358,
+            "created_at": "2025-12-19T15:31:44+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-19"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3148,
+            "chat_id": 358,
+            "created_at": "2025-12-19T15:31:44+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "x² - 5x + 6 = 0의 해는 어떻게 찾는 거야?"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3149,
+            "chat_id": 358,
+            "created_at": "2025-12-19T15:32:03+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "오케이! 이 문제는 이차방정식 x² - 5x + 6 = 0의 근을 구하는 문제야. 이런 유형의 문제를 풀 때는 '**근의 공식**'을 사용하면 편해. \n\n근의 공식은 아래와 같아:\n\n$$x = \\frac{-b \\pm \\sqrt{b^{2}-4ac}}{2a}$$\n\n주어진 방정식에서 a=1, b=-5, c=6이거든. 이 값을 공식에 대입하면,\n\n$$x = \\frac{-(-5) \\pm \\sqrt{(-5)^{2}-4\\cdot1\\cdot6}}{2\\cdot1}$$\n\n이렇게 되고, 계산을 하면,\n\n$$x = \\frac{5 \\pm \\sqrt{25-24}}{2}$$\n\n$$x = \\frac{5 \\pm \\sqrt{1}}{2}$$\n\n그래서, √1=1이 되니까, x = (5+1)/2 또는 x=(5-1)/2 가 되어 결국 x=3 또는 x=2가 나오는거야!\n\n결론적으로, 이 이차방정식의 해는 **x=2** 또는 **x=3**이야. 이해가 됐어? 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "solution_demonstration",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1766126234895
+    },
+    "totalDuration": 145.8709999985937
+  },
+  {
+    "id": "1b063536-869f-43a3-9f92-d628743bda9b",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/358/problems",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126234749
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": [],
+      "timestamp": 1766126234893
+    },
+    "totalDuration": 144.38399999858626
+  }
+]

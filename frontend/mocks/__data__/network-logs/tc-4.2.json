@@ -1,0 +1,3477 @@
+[
+  {
+    "id": "677dfe8c-1b57-4106-8e70-55cc27d36115",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users/452395d2-8832-41d5-976f-857e9ad2dcb8",
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766125080200
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "name": "e2e-playwright",
+        "grade": 10,
+        "memo": null,
+        "created_at": "2025-12-03T15:54:17+09:00",
+        "updated_at": "2025-12-03T16:15:51+09:00"
+      },
+      "timestamp": 1766125080256
+    },
+    "totalDuration": 55.66499999986263
+  },
+  {
+    "id": "0a1ce87e-d1ad-48ac-a201-ca4538795d4a",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats?subject=math&size=10",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766456428846
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "items": [
+          {
+            "id": 390,
+            "title": "문제 추천 요청",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-22T18:47:41+09:00"
+          },
+          {
+            "id": 347,
+            "title": "문제 유형: 테스트 메시지 작성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T16:36:13+09:00"
+          },
+          {
+            "id": 375,
+            "title": "개념: 일차함수 그래프",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": true,
+            "latest_used_at": "2025-12-19T11:46:22+09:00"
+          },
+          {
+            "id": 335,
+            "title": "문제: 이차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 334,
+            "title": "문제: 일차방정식 대입",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T10:55:39+09:00"
+          },
+          {
+            "id": 268,
+            "title": "개념: 이차함수 꼭짓점 중요성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-16T14:42:55+09:00"
+          },
+          {
+            "id": 258,
+            "title": "문제: 일차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T20:23:23+09:00"
+          },
+          {
+            "id": 257,
+            "title": "문제: 일차부등식 풀이",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T17:59:40+09:00"
+          },
+          {
+            "id": 252,
+            "title": "개념: 이차방정식 해의 개수",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T16:46:11+09:00"
+          },
+          {
+            "id": 256,
+            "title": "문제: 일차부등식 풀이",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T13:38:33+09:00"
+          }
+        ],
+        "next_cursor": "eyJsYXRlc3RfdXNlZF9hdCI6IjIwMjUtMTItMTVUMTM6Mzg6MzMiLCJpZCI6MjU2fQ=="
+      },
+      "timestamp": 1766456428878
+    },
+    "totalDuration": 32.20500001043547
+  },
+  {
+    "id": "a762d0e8-3dbc-4421-8169-adc6ea970855",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats",
+      "headers": {},
+      "timestamp": 1765728503427
+    },
+    "totalDuration": 81,
+    "response": {
+      "mode": "single",
+      "status": 201,
+      "statusText": "Created",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "127",
+        "content-type": "application/json",
+        "date": "Sun, 14 Dec 2025 16:08:23 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": 226,
+        "title": "",
+        "subject": "math",
+        "has_problem": false,
+        "has_active_goal": false,
+        "latest_used_at": "2025-12-15T01:08:23+09:00"
+      },
+      "timestamp": 1765728503508
+    }
+  },
+  {
+    "id": "bb435baa-bd4b-41af-84e9-882041d6012f",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/226",
+      "headers": {},
+      "timestamp": 1765728503528
+    },
+    "totalDuration": 82,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "101",
+        "content-type": "application/json",
+        "date": "Sun, 14 Dec 2025 16:08:23 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": 226,
+        "title": "",
+        "subject": "math",
+        "has_problem": false,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1765728503610
+    }
+  },
+  {
+    "id": "2e57fb0f-f8c0-4b2e-95c0-0775d4f0cfcd",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/226/problems",
+      "headers": {},
+      "timestamp": 1765728503953
+    },
+    "totalDuration": 60,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "2",
+        "content-type": "application/json",
+        "date": "Sun, 14 Dec 2025 16:08:24 GMT",
+        "server": "uvicorn"
+      },
+      "body": [],
+      "timestamp": 1765728504013
+    }
+  },
+  {
+    "id": "f1921b3d-9095-4a22-9a78-f8dff96093fc",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats/226/messages",
+      "headers": {},
+      "timestamp": 1765728503524
+    },
+    "totalDuration": 2732,
+    "response": {
+      "mode": "event-stream",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "text/event-stream",
+        "cache-control": "no-cache",
+        "connection": "keep-alive"
+      },
+      "body": [
+        {
+          "event": "message_start",
+          "data": {
+            "id": -1,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:26+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "오"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "잉"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "?"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 테"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "스트"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 메시지를"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 보낸"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "다고"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 했"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "는"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "데"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 아직"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 메시"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "지가"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 안"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 왔"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "네"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 혹시"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 잘못"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 보"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "냈"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "거나"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 조금"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 늦"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "어"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "지는"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 걸"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수도"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있으"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "니까"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 기다"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "려"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "보자"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 만약"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 계속"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 문제가"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 생기"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "면"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 선생"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "님이"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "나"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 부모"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "님께"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 도움을"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 요청"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하는"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 것도"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 좋은"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 방법"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "일"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 거"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "야"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 화"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "팅"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 😊"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_end",
+          "data": {
+            "id": -1,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:27+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "오잉? 테스트 메시지를 보낸다고 했는데 아직 메시지가 안 왔네. 혹시 잘못 보냈거나 조금 늦어지는 걸 수도 있으니까 기다려보자. 만약 계속 문제가 생기면 선생님이나 부모님께 도움을 요청하는 것도 좋은 방법일 거야. 화이팅! 😊"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          "delay": 1
+        }
+      ],
+      "timestamp": 1765728503525
+    }
+  },
+  {
+    "id": "07447db1-b15e-4ddc-a38a-45d040136860",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/226/messages",
+      "headers": {},
+      "timestamp": 1765728507681
+    },
+    "totalDuration": 32,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "965",
+        "content-type": "application/json",
+        "date": "Sun, 14 Dec 2025 16:08:27 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1985,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:24+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-15"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1986,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:24+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "테스트 메시지 전송"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1987,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:28+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "오잉? 테스트 메시지를 보낸다고 했는데 아직 메시지가 안 왔네. 혹시 잘못 보냈거나 조금 늦어지는 걸 수도 있으니까 기다려보자. 만약 계속 문제가 생기면 선생님이나 부모님께 도움을 요청하는 것도 좋은 방법일 거야. 화이팅! 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1765728507713
+    }
+  },
+  {
+    "id": "1d858fb3-f582-494d-b39d-3cd70e8e3659",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats/226/messages",
+      "headers": {},
+      "timestamp": 1765728514127
+    },
+    "totalDuration": 3658,
+    "response": {
+      "mode": "event-stream",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "text/event-stream",
+        "cache-control": "no-cache",
+        "connection": "keep-alive"
+      },
+      "body": [
+        {
+          "event": "message_start",
+          "data": {
+            "id": -1,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:35+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "아"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 엔"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "터"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "키"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "로"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 메시지를"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 보내는"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 테"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "스트"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "를"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 하고"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있었"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "구나"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 그럼"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이제"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 내가"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 제대로"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 답"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "장을"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 보내"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "볼"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "게"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " \n\n"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "혹"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "시"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수학"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 문제"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 풀"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "다가"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 막"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "히는"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 부분이"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있으면"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 언제든지"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 말해"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "줘"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 내가"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 최대한"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 쉽게"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 설명"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "해"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "줄"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "게"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 그리고"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 모르는"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 것이"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있을"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 때는"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 혼자"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 고민"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하지"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 말고"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 주변"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 친구"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "들이"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "나"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 선생님"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "들"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "께"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 적"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "극"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "적으로"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 질문"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하는"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 습"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "관을"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 들"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이면"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 더"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 효과적으로"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 공부"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "할"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있어"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 항상"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 응원"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "할"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "게"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 💪"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "😊"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_end",
+          "data": {
+            "id": -1,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:37+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "아하, 엔터키로 메시지를 보내는 테스트를 하고 있었구나! 그럼 이제 내가 제대로 답장을 보내볼게. \n\n혹시 수학 문제 풀다가 막히는 부분이 있으면 언제든지 말해줘. 내가 최대한 쉽게 설명해줄게. 그리고 모르는 것이 있을 때는 혼자 고민하지 말고 주변 친구들이나 선생님들께 적극적으로 질문하는 습관을 들이면 더 효과적으로 공부할 수 있어. 항상 응원할게! 💪😊"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          "delay": 1
+        }
+      ],
+      "timestamp": 1765728517828
+    }
+  },
+  {
+    "id": "688ab126-7654-4459-84e4-9a142709396b",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/226/messages",
+      "headers": {},
+      "timestamp": 1765728520534
+    },
+    "totalDuration": 37,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "1898",
+        "content-type": "application/json",
+        "date": "Sun, 14 Dec 2025 16:08:40 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1985,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:24+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-15"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1986,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:24+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "테스트 메시지 전송"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1987,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:28+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "오잉? 테스트 메시지를 보낸다고 했는데 아직 메시지가 안 왔네. 혹시 잘못 보냈거나 조금 늦어지는 걸 수도 있으니까 기다려보자. 만약 계속 문제가 생기면 선생님이나 부모님께 도움을 요청하는 것도 좋은 방법일 거야. 화이팅! 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1988,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:34+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "엔터키 테스트 메시지 전송"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1989,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:38+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "아하, 엔터키로 메시지를 보내는 테스트를 하고 있었구나! 그럼 이제 내가 제대로 답장을 보내볼게. \n\n혹시 수학 문제 풀다가 막히는 부분이 있으면 언제든지 말해줘. 내가 최대한 쉽게 설명해줄게. 그리고 모르는 것이 있을 때는 혼자 고민하지 말고 주변 친구들이나 선생님들께 적극적으로 질문하는 습관을 들이면 더 효과적으로 공부할 수 있어. 항상 응원할게! 💪😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1765728520571
+    }
+  },
+  {
+    "id": "9d255ace-45c2-41c4-9260-05aecf9225ac",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats/226/messages",
+      "headers": {},
+      "timestamp": 1765728523141
+    },
+    "totalDuration": 2984,
+    "response": {
+      "mode": "event-stream",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "text/event-stream",
+        "cache-control": "no-cache",
+        "connection": "keep-alive"
+      },
+      "body": [
+        {
+          "event": "message_start",
+          "data": {
+            "id": -1,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:45+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "안"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "녕"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이렇게"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 인사"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "해"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 주"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "다니"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 정말"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 반"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "갑"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "다"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 요즘"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 어떻게"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 지내"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "?"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 혹시"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수학"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 공부"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하다가"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 궁금"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "한"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 점"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있거나"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 도움이"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 필요한"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 부분"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있으면"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 편하게"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 말해"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "줘"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 내가"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 열심히"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 도와"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "줄"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "게"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 😊"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_end",
+          "data": {
+            "id": -1,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:46+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "안녕! 이렇게 인사해 주다니 정말 반갑다. 요즘 어떻게 지내? 혹시 수학 공부하다가 궁금한 점 있거나 도움이 필요한 부분 있으면 편하게 말해줘. 내가 열심히 도와줄게! 😊"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          "delay": 1
+        }
+      ],
+      "timestamp": 1765728526168
+    }
+  },
+  {
+    "id": "cf4820ef-8370-448d-be57-597758afc254",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/226/messages",
+      "headers": {},
+      "timestamp": 1765728526350
+    },
+    "totalDuration": 42,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "2551",
+        "content-type": "application/json",
+        "date": "Sun, 14 Dec 2025 16:08:46 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1985,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:24+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-15"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1986,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:24+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "테스트 메시지 전송"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1987,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:28+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "오잉? 테스트 메시지를 보낸다고 했는데 아직 메시지가 안 왔네. 혹시 잘못 보냈거나 조금 늦어지는 걸 수도 있으니까 기다려보자. 만약 계속 문제가 생기면 선생님이나 부모님께 도움을 요청하는 것도 좋은 방법일 거야. 화이팅! 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1988,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:34+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "엔터키 테스트 메시지 전송"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1989,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:38+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "아하, 엔터키로 메시지를 보내는 테스트를 하고 있었구나! 그럼 이제 내가 제대로 답장을 보내볼게. \n\n혹시 수학 문제 풀다가 막히는 부분이 있으면 언제든지 말해줘. 내가 최대한 쉽게 설명해줄게. 그리고 모르는 것이 있을 때는 혼자 고민하지 말고 주변 친구들이나 선생님들께 적극적으로 질문하는 습관을 들이면 더 효과적으로 공부할 수 있어. 항상 응원할게! 💪😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1990,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:43+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "## 안녕하세요"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1991,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:46+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "안녕! 이렇게 인사해 주다니 정말 반갑다. 요즘 어떻게 지내? 혹시 수학 공부하다가 궁금한 점 있거나 도움이 필요한 부분 있으면 편하게 말해줘. 내가 열심히 도와줄게! 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1765728526392
+    }
+  },
+  {
+    "id": "d6067448-1216-4b5b-bc0a-a6bd5778036b",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats/226/messages",
+      "headers": {},
+      "timestamp": 1765728542749
+    },
+    "totalDuration": 4995,
+    "response": {
+      "mode": "event-stream",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "text/event-stream",
+        "cache-control": "no-cache",
+        "connection": "keep-alive"
+      },
+      "body": [
+        {
+          "event": "message_start",
+          "data": {
+            "id": -1,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:09:05+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "$\\"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "sqrt"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "}$"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "는"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " '"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "루"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "트"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " "
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "'"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "라고"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 읽"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "으며"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이는"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 약"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " "
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "1"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "414"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "213"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "562"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "373"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "095"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "..."
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "처럼"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 끝"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "없이"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이어지는"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 소수"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "야"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 루"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "트는"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 제"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "곱"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "했을"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 때"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 주어진"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수가"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 되는"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 값을"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 의미"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "해"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 예를"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 들어"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " $\\"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "sqrt"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "4"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "}"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " ="
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " "
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "$"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "인"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이유는"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " "
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "를"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 제"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "곱"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하면"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " "
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "4"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "가"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 되기"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 때문"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이지"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ".\n\n"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "$\\"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "sqrt"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "{"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "}$"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "는"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 완전"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "제"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "곱"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "수가"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 아니"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "기"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 때문에"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 정확한"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 값"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "으로는"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 표현"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "할"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 없지만"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 대략"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " "
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "1"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "4"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 정도로"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 기억"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "해도"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 괜찮"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "아"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 계산"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "기를"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 사용하면"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 더"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 정확하게"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 구"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "할"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있고"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 말"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이야"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!\n\n"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이제"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이해가"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 좀"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 되었"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "을까"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "?"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 혹시"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 더"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 알고"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 싶은"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 내용"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이나"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 다른"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 질문"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있다면"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 언제"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "든"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 물어"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "봐"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 😊"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_end",
+          "data": {
+            "id": -1,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:09:08+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "$\\sqrt{2}$는 '루트 2'라고 읽으며, 이는 약 1.414213562373095...처럼 끝없이 이어지는 소수야. 루트는 제곱했을 때 주어진 수가 되는 값을 의미해. 예를 들어, $\\sqrt{4} = 2$인 이유는 2를 제곱하면 4가 되기 때문이지.\n\n$\\sqrt{2}$는 완전제곱수가 아니기 때문에 정확한 값으로는 표현할 수 없지만, 대략 1.4 정도로 기억해도 괜찮아. 계산기를 사용하면 더 정확하게 구할 수 있고 말이야!\n\n이제 이해가 좀 되었을까? 혹시 더 알고 싶은 내용이나 다른 질문이 있다면 언제든 물어봐! 😊"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          "delay": 1
+        }
+      ],
+      "timestamp": 1765728548107
+    }
+  },
+  {
+    "id": "f257b511-3a7a-4341-a12b-433380673821",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/226/messages",
+      "headers": {},
+      "timestamp": 1765728548981
+    },
+    "totalDuration": 53,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "3593",
+        "content-type": "application/json",
+        "date": "Sun, 14 Dec 2025 16:09:08 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1985,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:24+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-15"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1986,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:24+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "테스트 메시지 전송"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1987,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:28+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "오잉? 테스트 메시지를 보낸다고 했는데 아직 메시지가 안 왔네. 혹시 잘못 보냈거나 조금 늦어지는 걸 수도 있으니까 기다려보자. 만약 계속 문제가 생기면 선생님이나 부모님께 도움을 요청하는 것도 좋은 방법일 거야. 화이팅! 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1988,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:34+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "엔터키 테스트 메시지 전송"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1989,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:38+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "아하, 엔터키로 메시지를 보내는 테스트를 하고 있었구나! 그럼 이제 내가 제대로 답장을 보내볼게. \n\n혹시 수학 문제 풀다가 막히는 부분이 있으면 언제든지 말해줘. 내가 최대한 쉽게 설명해줄게. 그리고 모르는 것이 있을 때는 혼자 고민하지 말고 주변 친구들이나 선생님들께 적극적으로 질문하는 습관을 들이면 더 효과적으로 공부할 수 있어. 항상 응원할게! 💪😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1990,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:43+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "## 안녕하세요"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1991,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:08:46+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "안녕! 이렇게 인사해 주다니 정말 반갑다. 요즘 어떻게 지내? 혹시 수학 공부하다가 궁금한 점 있거나 도움이 필요한 부분 있으면 편하게 말해줘. 내가 열심히 도와줄게! 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1992,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:09:03+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": " $ \\sqrt2 $ "
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1993,
+            "chat_id": 226,
+            "created_at": "2025-12-15T01:09:08+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "$\\sqrt{2}$는 '루트 2'라고 읽으며, 이는 약 1.414213562373095...처럼 끝없이 이어지는 소수야. 루트는 제곱했을 때 주어진 수가 되는 값을 의미해. 예를 들어, $\\sqrt{4} = 2$인 이유는 2를 제곱하면 4가 되기 때문이지.\n\n$\\sqrt{2}$는 완전제곱수가 아니기 때문에 정확한 값으로는 표현할 수 없지만, 대략 1.4 정도로 기억해도 괜찮아. 계산기를 사용하면 더 정확하게 구할 수 있고 말이야!\n\n이제 이해가 좀 되었을까? 혹시 더 알고 싶은 내용이나 다른 질문이 있다면 언제든 물어봐! 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1765728549034
+    }
+  }
+]

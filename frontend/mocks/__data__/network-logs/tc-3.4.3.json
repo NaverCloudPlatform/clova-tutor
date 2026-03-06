@@ -1,0 +1,354 @@
+[
+  {
+    "id": "af259458-c304-49a8-8891-1df12736d8a5",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats?subject=english&size=10",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126282491
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "items": [
+          {
+            "id": 361,
+            "title": "영어 문장 해석 요청",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:34:43+09:00"
+          },
+          {
+            "id": 359,
+            "title": "",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:33:10+09:00"
+          },
+          {
+            "id": 136,
+            "title": "단어 의미: consistently",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:56:39+09:00"
+          },
+          {
+            "id": 146,
+            "title": "의미 불명확한 입력",
+            "subject": "english",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:56:23+09:00"
+          },
+          {
+            "id": 247,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:57:20+09:00"
+          },
+          {
+            "id": 245,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:52:31+09:00"
+          },
+          {
+            "id": 242,
+            "title": "개념: to부정사 부사적용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:48:20+09:00"
+          },
+          {
+            "id": 238,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:43:34+09:00"
+          },
+          {
+            "id": 236,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:30:36+09:00"
+          },
+          {
+            "id": 233,
+            "title": "개념: to부정사의 부사적 용법",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T01:24:53+09:00"
+          }
+        ],
+        "next_cursor": "eyJsYXRlc3RfdXNlZF9hdCI6IjIwMjUtMTItMTVUMDE6MjQ6NTMiLCJpZCI6MjMzfQ=="
+      },
+      "timestamp": 1766126282527
+    },
+    "totalDuration": 36.303000000771135
+  },
+  {
+    "id": "ed10b782-6bfe-4096-a9ab-f906c20161e1",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users/452395d2-8832-41d5-976f-857e9ad2dcb8",
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126282491
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "name": "e2e-playwright",
+        "grade": 10,
+        "memo": null,
+        "created_at": "2025-12-03T15:54:17+09:00",
+        "updated_at": "2025-12-03T16:15:51+09:00"
+      },
+      "timestamp": 1766126282527
+    },
+    "totalDuration": 35.901999995985534
+  },
+  {
+    "id": "b9daa96a-10ba-403d-ac36-b72c39dd009d",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/361",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126299016
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 361,
+        "title": "영어 문장 해석 요청",
+        "subject": "english",
+        "has_problem": false,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1766126299064
+    },
+    "totalDuration": 48.25299999948684
+  },
+  {
+    "id": "25e4daef-14b2-4556-b127-4e0089ed8d28",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/361/stream-status",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126300260
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "status": "COMPLETE"
+      },
+      "timestamp": 1766126300307
+    },
+    "totalDuration": 46.61100000521401
+  },
+  {
+    "id": "454d298f-5e9a-47af-af9b-089f46097a82",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/361/messages",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126300260
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 3150,
+            "chat_id": 361,
+            "created_at": "2025-12-19T15:34:22+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-19"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3151,
+            "chat_id": 361,
+            "created_at": "2025-12-19T15:34:22+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "\"If it rains, I will stay home.\"는 어떤 의미의 문장이야?"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3152,
+            "chat_id": 361,
+            "created_at": "2025-12-19T15:34:43+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "이 문장은 '**비가 오면 집에 머물 것이다**'라는 의미를 가지고 있어.\n\n1. **조건절**: 'It rains'(비가 온다면)이라는 조건이 부여되어 있어.\n2. **결과 절**: 그 조건에 따른 결과가 'I will stay home'(집에 머무르겠다)으로 나타나 있지.\n\n즉, 비가 오는 상황을 가정하고 그에 따라 집에서 지내겠다는 의지를 나타내는 거야. 이처럼 if가 이끄는 조건절에서는 특정 조건을 설정하고, 그 조건이 충족될 경우에 대한 결과를 서술하는 패턴이 일반적이야.\n\n이 문장을 통해 날씨에 따라 계획을 조정하거나 행동을 결정하는 상황에서도 사용할 수 있어. 예를 들면 약속 시간에 비가 올 것 같으면 실내에서 만나기로 한다든지, 야외 활동을 취소하고 집에서 쉬기로 할 때도 쓸 수 있겠지?\n\n더 궁금한 게 있으면 언제든 물어봐! 😊\n\n> [!TRANSLATION]-\n> ```json\n> {\n>   \"type\": \"translation\",\n>   \"content\": [\n>     {\n>       \"en\": \"If it rains\",\n>       \"ko\": \"비가 오면\"\n>     },\n>     {\n>       \"en\": \"I will stay home\",\n>       \"ko\": \"집에 머물 것이다\"\n>     }\n>   ]\n> }\n> ```\n"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "translation",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1766126300309
+    },
+    "totalDuration": 48.788000006657555
+  },
+  {
+    "id": "10ca2b12-969d-4530-966e-cfe9b6ac2d56",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/361/problems",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126300260
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": [],
+      "timestamp": 1766126300304
+    },
+    "totalDuration": 44.07700000525033
+  },
+  {
+    "id": "bee1f33d-4a74-4426-ac6f-3b5f119822a9",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/361",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766126300261
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 361,
+        "title": "영어 문장 해석 요청",
+        "subject": "english",
+        "has_problem": false,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1766126300305
+    },
+    "totalDuration": 44.00499999610474
+  }
+]

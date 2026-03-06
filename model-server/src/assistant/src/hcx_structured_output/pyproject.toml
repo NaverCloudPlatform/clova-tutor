@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hcx-structured-output"
+version = "0.1.0"
+description = "Structured output utilities and examples for HyperCLOVA X"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+authors = [{ name = "keonwoo" }]
+keywords = ["llm", "structured-output", "pydantic", "hcx"]
+
+# Runtime dependencies
+# Pinned to match the user's current environment
+dependencies = [
+	"instructor==1.10.0",
+	"langchain-naver==0.1.1",
+	"pydantic==2.11.7",
+	"python-dotenv==1.1.1",
+	"PyYAML==6.0.2",
+	"typing-extensions==4.14.1",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+packages-dir = "src"
+
+[tool.uv]
+# uv will respect PEP 621 metadata. You can pin Python here if you want strict control.
+# python-preference = "managed"

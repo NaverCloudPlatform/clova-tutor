@@ -1,0 +1,60 @@
+---
+sidebar_position: 4
+---
+
+# 학습 노트
+
+## 학습 노트 페이지 진입
+
+사이드바에서 **학습 노트** 버튼을 눌러 학습 노트 페이지에 진입할 수 있어요.
+
+## 저장된 문제 목록 확인
+
+<div className="flex flex-col gap-4 divide-x">
+  <img src={require('./img/학습노트목록.png').default} className="px-4" />
+  <div>
+
+<p className="bg-accent-blue-400 size-5 rounded-full flex items-center justify-center text-white font-semibold">1</p>
+> 과목별로 추천 문제를 나눠서 볼 수 있어요.
+
+<p className="bg-accent-blue-400 size-5 rounded-full flex items-center justify-center text-white font-semibold">2</p>
+> 필터를 통해 원하는 상태의 문제만 골라서 볼 수 있어요.
+
+<p className="bg-accent-blue-400 size-5 rounded-full flex items-center justify-center text-white font-semibold">3</p>
+> "학습 문제 추천 영역"에서 저장한 문제를 한눈에 볼 수 있어요. 각 문제를 클릭하면 문제 풀기 창이 표시돼요.
+
+  </div>
+</div>
+
+## 문제 풀기
+
+학습 노트 리스트에서 각 문제를 누르면 문제를 풀 수 있는 다이얼로그가 떠요.
+
+<div className="flex flex-col gap-4 divide-x">
+  <img src={require('./img/학습노트단일문제.png').default} className="px-4" />
+  <div>
+
+<p className="bg-accent-blue-400 size-5 rounded-full flex items-center justify-center text-white font-semibold">1</p>
+> 학년, 문제 난이도, 문제 카테고리 정보를 볼 수 있어요.
+
+<p className="bg-accent-blue-400 size-5 rounded-full flex items-center justify-center text-white font-semibold">2</p>
+> 저장된 문제가 노출돼요. (객관식, 주관식 문제로 제공)
+
+<p className="bg-accent-blue-400 size-5 rounded-full flex items-center justify-center text-white font-semibold">3</p>
+> 다이얼로그를 닫으면 다시 저장된 문제 목록으로 되돌아가요.
+
+<p className="bg-accent-blue-400 size-5 rounded-full flex items-center justify-center text-white font-semibold">4</p>
+> 화살표 버튼을 눌러서 이전/다음 문제로 이동할 수 있어요.
+
+<p className="bg-accent-blue-400 size-5 rounded-full flex items-center justify-center text-white font-semibold">5</p>
+> **채팅방에서 질문하기** 버튼을 눌러 현재 문제를 AI에게 질문하거나, **채점하기** 버튼을 통해 문제를 채점할 수 있어요.
+
+  </div>
+</div>
+
+## 저장 해제
+
+<img src={require('./img/학습노트저장해제.gif').default} />
+
+- 북마크 버튼을 눌러 저장된 문제에서 제외할 수 있어요.
+- 실수로 해제했을 때를 대비해서 바로 리스트에서 제거되지 않고, 토글 버튼만 해제돼요. 언제든지 다시 눌러서 추가할 수 있어요. 단, 새로고침하면 실제로 반영되어 제거돼요.

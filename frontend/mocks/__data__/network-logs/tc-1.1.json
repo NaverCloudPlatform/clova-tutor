@@ -1,0 +1,29 @@
+[
+  {
+    "id": "feadd5c9-faab-4432-9538-5e8a7dfc2102",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users",
+      "headers": {},
+      "timestamp": 1764662840017
+    },
+    "totalDuration": 32,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "680",
+        "content-type": "application/json",
+        "date": "Tue, 02 Dec 2025 08:07:19 GMT",
+        "server": "uvicorn"
+      },
+      "body": [],
+      "timestamp": 1764662840049
+    }
+  }
+]

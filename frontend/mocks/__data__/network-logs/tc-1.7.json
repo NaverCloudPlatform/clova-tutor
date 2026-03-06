@@ -1,0 +1,106 @@
+[
+  {
+    "id": "63aa9922-63f3-47b2-93f3-c2a71080011e",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users",
+      "headers": {},
+      "timestamp": 1764745839674
+    },
+    "totalDuration": 31,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "855",
+        "content-type": "application/json",
+        "date": "Wed, 03 Dec 2025 07:10:39 GMT",
+        "server": "uvicorn"
+      },
+      "body": [
+        {
+          "id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+          "name": "e2e-playwright",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-12-03T15:54:17+09:00",
+          "updated_at": "2025-12-03T15:54:17+09:00"
+        }
+      ],
+      "timestamp": 1764745839705
+    }
+  },
+  {
+    "id": "8d3bbda7-3f3c-418d-b5ff-e3e00110cff3",
+    "version": "1.1",
+    "request": {
+      "method": "PATCH",
+      "url": "/api/v1/users/452395d2-8832-41d5-976f-857e9ad2dcb8",
+      "headers": {},
+      "timestamp": 1764745849497
+    },
+    "totalDuration": 49,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "81",
+        "content-type": "application/json",
+        "date": "Wed, 03 Dec 2025 07:10:49 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "name": "e2e",
+        "grade": 10,
+        "memo": null
+      },
+      "timestamp": 1764745849546
+    }
+  },
+  {
+    "id": "27cde52e-38ba-4f89-9036-f03ac69baed8",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users",
+      "headers": {},
+      "timestamp": 1764745849548
+    },
+    "totalDuration": 17,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "844",
+        "content-type": "application/json",
+        "date": "Wed, 03 Dec 2025 07:10:49 GMT",
+        "server": "uvicorn"
+      },
+      "body": [
+        {
+          "id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+          "name": "e2e",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-12-03T15:54:17+09:00",
+          "updated_at": "2025-12-03T16:10:50+09:00"
+        }
+      ],
+      "timestamp": 1764745849565
+    }
+  }
+]

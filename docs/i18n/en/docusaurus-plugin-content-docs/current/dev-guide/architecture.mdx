@@ -1,0 +1,75 @@
+---
+slug: architecture
+sidebar_position: 3
+---
+
+# Model Architecture
+
+CLOVA Tutor adopts a **subject-specific ReAct agent architecture combined with tool-based dialogue orchestration**.
+
+This document describes the overall system flow, architecture diagrams for each subject agent, and a detailed reference of the tools used in the pipeline.
+
+---
+
+## Overall Flow
+
+User input first passes through a shared Pre-Pipeline stage.  
+Based on the detected learning subject, the input is then routed to the corresponding ReAct agent (Math or English), where subject-specific reasoning and tool selection take place.
+
+---
+
+## Math ReAct Agent Architecture
+
+import MathAgent from '@site/static/img/math-react-agent.png';
+
+<img
+  src={MathAgent}
+  alt="Math ReAct Agent Architecture"
+/>
+
+---
+
+## English ReAct Agent Architecture
+
+import EnglishAgent from '@site/static/img/english-react-agent.png';
+
+<img
+  src={EnglishAgent}
+  alt="English ReAct Agent Architecture"
+/>
+
+---
+
+## Tool Reference
+
+### Common (Pre-Pipeline)
+
+| <span style={{ whiteSpace: 'nowrap' }}>Subject</span> | Tool | Tool Intent |
+|--------|------|-------------|
+| Common | `problem_info_tool` | Called when the user **explicitly signals a transition** to a new learning unit (problem, topic, word, or question type).<br/>Example triggers: "new problem", "different problem", "new topic", "change topic", "what does this mean?", "explain this", "start over", "change the type". |
+| Common | `persuasion_tool` | Used when the conversation **deviates from the learning objective** and needs to be gently guided back to the original topic. |
+| Common | `make_problem_summary_tool` | Called when a learning interaction has **reached a clear problem-level completion** and the user **requests a summary** of the discussion. |
+| Math | `detect_unknown_concept_math_tool` | Triggered when **signals of conceptual confusion or insufficient understanding** related to a math concept are detected.<br/>Example triggers: "what is this?", "explain", "what's the definition?", "I don't get it", "this is hard", "I'm confused", "what's the formula?", "explain the principle", "define the terms". |
+
+---
+
+### Math — ReAct Agent
+
+| <span style={{ whiteSpace: 'nowrap' }}>Subject</span> | Tool | Tool Intent |
+|--------|------|-------------|
+| Math | `concept_note_tool` | Used when the user asks about a **specific math concept**.<br/>Example triggers: "define this", "what are the conditions?", "what properties does it have?", "summarize the formula", "explain the concept". |
+| Math | `stepwise_solution_tool` | Used when the student intends to **solve the problem step by step with guidance**.<br/>Example triggers: "show me how to solve it", "let's solve it together", "what's the answer?", "where did I go wrong?".<br/>**Note:** This tool is intended for guided problem-solving. For concept-only explanations, use `concept_note_tool`. |
+| Math | `recommend_problem_tool` | Called when either (1) the student explicitly requests a **new problem recommendation**, or (2) the student's response is **judged to be correct**.<br/>Whenever possible, correctness is verified objectively (e.g. arithmetic validation). The tool is called only on **strong affirmative signals**. Uncertain phrasing lowers decision confidence, and the tool must not be called in cases of clear mismatch or explicit negation.<br/>If incorrect-answer signals are detected, `demonstrate_solution_tool` is used instead. |
+| Math | `default_chat_tool` | Handles **off-topic or non-math-related** queries. |
+
+---
+
+### English — ReAct Agent
+
+| <span style={{ whiteSpace: 'nowrap' }}>Subject</span> | Tool | Tool Intent |
+|--------|------|-------------|
+| English | `translation_tool` | Used when the user requests **translation or interpretation**. |
+| English | `table_fetch_tool` | Used when **vocabulary or grammar information** is requested. |
+| English | `answer_included_tool` | Used when the user asks for an **explanation of an English problem** or exercise. |
+| English | `recommend_problem_tool` | Called when either (1) the student requests a **new problem recommendation**, or (2) the student's response is **judged to be correct**. |
+| English | `default_chat_tool` | Handles **off-topic or non–English-learning** queries. |

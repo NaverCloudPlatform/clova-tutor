@@ -1,0 +1,49 @@
+import type { ZodSchema } from 'zod';
+
+export class ZodValidationError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = 'ZodValidationError';
+  }
+}
+
+export const validateSchema = <TData>(schema: ZodSchema | null, data: TData): TData => {
+  if (!schema) return data;
+
+  const result = schema.safeParse(data);
+
+  if (!result.success) {
+    const errorMessage = result.error.errors.map((err) => `Path: ${err.path.join('.')} - ${err.message}`).join('\n');
+
+    const error = new ZodValidationError(
+      `❌ Invalid data according to zod schema:\n${errorMessage}\n\n🔍 Received data: ${JSON.stringify(data, null, 2)}`,
+    );
+
+    if (import.meta.env?.DEV || process.env.NODE_ENV === 'development') {
+      console.error(error);
+    }
+
+    throw error;
+  }
+
+  return data;
+};
+
+export const createSearchParams = (
+  params?: Record<string, string | number | boolean | Array<string | number | boolean>>,
+): URLSearchParams => {
+  const urlSearchParams = new URLSearchParams();
+
+  if (params) {
+    for (const [key, value] of Object.entries(params)) {
+      if (value !== undefined) {
+        const values = Array.isArray(value) ? value : [value];
+        for (const v of values) {
+          urlSearchParams.append(key, v.toString());
+        }
+      }
+    }
+  }
+
+  return urlSearchParams;
+};

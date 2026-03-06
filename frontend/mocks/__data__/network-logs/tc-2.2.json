@@ -1,0 +1,364 @@
+[
+  {
+    "id": "c50c6567-18f0-4397-b497-5df12211660f",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats?subject=math&size=10",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766393369969
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "items": [
+          {
+            "id": 380,
+            "title": "문제 추천 요청",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-22T16:56:43+09:00"
+          },
+          {
+            "id": 171,
+            "title": "문제 추천 요청",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": true,
+            "latest_used_at": "2025-12-22T13:53:55+09:00"
+          },
+          {
+            "id": 369,
+            "title": "개념: 제곱근 2",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T16:43:49+09:00"
+          },
+          {
+            "id": 347,
+            "title": "문제 유형: 테스트 메시지 작성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T16:36:13+09:00"
+          },
+          {
+            "id": 375,
+            "title": "개념: 일차함수 그래프",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": true,
+            "latest_used_at": "2025-12-19T11:46:22+09:00"
+          },
+          {
+            "id": 335,
+            "title": "문제: 이차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 334,
+            "title": "문제: 일차방정식 대입",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T10:55:39+09:00"
+          },
+          {
+            "id": 268,
+            "title": "개념: 이차함수 꼭짓점 중요성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-16T14:42:55+09:00"
+          },
+          {
+            "id": 258,
+            "title": "문제: 일차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T20:23:23+09:00"
+          },
+          {
+            "id": 257,
+            "title": "문제: 일차부등식 풀이",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T17:59:40+09:00"
+          }
+        ],
+        "next_cursor": "eyJsYXRlc3RfdXNlZF9hdCI6IjIwMjUtMTItMTVUMTc6NTk6NDAiLCJpZCI6MjU3fQ=="
+      },
+      "timestamp": 1766393370007
+    },
+    "totalDuration": 37.8549999996014
+  },
+  {
+    "id": "88f090d5-9f43-4f3c-97b8-703e8182a17b",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users/452395d2-8832-41d5-976f-857e9ad2dcb8",
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766393386852
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "name": "e2e-playwright",
+        "grade": 10,
+        "memo": null,
+        "created_at": "2025-12-03T15:54:17+09:00",
+        "updated_at": "2025-12-03T16:15:51+09:00"
+      },
+      "timestamp": 1766393386896
+    },
+    "totalDuration": 43.943000008787024
+  },
+  {
+    "id": "a1ebfcef-65b9-4d41-803a-a8859a123af1",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats?subject=english&size=10",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766393401572
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "items": [
+          {
+            "id": 387,
+            "title": "시제 질문: I have lived here for three years.",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-22T17:10:27+09:00"
+          },
+          {
+            "id": 384,
+            "title": "영문 해석 요청",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-22T17:05:41+09:00"
+          },
+          {
+            "id": 382,
+            "title": "개념: 관계대명사",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-22T17:02:41+09:00"
+          },
+          {
+            "id": 378,
+            "title": "영어 번역 연습",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-22T11:19:09+09:00"
+          },
+          {
+            "id": 373,
+            "title": "시제 질문: I have lived here for three years.",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T16:51:30+09:00"
+          },
+          {
+            "id": 362,
+            "title": "구조 분석: tell+목적어+to부정사",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:52:48+09:00"
+          },
+          {
+            "id": 361,
+            "title": "영어 문장 해석 요청",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:34:43+09:00"
+          },
+          {
+            "id": 359,
+            "title": "",
+            "subject": "english",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T15:33:10+09:00"
+          },
+          {
+            "id": 136,
+            "title": "단어 의미: consistently",
+            "subject": "english",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T11:46:22+09:00"
+          },
+          {
+            "id": 146,
+            "title": "의미 불명확한 입력",
+            "subject": "english",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T01:56:23+09:00"
+          }
+        ],
+        "next_cursor": "eyJsYXRlc3RfdXNlZF9hdCI6IjIwMjUtMTItMTlUMDE6NTY6MjMiLCJpZCI6MTQ2fQ=="
+      },
+      "timestamp": 1766393401625
+    },
+    "totalDuration": 52.67000000458211
+  },
+  {
+    "id": "d0e6531b-2964-4f89-9cdf-874a3d7dd210",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users/452395d2-8832-41d5-976f-857e9ad2dcb8",
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766393409443
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": "",
+      "timestamp": 1766393409477
+    },
+    "totalDuration": 34.095000000338075
+  },
+  {
+    "id": "d56191b9-476d-4fc1-971b-c21a64d05282",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users",
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766393424464
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": [
+        {
+          "id": "84832e7a-c424-4cf0-8125-ceb279d7fd61",
+          "name": "ㅁㅁㅁ",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-12-19T21:14:52+09:00",
+          "updated_at": "2025-12-19T21:14:52+09:00"
+        },
+        {
+          "id": "627facc9-caeb-4a6b-8001-518c777f84de",
+          "name": "ㅎㅇㅌ",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-12-15T12:25:37+09:00",
+          "updated_at": "2025-12-15T12:25:37+09:00"
+        },
+        {
+          "id": "6c0e6a25-2117-44fb-9ddf-5f4ebbc347fe",
+          "name": "ㅌㄱㅎㄹ",
+          "grade": 3,
+          "memo": null,
+          "created_at": "2025-12-04T10:54:48+09:00",
+          "updated_at": "2025-12-04T10:54:48+09:00"
+        },
+        {
+          "id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+          "name": "e2e-playwright",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-12-03T15:54:17+09:00",
+          "updated_at": "2025-12-03T16:15:51+09:00"
+        },
+        {
+          "id": "245e3731-1617-49eb-8a33-1f65a65cb8b0",
+          "name": "김민지",
+          "grade": 3,
+          "memo": null,
+          "created_at": "2025-12-02T14:43:23+09:00",
+          "updated_at": "2025-12-02T14:43:23+09:00"
+        },
+        {
+          "id": "77a17712-d2f9-424b-8a20-3bf0e6dff96e",
+          "name": "김민수",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-11-19T17:19:21+09:00",
+          "updated_at": "2025-12-01T18:57:55+09:00"
+        },
+        {
+          "id": "76484212-1b62-4f7d-b99e-0e5e84a3428f",
+          "name": "김민서",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-11-26T18:11:22+09:00",
+          "updated_at": "2025-11-26T18:11:22+09:00"
+        },
+        {
+          "id": "f0104cd0-0936-4e06-b707-7ce1ab287536",
+          "name": "김민석",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-11-26T18:09:13+09:00",
+          "updated_at": "2025-11-26T18:09:13+09:00"
+        }
+      ],
+      "timestamp": 1766393424482
+    },
+    "totalDuration": 18.047999998088926
+  }
+]

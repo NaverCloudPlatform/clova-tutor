@@ -1,0 +1,62 @@
+# CLOVA Tutor
+# Copyright (c) 2026-present NAVER Cloud Corp.
+# MIT
+
+reject_listening: |
+  나는 직접 음성을 들을 수는 없어. 하지만 단어, 문법, 해석 중에 내가 도와줄 게 있으면 알려줘! ☺️
+
+say_cannot_understand: |
+  미안, 네가 한 말을 잘 이해하지 못했어. 내가 더 잘 도와주고 싶은데, 조금만 다르게 말해줄 수 있어?
+
+reject_advanced_learning: |
+  그건 네 학년에 해당하는 개념이 아니라서 설명해 줄 수 없어. 우리 나중에 같이 배워보자~
+
+user_want_problem: |
+  좋아! {section} 단원에서 문제를 하나 가져왔어! 한번 풀어볼래? 😊
+
+cold_start_recommendation_eng: |
+  좋아! 너의 학년에 해당하는 {section} 문제를 하나 가져왔어! 한번 풀어볼래? 😊
+
+specific_concept_recommendation_eng: |
+  공부에 대한 의욕이 넘치는 모습 멋지다!
+  아쉽지만 지금은 이 개념이 쓰인 문제를 정확히 골라주긴 조금 어려워.
+  그래도 최대한 비슷한 문제로 추천해볼게. 한번 풀어볼래? 😊
+
+user_solve_problem: |
+  네가 풀어보면 좋을 만한 문제를 추천해줄게! 오른쪽에서 확인해볼래? 😊
+
+not_have_recommend_problem: |
+  아쉽게도 지금은 이 단원에서 모든 문제를 네가 이미 푼 것 같아~ 혹시 다른 단원의 문제도 계속 풀어볼까?
+
+no_more_recommendations: |
+  이 단원의 모든 문제를 이미 추천해줬어! 혹시 다른 단원의 문제를 풀어볼래?
+
+no_problems_available: |
+  아쉽게도 지금은 이 단원에서 추천해줄 수 있는 문제가 없어. 다른 단원이나 주제로 문제를 풀어볼래?
+
+callout_image: |
+  미안, 네가 한 말을 잘 이해하지 못했어. 대신 이미지에 대해서는 설명해줄 수 있어!
+  더 궁금한 점 있으면 이어서 질문해줘.
+
+  > [!quote] - 이미지 설명
+  {text}
+
+callout_translation: |
+  > [!TRANSLATION]-
+  {text}
+
+callout_table: |
+  > [!TABLE_FETCH]-
+  {text}
+
+feedback_answer_for_correct_answer: |
+  오케이, 잘 이해했구나! 고생했어.
+  맞아! 문제를 잘 이해하고 풀었네. 아주 잘했어 ㅎㅎ
+  좋아, 정확하게 답했어. 수고 많았다!
+  응, 풀이 과정이 깔끔했어. 잘했어 👍
+  완벽하게 이해했구나! 자신감을 가져도 돼.
+  풀이가 논리적이었어. 정말 잘했어 👏
+  아주 정확했어! 계속 이렇게만 하면 돼.
+  좋은 접근이었어, 생각하는 힘이 느껴진다!
+  문제를 차근차근 잘 풀어냈네. 대단하다!
+  네가 이해한 걸 보니 내가 다 뿌듯하네 😊

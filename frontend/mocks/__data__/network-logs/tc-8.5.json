@@ -1,0 +1,3908 @@
+[
+  {
+    "id": "38ba297a-3d88-4e22-8627-276be5f3f890",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/174/problems/H1-M-002",
+      "headers": {},
+      "timestamp": 1765269398214
+    },
+    "totalDuration": 23,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "590",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:38 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 1,
+        "status": "풀지 않음",
+        "last_answer": null,
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-002",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "((x + 3)(x + 5))의 전개식은?",
+            "tags": [
+              "다항식",
+              "전개"
+            ],
+            "hint": "FOIL 법칙 활용",
+            "explanation": "(x×x + 5x + 3x + 15)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 15"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 8x + 15"
+              },
+              {
+                "no": 3,
+                "inst": "x² + 5x + 8"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 3x + 15"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269398237
+    }
+  },
+  {
+    "id": "811e889d-f5be-4ff0-97fb-cac91fc3ee24",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/174/problems/H1-M-018",
+      "headers": {},
+      "timestamp": 1765269398269
+    },
+    "totalDuration": 22,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "679",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:38 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 2,
+        "status": "풀지 않음",
+        "last_answer": null,
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-018",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "응용 계산",
+            "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+            "tags": [
+              "도형",
+              "다항식",
+              "활용"
+            ],
+            "hint": "실생활 연계 문제",
+            "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 2x + 2"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 4x + 4"
+              },
+              {
+                "no": 3,
+                "inst": "2x² + 4x"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 8x + 4"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269398291
+    }
+  },
+  {
+    "id": "71fa7b16-aff5-41bf-a2f9-1943cc2ea698",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/129/problems/H1-M-004",
+      "headers": {},
+      "timestamp": 1765269398296
+    },
+    "totalDuration": 22,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "573",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:38 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 3,
+        "status": "복습 완료",
+        "last_answer": "1",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-004",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "((x - 2)(x + 1))의 전개식은?",
+            "tags": [
+              "다항식",
+              "전개"
+            ],
+            "hint": "FOIL 적용",
+            "explanation": "(x² - x - 2)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² - x - 2"
+              },
+              {
+                "no": 2,
+                "inst": "x² - x + 2"
+              },
+              {
+                "no": 3,
+                "inst": "x² + x - 2"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 3x + 2"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269398318
+    }
+  },
+  {
+    "id": "a8149fa3-3a19-425c-afae-61df574fde25",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/129/problems/H1-M-093",
+      "headers": {},
+      "timestamp": 1765269398328
+    },
+    "totalDuration": 21,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "529",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:38 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 7,
+        "status": "복습 완료",
+        "last_answer": "$ y=\\frac{x+6}{3} $",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-093",
+          "type": "단일응답 주관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 3,
+            "primary": "함수와 그래프",
+            "secondary": "함수",
+            "specific": "역함수",
+            "category": "역함수 구하기",
+            "problem": "y=3x−6의 역함수를 구하시오.",
+            "tags": [
+              "역함수",
+              "변환"
+            ],
+            "hint": "역함수는 x와 y를 바꾼 뒤 풀면 됩니다.",
+            "explanation": "x↔y 바꾸고 y에 대해 정리."
+          }
+        }
+      },
+      "timestamp": 1765269398349
+    }
+  },
+  {
+    "id": "0104f684-7100-41c1-9a3f-ae149cca97e3",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/129/problems/H1-M-057",
+      "headers": {},
+      "timestamp": 1765269398382
+    },
+    "totalDuration": 26,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "593",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:38 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 6,
+        "status": "정답",
+        "last_answer": "$ 2 $",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-057",
+          "type": "단일응답 주관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 1,
+            "primary": "방정식과 부등식",
+            "secondary": "이차방정식과 이차함수",
+            "specific": "이차방정식과 이차함수의 관계",
+            "category": "교점 개수",
+            "problem": "(y=x^2−2x+1)과 직선 (y=3)의 교점의 개수는?",
+            "tags": [
+              "직선",
+              "교점"
+            ],
+            "hint": "연립 후 판별식으로 판단합니다.",
+            "explanation": "두 식을 연립하면 (x^2−2x−2=0), D>0 → 교점 2개."
+          }
+        }
+      },
+      "timestamp": 1765269398408
+    }
+  },
+  {
+    "id": "1aedf473-9ef9-4cab-8136-260184991635",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/129/problems/H1-M-001",
+      "headers": {},
+      "timestamp": 1765269398397
+    },
+    "totalDuration": 30,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "603",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:38 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 5,
+        "status": "복습 완료",
+        "last_answer": "2",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-001",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 1,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "(3x(2x + 4))의 값을 구하시오.",
+            "tags": [
+              "다항식",
+              "곱셈"
+            ],
+            "hint": "분배법칙을 이용하세요.",
+            "explanation": "(3x×2x + 3x×4 = 6x² + 12x)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "5x² + 4x"
+              },
+              {
+                "no": 2,
+                "inst": "6x² + 12x"
+              },
+              {
+                "no": 3,
+                "inst": "3x² + 4x"
+              },
+              {
+                "no": 4,
+                "inst": "6x + 12"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269398427
+    }
+  },
+  {
+    "id": "36783446-d382-49e6-a701-cc67d93ba5b4",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/132/problems/H1-M-002",
+      "headers": {},
+      "timestamp": 1765269398482
+    },
+    "totalDuration": 25,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "589",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:38 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 1,
+        "status": "복습 완료",
+        "last_answer": "2",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-002",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "((x + 3)(x + 5))의 전개식은?",
+            "tags": [
+              "다항식",
+              "전개"
+            ],
+            "hint": "FOIL 법칙 활용",
+            "explanation": "(x×x + 5x + 3x + 15)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 15"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 8x + 15"
+              },
+              {
+                "no": 3,
+                "inst": "x² + 5x + 8"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 3x + 15"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269398507
+    }
+  },
+  {
+    "id": "05dea58d-5e62-41ab-ad41-fb41ab10c5e3",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/161/problems/H1-M-018",
+      "headers": {},
+      "timestamp": 1765269398512
+    },
+    "totalDuration": 23,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "671",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:38 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 2,
+        "status": "오답",
+        "last_answer": "3",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-018",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "응용 계산",
+            "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+            "tags": [
+              "도형",
+              "다항식",
+              "활용"
+            ],
+            "hint": "실생활 연계 문제",
+            "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 2x + 2"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 4x + 4"
+              },
+              {
+                "no": 3,
+                "inst": "2x² + 4x"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 8x + 4"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269398535
+    }
+  },
+  {
+    "id": "aaf22ec8-9b36-435e-b5f8-f34efb3eb625",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/176/problems/H1-M-018",
+      "headers": {},
+      "timestamp": 1765269398571
+    },
+    "totalDuration": 25,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "679",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:38 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 2,
+        "status": "풀지 않음",
+        "last_answer": null,
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-018",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "응용 계산",
+            "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+            "tags": [
+              "도형",
+              "다항식",
+              "활용"
+            ],
+            "hint": "실생활 연계 문제",
+            "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 2x + 2"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 4x + 4"
+              },
+              {
+                "no": 3,
+                "inst": "2x² + 4x"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 8x + 4"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269398596
+    }
+  },
+  {
+    "id": "d769d92f-50b5-41ff-944d-a1666781830c",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/176/problems/H1-M-002",
+      "headers": {},
+      "timestamp": 1765269398571
+    },
+    "totalDuration": 25,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "589",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:38 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 1,
+        "status": "복습 완료",
+        "last_answer": "2",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-002",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "((x + 3)(x + 5))의 전개식은?",
+            "tags": [
+              "다항식",
+              "전개"
+            ],
+            "hint": "FOIL 법칙 활용",
+            "explanation": "(x×x + 5x + 3x + 15)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 15"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 8x + 15"
+              },
+              {
+                "no": 3,
+                "inst": "x² + 5x + 8"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 3x + 15"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269398596
+    }
+  },
+  {
+    "id": "e699c273-2416-4f67-8dc8-a42e9d7efc45",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/174",
+      "headers": {},
+      "timestamp": 1765269401346
+    },
+    "totalDuration": 24,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "156",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:41 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": 174,
+        "title": "문제 추천 요청",
+        "subject": "math",
+        "has_problem": true,
+        "has_active_goal": true,
+        "active_goal": {
+          "id": 65,
+          "goal_count": 1,
+          "solved_count": 0
+        }
+      },
+      "timestamp": 1765269401370
+    }
+  },
+  {
+    "id": "7a274411-eda7-4a40-9078-9506c1de164c",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/174/problems/H1-M-002",
+      "headers": {},
+      "timestamp": 1765269401346
+    },
+    "totalDuration": 23,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "590",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:41 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 1,
+        "status": "풀지 않음",
+        "last_answer": null,
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-002",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "((x + 3)(x + 5))의 전개식은?",
+            "tags": [
+              "다항식",
+              "전개"
+            ],
+            "hint": "FOIL 법칙 활용",
+            "explanation": "(x×x + 5x + 3x + 15)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 15"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 8x + 15"
+              },
+              {
+                "no": 3,
+                "inst": "x² + 5x + 8"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 3x + 15"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269401369
+    }
+  },
+  {
+    "id": "9a465898-cf80-47d5-9532-6ba164ff354b",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/problem-bookmarks?subject=math&size=12",
+      "headers": {},
+      "timestamp": 1765269401346
+    },
+    "totalDuration": 44,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "6903",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:41 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "items": [
+          {
+            "bookmarked_at": "2025-12-09T17:36:27+09:00",
+            "chat": {
+              "id": 174,
+              "has_active_goal": true
+            },
+            "problem": {
+              "number": 1,
+              "status": "풀지 않음",
+              "last_answer": null,
+              "problem_info": {
+                "id": "H1-M-002",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "곱셈 계산",
+                  "problem": "((x + 3)(x + 5))의 전개식은?",
+                  "tags": [
+                    "다항식",
+                    "전개"
+                  ],
+                  "hint": "FOIL 법칙 활용",
+                  "explanation": "(x×x + 5x + 3x + 15)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 15"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 8x + 15"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "x² + 5x + 8"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 3x + 15"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T17:36:24+09:00",
+            "chat": {
+              "id": 174,
+              "has_active_goal": true
+            },
+            "problem": {
+              "number": 2,
+              "status": "풀지 않음",
+              "last_answer": null,
+              "problem_info": {
+                "id": "H1-M-018",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "응용 계산",
+                  "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+                  "tags": [
+                    "도형",
+                    "다항식",
+                    "활용"
+                  ],
+                  "hint": "실생활 연계 문제",
+                  "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 2x + 2"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 4x + 4"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "2x² + 4x"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 8x + 4"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:50:19+09:00",
+            "chat": {
+              "id": 129,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 3,
+              "status": "복습 완료",
+              "last_answer": "1",
+              "problem_info": {
+                "id": "H1-M-004",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "곱셈 계산",
+                  "problem": "((x - 2)(x + 1))의 전개식은?",
+                  "tags": [
+                    "다항식",
+                    "전개"
+                  ],
+                  "hint": "FOIL 적용",
+                  "explanation": "(x² - x - 2)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² - x - 2"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² - x + 2"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "x² + x - 2"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 3x + 2"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:39:52+09:00",
+            "chat": {
+              "id": 129,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 7,
+              "status": "복습 완료",
+              "last_answer": "$ y=\\frac{x+6}{3} $",
+              "problem_info": {
+                "id": "H1-M-093",
+                "type": "단일응답 주관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 3,
+                  "primary": "함수와 그래프",
+                  "secondary": "함수",
+                  "specific": "역함수",
+                  "category": "역함수 구하기",
+                  "problem": "y=3x−6의 역함수를 구하시오.",
+                  "tags": [
+                    "역함수",
+                    "변환"
+                  ],
+                  "hint": "역함수는 x와 y를 바꾼 뒤 풀면 됩니다.",
+                  "explanation": "x↔y 바꾸고 y에 대해 정리."
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:39:50+09:00",
+            "chat": {
+              "id": 129,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 6,
+              "status": "정답",
+              "last_answer": "$ 2 $",
+              "problem_info": {
+                "id": "H1-M-057",
+                "type": "단일응답 주관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 1,
+                  "primary": "방정식과 부등식",
+                  "secondary": "이차방정식과 이차함수",
+                  "specific": "이차방정식과 이차함수의 관계",
+                  "category": "교점 개수",
+                  "problem": "(y=x^2−2x+1)과 직선 (y=3)의 교점의 개수는?",
+                  "tags": [
+                    "직선",
+                    "교점"
+                  ],
+                  "hint": "연립 후 판별식으로 판단합니다.",
+                  "explanation": "두 식을 연립하면 (x^2−2x−2=0), D>0 → 교점 2개."
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:39:48+09:00",
+            "chat": {
+              "id": 129,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 5,
+              "status": "복습 완료",
+              "last_answer": "2",
+              "problem_info": {
+                "id": "H1-M-001",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 1,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "곱셈 계산",
+                  "problem": "(3x(2x + 4))의 값을 구하시오.",
+                  "tags": [
+                    "다항식",
+                    "곱셈"
+                  ],
+                  "hint": "분배법칙을 이용하세요.",
+                  "explanation": "(3x×2x + 3x×4 = 6x² + 12x)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "5x² + 4x"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "6x² + 12x"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "3x² + 4x"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "6x + 12"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:39:08+09:00",
+            "chat": {
+              "id": 132,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 1,
+              "status": "복습 완료",
+              "last_answer": "2",
+              "problem_info": {
+                "id": "H1-M-002",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "곱셈 계산",
+                  "problem": "((x + 3)(x + 5))의 전개식은?",
+                  "tags": [
+                    "다항식",
+                    "전개"
+                  ],
+                  "hint": "FOIL 법칙 활용",
+                  "explanation": "(x×x + 5x + 3x + 15)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 15"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 8x + 15"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "x² + 5x + 8"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 3x + 15"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:37:40+09:00",
+            "chat": {
+              "id": 161,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 2,
+              "status": "오답",
+              "last_answer": "3",
+              "problem_info": {
+                "id": "H1-M-018",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "응용 계산",
+                  "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+                  "tags": [
+                    "도형",
+                    "다항식",
+                    "활용"
+                  ],
+                  "hint": "실생활 연계 문제",
+                  "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 2x + 2"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 4x + 4"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "2x² + 4x"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 8x + 4"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:28:43+09:00",
+            "chat": {
+              "id": 176,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 2,
+              "status": "풀지 않음",
+              "last_answer": null,
+              "problem_info": {
+                "id": "H1-M-018",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "응용 계산",
+                  "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+                  "tags": [
+                    "도형",
+                    "다항식",
+                    "활용"
+                  ],
+                  "hint": "실생활 연계 문제",
+                  "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 2x + 2"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 4x + 4"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "2x² + 4x"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 8x + 4"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:28:41+09:00",
+            "chat": {
+              "id": 176,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 1,
+              "status": "복습 완료",
+              "last_answer": "2",
+              "problem_info": {
+                "id": "H1-M-002",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "곱셈 계산",
+                  "problem": "((x + 3)(x + 5))의 전개식은?",
+                  "tags": [
+                    "다항식",
+                    "전개"
+                  ],
+                  "hint": "FOIL 법칙 활용",
+                  "explanation": "(x×x + 5x + 3x + 15)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 15"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 8x + 15"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "x² + 5x + 8"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 3x + 15"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "next_cursor": null
+      },
+      "timestamp": 1765269401390
+    }
+  },
+  {
+    "id": "cfdbe6ff-4d6c-4dab-8841-1608c4bff329",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats/174/problems/H1-M-002/submit",
+      "headers": {},
+      "timestamp": 1765269404913
+    },
+    "totalDuration": 39,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "39",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:45 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "is_correct": false,
+        "active_goal": null
+      },
+      "timestamp": 1765269404952
+    }
+  },
+  {
+    "id": "67fc28f8-8a0b-4a1d-b658-7f4e1612d99c",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/174/problems/H1-M-002",
+      "headers": {},
+      "timestamp": 1765269404955
+    },
+    "totalDuration": 29,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "582",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:45 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 1,
+        "status": "오답",
+        "last_answer": "1",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-002",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "((x + 3)(x + 5))의 전개식은?",
+            "tags": [
+              "다항식",
+              "전개"
+            ],
+            "hint": "FOIL 법칙 활용",
+            "explanation": "(x×x + 5x + 3x + 15)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 15"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 8x + 15"
+              },
+              {
+                "no": 3,
+                "inst": "x² + 5x + 8"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 3x + 15"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269404984
+    }
+  },
+  {
+    "id": "0e668254-bdf8-41c0-af07-7b18a04a8aa0",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/174/problems/H1-M-018",
+      "headers": {},
+      "timestamp": 1765269404955
+    },
+    "totalDuration": 30,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "679",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:45 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 2,
+        "status": "풀지 않음",
+        "last_answer": null,
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-018",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "응용 계산",
+            "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+            "tags": [
+              "도형",
+              "다항식",
+              "활용"
+            ],
+            "hint": "실생활 연계 문제",
+            "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 2x + 2"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 4x + 4"
+              },
+              {
+                "no": 3,
+                "inst": "2x² + 4x"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 8x + 4"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269404985
+    }
+  },
+  {
+    "id": "fdedb014-3d9e-4d5a-9ffb-e087b386ab46",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/129/problems/H1-M-004",
+      "headers": {},
+      "timestamp": 1765269404955
+    },
+    "totalDuration": 29,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "573",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:45 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 3,
+        "status": "복습 완료",
+        "last_answer": "1",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-004",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "((x - 2)(x + 1))의 전개식은?",
+            "tags": [
+              "다항식",
+              "전개"
+            ],
+            "hint": "FOIL 적용",
+            "explanation": "(x² - x - 2)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² - x - 2"
+              },
+              {
+                "no": 2,
+                "inst": "x² - x + 2"
+              },
+              {
+                "no": 3,
+                "inst": "x² + x - 2"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 3x + 2"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269404984
+    }
+  },
+  {
+    "id": "3f740b50-3d9b-4850-b47c-1fcc3bea7ea4",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/129/problems/H1-M-093",
+      "headers": {},
+      "timestamp": 1765269404955
+    },
+    "totalDuration": 46,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "529",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:45 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 7,
+        "status": "복습 완료",
+        "last_answer": "$ y=\\frac{x+6}{3} $",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-093",
+          "type": "단일응답 주관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 3,
+            "primary": "함수와 그래프",
+            "secondary": "함수",
+            "specific": "역함수",
+            "category": "역함수 구하기",
+            "problem": "y=3x−6의 역함수를 구하시오.",
+            "tags": [
+              "역함수",
+              "변환"
+            ],
+            "hint": "역함수는 x와 y를 바꾼 뒤 풀면 됩니다.",
+            "explanation": "x↔y 바꾸고 y에 대해 정리."
+          }
+        }
+      },
+      "timestamp": 1765269405001
+    }
+  },
+  {
+    "id": "e4d4d46f-fc39-4c30-a58c-5e9139147fcf",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/129/problems/H1-M-057",
+      "headers": {},
+      "timestamp": 1765269404955
+    },
+    "totalDuration": 47,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "593",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:45 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 6,
+        "status": "정답",
+        "last_answer": "$ 2 $",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-057",
+          "type": "단일응답 주관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 1,
+            "primary": "방정식과 부등식",
+            "secondary": "이차방정식과 이차함수",
+            "specific": "이차방정식과 이차함수의 관계",
+            "category": "교점 개수",
+            "problem": "(y=x^2−2x+1)과 직선 (y=3)의 교점의 개수는?",
+            "tags": [
+              "직선",
+              "교점"
+            ],
+            "hint": "연립 후 판별식으로 판단합니다.",
+            "explanation": "두 식을 연립하면 (x^2−2x−2=0), D>0 → 교점 2개."
+          }
+        }
+      },
+      "timestamp": 1765269405002
+    }
+  },
+  {
+    "id": "1196c9b6-57cd-40fa-9052-6fa761ce98f1",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/129/problems/H1-M-001",
+      "headers": {},
+      "timestamp": 1765269404955
+    },
+    "totalDuration": 47,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "603",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:45 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 5,
+        "status": "복습 완료",
+        "last_answer": "2",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-001",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 1,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "(3x(2x + 4))의 값을 구하시오.",
+            "tags": [
+              "다항식",
+              "곱셈"
+            ],
+            "hint": "분배법칙을 이용하세요.",
+            "explanation": "(3x×2x + 3x×4 = 6x² + 12x)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "5x² + 4x"
+              },
+              {
+                "no": 2,
+                "inst": "6x² + 12x"
+              },
+              {
+                "no": 3,
+                "inst": "3x² + 4x"
+              },
+              {
+                "no": 4,
+                "inst": "6x + 12"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269405002
+    }
+  },
+  {
+    "id": "02697530-8091-45e0-b600-9cae7fdc7c0b",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/132/problems/H1-M-002",
+      "headers": {},
+      "timestamp": 1765269404955
+    },
+    "totalDuration": 62,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "589",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:45 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 1,
+        "status": "복습 완료",
+        "last_answer": "2",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-002",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "((x + 3)(x + 5))의 전개식은?",
+            "tags": [
+              "다항식",
+              "전개"
+            ],
+            "hint": "FOIL 법칙 활용",
+            "explanation": "(x×x + 5x + 3x + 15)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 15"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 8x + 15"
+              },
+              {
+                "no": 3,
+                "inst": "x² + 5x + 8"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 3x + 15"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269405017
+    }
+  },
+  {
+    "id": "c68b0335-30aa-415a-b349-9ee6fec9ed73",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/161/problems/H1-M-018",
+      "headers": {},
+      "timestamp": 1765269404955
+    },
+    "totalDuration": 62,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "671",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:45 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 2,
+        "status": "오답",
+        "last_answer": "3",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-018",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "응용 계산",
+            "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+            "tags": [
+              "도형",
+              "다항식",
+              "활용"
+            ],
+            "hint": "실생활 연계 문제",
+            "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 2x + 2"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 4x + 4"
+              },
+              {
+                "no": 3,
+                "inst": "2x² + 4x"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 8x + 4"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269405017
+    }
+  },
+  {
+    "id": "94dbe5e9-322b-4919-a7b6-39c80f96fb92",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/176/problems/H1-M-018",
+      "headers": {},
+      "timestamp": 1765269404955
+    },
+    "totalDuration": 62,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "679",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:45 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 2,
+        "status": "풀지 않음",
+        "last_answer": null,
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-018",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "응용 계산",
+            "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+            "tags": [
+              "도형",
+              "다항식",
+              "활용"
+            ],
+            "hint": "실생활 연계 문제",
+            "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 2x + 2"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 4x + 4"
+              },
+              {
+                "no": 3,
+                "inst": "2x² + 4x"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 8x + 4"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269405017
+    }
+  },
+  {
+    "id": "78003fcd-a980-498d-89d2-f13e5c5fa868",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/176/problems/H1-M-002",
+      "headers": {},
+      "timestamp": 1765269404955
+    },
+    "totalDuration": 65,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "589",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:45 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 1,
+        "status": "복습 완료",
+        "last_answer": "2",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-002",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "((x + 3)(x + 5))의 전개식은?",
+            "tags": [
+              "다항식",
+              "전개"
+            ],
+            "hint": "FOIL 법칙 활용",
+            "explanation": "(x×x + 5x + 3x + 15)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 15"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 8x + 15"
+              },
+              {
+                "no": 3,
+                "inst": "x² + 5x + 8"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 3x + 15"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269405020
+    }
+  },
+  {
+    "id": "08d4b7c9-1d96-415f-8945-e4f6d972aebf",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/174",
+      "headers": {},
+      "timestamp": 1765269404955
+    },
+    "totalDuration": 67,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "156",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:45 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": 174,
+        "title": "문제 추천 요청",
+        "subject": "math",
+        "has_problem": true,
+        "has_active_goal": true,
+        "active_goal": {
+          "id": 65,
+          "goal_count": 1,
+          "solved_count": 0
+        }
+      },
+      "timestamp": 1765269405022
+    }
+  },
+  {
+    "id": "1f4022ee-d098-4889-9845-bca0835d6142",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/problem-bookmarks?subject=math&size=12",
+      "headers": {},
+      "timestamp": 1765269405023
+    },
+    "totalDuration": 27,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "6895",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:45 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "items": [
+          {
+            "bookmarked_at": "2025-12-09T17:36:27+09:00",
+            "chat": {
+              "id": 174,
+              "has_active_goal": true
+            },
+            "problem": {
+              "number": 1,
+              "status": "오답",
+              "last_answer": "1",
+              "problem_info": {
+                "id": "H1-M-002",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "곱셈 계산",
+                  "problem": "((x + 3)(x + 5))의 전개식은?",
+                  "tags": [
+                    "다항식",
+                    "전개"
+                  ],
+                  "hint": "FOIL 법칙 활용",
+                  "explanation": "(x×x + 5x + 3x + 15)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 15"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 8x + 15"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "x² + 5x + 8"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 3x + 15"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T17:36:24+09:00",
+            "chat": {
+              "id": 174,
+              "has_active_goal": true
+            },
+            "problem": {
+              "number": 2,
+              "status": "풀지 않음",
+              "last_answer": null,
+              "problem_info": {
+                "id": "H1-M-018",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "응용 계산",
+                  "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+                  "tags": [
+                    "도형",
+                    "다항식",
+                    "활용"
+                  ],
+                  "hint": "실생활 연계 문제",
+                  "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 2x + 2"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 4x + 4"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "2x² + 4x"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 8x + 4"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:50:19+09:00",
+            "chat": {
+              "id": 129,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 3,
+              "status": "복습 완료",
+              "last_answer": "1",
+              "problem_info": {
+                "id": "H1-M-004",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "곱셈 계산",
+                  "problem": "((x - 2)(x + 1))의 전개식은?",
+                  "tags": [
+                    "다항식",
+                    "전개"
+                  ],
+                  "hint": "FOIL 적용",
+                  "explanation": "(x² - x - 2)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² - x - 2"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² - x + 2"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "x² + x - 2"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 3x + 2"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:39:52+09:00",
+            "chat": {
+              "id": 129,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 7,
+              "status": "복습 완료",
+              "last_answer": "$ y=\\frac{x+6}{3} $",
+              "problem_info": {
+                "id": "H1-M-093",
+                "type": "단일응답 주관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 3,
+                  "primary": "함수와 그래프",
+                  "secondary": "함수",
+                  "specific": "역함수",
+                  "category": "역함수 구하기",
+                  "problem": "y=3x−6의 역함수를 구하시오.",
+                  "tags": [
+                    "역함수",
+                    "변환"
+                  ],
+                  "hint": "역함수는 x와 y를 바꾼 뒤 풀면 됩니다.",
+                  "explanation": "x↔y 바꾸고 y에 대해 정리."
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:39:50+09:00",
+            "chat": {
+              "id": 129,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 6,
+              "status": "정답",
+              "last_answer": "$ 2 $",
+              "problem_info": {
+                "id": "H1-M-057",
+                "type": "단일응답 주관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 1,
+                  "primary": "방정식과 부등식",
+                  "secondary": "이차방정식과 이차함수",
+                  "specific": "이차방정식과 이차함수의 관계",
+                  "category": "교점 개수",
+                  "problem": "(y=x^2−2x+1)과 직선 (y=3)의 교점의 개수는?",
+                  "tags": [
+                    "직선",
+                    "교점"
+                  ],
+                  "hint": "연립 후 판별식으로 판단합니다.",
+                  "explanation": "두 식을 연립하면 (x^2−2x−2=0), D>0 → 교점 2개."
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:39:48+09:00",
+            "chat": {
+              "id": 129,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 5,
+              "status": "복습 완료",
+              "last_answer": "2",
+              "problem_info": {
+                "id": "H1-M-001",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 1,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "곱셈 계산",
+                  "problem": "(3x(2x + 4))의 값을 구하시오.",
+                  "tags": [
+                    "다항식",
+                    "곱셈"
+                  ],
+                  "hint": "분배법칙을 이용하세요.",
+                  "explanation": "(3x×2x + 3x×4 = 6x² + 12x)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "5x² + 4x"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "6x² + 12x"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "3x² + 4x"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "6x + 12"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:39:08+09:00",
+            "chat": {
+              "id": 132,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 1,
+              "status": "복습 완료",
+              "last_answer": "2",
+              "problem_info": {
+                "id": "H1-M-002",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "곱셈 계산",
+                  "problem": "((x + 3)(x + 5))의 전개식은?",
+                  "tags": [
+                    "다항식",
+                    "전개"
+                  ],
+                  "hint": "FOIL 법칙 활용",
+                  "explanation": "(x×x + 5x + 3x + 15)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 15"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 8x + 15"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "x² + 5x + 8"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 3x + 15"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:37:40+09:00",
+            "chat": {
+              "id": 161,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 2,
+              "status": "오답",
+              "last_answer": "3",
+              "problem_info": {
+                "id": "H1-M-018",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "응용 계산",
+                  "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+                  "tags": [
+                    "도형",
+                    "다항식",
+                    "활용"
+                  ],
+                  "hint": "실생활 연계 문제",
+                  "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 2x + 2"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 4x + 4"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "2x² + 4x"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 8x + 4"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:28:43+09:00",
+            "chat": {
+              "id": 176,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 2,
+              "status": "풀지 않음",
+              "last_answer": null,
+              "problem_info": {
+                "id": "H1-M-018",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "응용 계산",
+                  "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+                  "tags": [
+                    "도형",
+                    "다항식",
+                    "활용"
+                  ],
+                  "hint": "실생활 연계 문제",
+                  "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 2x + 2"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 4x + 4"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "2x² + 4x"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 8x + 4"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:28:41+09:00",
+            "chat": {
+              "id": 176,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 1,
+              "status": "복습 완료",
+              "last_answer": "2",
+              "problem_info": {
+                "id": "H1-M-002",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "곱셈 계산",
+                  "problem": "((x + 3)(x + 5))의 전개식은?",
+                  "tags": [
+                    "다항식",
+                    "전개"
+                  ],
+                  "hint": "FOIL 법칙 활용",
+                  "explanation": "(x×x + 5x + 3x + 15)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 15"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 8x + 15"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "x² + 5x + 8"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 3x + 15"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "next_cursor": null
+      },
+      "timestamp": 1765269405050
+    }
+  },
+  {
+    "id": "6692181c-0195-46f8-a6fd-fd0bd4bc9d1c",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats/174/problems/H1-M-002/submit",
+      "headers": {},
+      "timestamp": 1765269407156
+    },
+    "totalDuration": 28,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "75",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:47 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "is_correct": true,
+        "active_goal": {
+          "id": 65,
+          "goal_count": 1,
+          "solved_count": 1
+        }
+      },
+      "timestamp": 1765269407184
+    }
+  },
+  {
+    "id": "352423c4-a009-4f19-8e9d-66c251652cb8",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/174/problems/H1-M-002",
+      "headers": {},
+      "timestamp": 1765269407186
+    },
+    "totalDuration": 34,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "589",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:47 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 1,
+        "status": "복습 완료",
+        "last_answer": "2",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-002",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "((x + 3)(x + 5))의 전개식은?",
+            "tags": [
+              "다항식",
+              "전개"
+            ],
+            "hint": "FOIL 법칙 활용",
+            "explanation": "(x×x + 5x + 3x + 15)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 15"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 8x + 15"
+              },
+              {
+                "no": 3,
+                "inst": "x² + 5x + 8"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 3x + 15"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269407220
+    }
+  },
+  {
+    "id": "64d8131c-6ba3-455e-8b6e-cc9f280237cd",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/174/problems/H1-M-018",
+      "headers": {},
+      "timestamp": 1765269407186
+    },
+    "totalDuration": 36,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "679",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:47 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 2,
+        "status": "풀지 않음",
+        "last_answer": null,
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-018",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "응용 계산",
+            "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+            "tags": [
+              "도형",
+              "다항식",
+              "활용"
+            ],
+            "hint": "실생활 연계 문제",
+            "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 2x + 2"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 4x + 4"
+              },
+              {
+                "no": 3,
+                "inst": "2x² + 4x"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 8x + 4"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269407222
+    }
+  },
+  {
+    "id": "2c24c8aa-303b-4dc6-84a1-98ff467425ae",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/129/problems/H1-M-004",
+      "headers": {},
+      "timestamp": 1765269407186
+    },
+    "totalDuration": 52,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "573",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:47 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 3,
+        "status": "복습 완료",
+        "last_answer": "1",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-004",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "((x - 2)(x + 1))의 전개식은?",
+            "tags": [
+              "다항식",
+              "전개"
+            ],
+            "hint": "FOIL 적용",
+            "explanation": "(x² - x - 2)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² - x - 2"
+              },
+              {
+                "no": 2,
+                "inst": "x² - x + 2"
+              },
+              {
+                "no": 3,
+                "inst": "x² + x - 2"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 3x + 2"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269407238
+    }
+  },
+  {
+    "id": "04f42e20-964c-4a0e-8f2a-d63edea109f6",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/129/problems/H1-M-093",
+      "headers": {},
+      "timestamp": 1765269407186
+    },
+    "totalDuration": 52,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "529",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:47 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 7,
+        "status": "복습 완료",
+        "last_answer": "$ y=\\frac{x+6}{3} $",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-093",
+          "type": "단일응답 주관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 3,
+            "primary": "함수와 그래프",
+            "secondary": "함수",
+            "specific": "역함수",
+            "category": "역함수 구하기",
+            "problem": "y=3x−6의 역함수를 구하시오.",
+            "tags": [
+              "역함수",
+              "변환"
+            ],
+            "hint": "역함수는 x와 y를 바꾼 뒤 풀면 됩니다.",
+            "explanation": "x↔y 바꾸고 y에 대해 정리."
+          }
+        }
+      },
+      "timestamp": 1765269407238
+    }
+  },
+  {
+    "id": "19874c7e-b468-4811-8592-9900986a535b",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/129/problems/H1-M-057",
+      "headers": {},
+      "timestamp": 1765269407186
+    },
+    "totalDuration": 52,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "593",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:47 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 6,
+        "status": "정답",
+        "last_answer": "$ 2 $",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-057",
+          "type": "단일응답 주관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 1,
+            "primary": "방정식과 부등식",
+            "secondary": "이차방정식과 이차함수",
+            "specific": "이차방정식과 이차함수의 관계",
+            "category": "교점 개수",
+            "problem": "(y=x^2−2x+1)과 직선 (y=3)의 교점의 개수는?",
+            "tags": [
+              "직선",
+              "교점"
+            ],
+            "hint": "연립 후 판별식으로 판단합니다.",
+            "explanation": "두 식을 연립하면 (x^2−2x−2=0), D>0 → 교점 2개."
+          }
+        }
+      },
+      "timestamp": 1765269407238
+    }
+  },
+  {
+    "id": "a617b5ee-f96d-4e4d-a828-0bbaad750b28",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/129/problems/H1-M-001",
+      "headers": {},
+      "timestamp": 1765269407186
+    },
+    "totalDuration": 54,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "603",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:47 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 5,
+        "status": "복습 완료",
+        "last_answer": "2",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-001",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 1,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "(3x(2x + 4))의 값을 구하시오.",
+            "tags": [
+              "다항식",
+              "곱셈"
+            ],
+            "hint": "분배법칙을 이용하세요.",
+            "explanation": "(3x×2x + 3x×4 = 6x² + 12x)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "5x² + 4x"
+              },
+              {
+                "no": 2,
+                "inst": "6x² + 12x"
+              },
+              {
+                "no": 3,
+                "inst": "3x² + 4x"
+              },
+              {
+                "no": 4,
+                "inst": "6x + 12"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269407240
+    }
+  },
+  {
+    "id": "bbed97dc-9b39-49d1-bb42-0997dff69886",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/132/problems/H1-M-002",
+      "headers": {},
+      "timestamp": 1765269407186
+    },
+    "totalDuration": 61,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "589",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:47 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 1,
+        "status": "복습 완료",
+        "last_answer": "2",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-002",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "((x + 3)(x + 5))의 전개식은?",
+            "tags": [
+              "다항식",
+              "전개"
+            ],
+            "hint": "FOIL 법칙 활용",
+            "explanation": "(x×x + 5x + 3x + 15)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 15"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 8x + 15"
+              },
+              {
+                "no": 3,
+                "inst": "x² + 5x + 8"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 3x + 15"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269407247
+    }
+  },
+  {
+    "id": "ab50e102-d403-4009-be93-6062e8ca3e7c",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/161/problems/H1-M-018",
+      "headers": {},
+      "timestamp": 1765269407186
+    },
+    "totalDuration": 68,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "671",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:47 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 2,
+        "status": "오답",
+        "last_answer": "3",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-018",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "응용 계산",
+            "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+            "tags": [
+              "도형",
+              "다항식",
+              "활용"
+            ],
+            "hint": "실생활 연계 문제",
+            "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 2x + 2"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 4x + 4"
+              },
+              {
+                "no": 3,
+                "inst": "2x² + 4x"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 8x + 4"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269407254
+    }
+  },
+  {
+    "id": "7ac6ff71-0c4d-4577-8149-f058b292b751",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/176/problems/H1-M-018",
+      "headers": {},
+      "timestamp": 1765269407186
+    },
+    "totalDuration": 71,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "679",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:47 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 2,
+        "status": "풀지 않음",
+        "last_answer": null,
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-018",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "응용 계산",
+            "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+            "tags": [
+              "도형",
+              "다항식",
+              "활용"
+            ],
+            "hint": "실생활 연계 문제",
+            "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 2x + 2"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 4x + 4"
+              },
+              {
+                "no": 3,
+                "inst": "2x² + 4x"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 8x + 4"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269407257
+    }
+  },
+  {
+    "id": "a019c623-0c3f-4edf-b608-a65e84671bf8",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/176/problems/H1-M-002",
+      "headers": {},
+      "timestamp": 1765269407186
+    },
+    "totalDuration": 70,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "589",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:47 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 1,
+        "status": "복습 완료",
+        "last_answer": "2",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-002",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "곱셈 계산",
+            "problem": "((x + 3)(x + 5))의 전개식은?",
+            "tags": [
+              "다항식",
+              "전개"
+            ],
+            "hint": "FOIL 법칙 활용",
+            "explanation": "(x×x + 5x + 3x + 15)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 15"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 8x + 15"
+              },
+              {
+                "no": 3,
+                "inst": "x² + 5x + 8"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 3x + 15"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269407256
+    }
+  },
+  {
+    "id": "6260152d-f1d4-44d1-9a9b-60dd7888a5cd",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/174",
+      "headers": {},
+      "timestamp": 1765269407186
+    },
+    "totalDuration": 71,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "120",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:47 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": 174,
+        "title": "문제 추천 요청",
+        "subject": "math",
+        "has_problem": true,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1765269407257
+    }
+  },
+  {
+    "id": "255d8f46-c770-4e8e-b831-2625d0139396",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/problem-bookmarks?subject=math&size=12",
+      "headers": {},
+      "timestamp": 1765269407258
+    },
+    "totalDuration": 28,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "6904",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:47 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "items": [
+          {
+            "bookmarked_at": "2025-12-09T17:36:27+09:00",
+            "chat": {
+              "id": 174,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 1,
+              "status": "복습 완료",
+              "last_answer": "2",
+              "problem_info": {
+                "id": "H1-M-002",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "곱셈 계산",
+                  "problem": "((x + 3)(x + 5))의 전개식은?",
+                  "tags": [
+                    "다항식",
+                    "전개"
+                  ],
+                  "hint": "FOIL 법칙 활용",
+                  "explanation": "(x×x + 5x + 3x + 15)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 15"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 8x + 15"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "x² + 5x + 8"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 3x + 15"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T17:36:24+09:00",
+            "chat": {
+              "id": 174,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 2,
+              "status": "풀지 않음",
+              "last_answer": null,
+              "problem_info": {
+                "id": "H1-M-018",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "응용 계산",
+                  "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+                  "tags": [
+                    "도형",
+                    "다항식",
+                    "활용"
+                  ],
+                  "hint": "실생활 연계 문제",
+                  "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 2x + 2"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 4x + 4"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "2x² + 4x"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 8x + 4"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:50:19+09:00",
+            "chat": {
+              "id": 129,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 3,
+              "status": "복습 완료",
+              "last_answer": "1",
+              "problem_info": {
+                "id": "H1-M-004",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "곱셈 계산",
+                  "problem": "((x - 2)(x + 1))의 전개식은?",
+                  "tags": [
+                    "다항식",
+                    "전개"
+                  ],
+                  "hint": "FOIL 적용",
+                  "explanation": "(x² - x - 2)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² - x - 2"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² - x + 2"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "x² + x - 2"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 3x + 2"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:39:52+09:00",
+            "chat": {
+              "id": 129,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 7,
+              "status": "복습 완료",
+              "last_answer": "$ y=\\frac{x+6}{3} $",
+              "problem_info": {
+                "id": "H1-M-093",
+                "type": "단일응답 주관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 3,
+                  "primary": "함수와 그래프",
+                  "secondary": "함수",
+                  "specific": "역함수",
+                  "category": "역함수 구하기",
+                  "problem": "y=3x−6의 역함수를 구하시오.",
+                  "tags": [
+                    "역함수",
+                    "변환"
+                  ],
+                  "hint": "역함수는 x와 y를 바꾼 뒤 풀면 됩니다.",
+                  "explanation": "x↔y 바꾸고 y에 대해 정리."
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:39:50+09:00",
+            "chat": {
+              "id": 129,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 6,
+              "status": "정답",
+              "last_answer": "$ 2 $",
+              "problem_info": {
+                "id": "H1-M-057",
+                "type": "단일응답 주관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 1,
+                  "primary": "방정식과 부등식",
+                  "secondary": "이차방정식과 이차함수",
+                  "specific": "이차방정식과 이차함수의 관계",
+                  "category": "교점 개수",
+                  "problem": "(y=x^2−2x+1)과 직선 (y=3)의 교점의 개수는?",
+                  "tags": [
+                    "직선",
+                    "교점"
+                  ],
+                  "hint": "연립 후 판별식으로 판단합니다.",
+                  "explanation": "두 식을 연립하면 (x^2−2x−2=0), D>0 → 교점 2개."
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:39:48+09:00",
+            "chat": {
+              "id": 129,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 5,
+              "status": "복습 완료",
+              "last_answer": "2",
+              "problem_info": {
+                "id": "H1-M-001",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 1,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "곱셈 계산",
+                  "problem": "(3x(2x + 4))의 값을 구하시오.",
+                  "tags": [
+                    "다항식",
+                    "곱셈"
+                  ],
+                  "hint": "분배법칙을 이용하세요.",
+                  "explanation": "(3x×2x + 3x×4 = 6x² + 12x)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "5x² + 4x"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "6x² + 12x"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "3x² + 4x"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "6x + 12"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:39:08+09:00",
+            "chat": {
+              "id": 132,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 1,
+              "status": "복습 완료",
+              "last_answer": "2",
+              "problem_info": {
+                "id": "H1-M-002",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "곱셈 계산",
+                  "problem": "((x + 3)(x + 5))의 전개식은?",
+                  "tags": [
+                    "다항식",
+                    "전개"
+                  ],
+                  "hint": "FOIL 법칙 활용",
+                  "explanation": "(x×x + 5x + 3x + 15)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 15"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 8x + 15"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "x² + 5x + 8"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 3x + 15"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:37:40+09:00",
+            "chat": {
+              "id": 161,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 2,
+              "status": "오답",
+              "last_answer": "3",
+              "problem_info": {
+                "id": "H1-M-018",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "응용 계산",
+                  "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+                  "tags": [
+                    "도형",
+                    "다항식",
+                    "활용"
+                  ],
+                  "hint": "실생활 연계 문제",
+                  "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 2x + 2"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 4x + 4"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "2x² + 4x"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 8x + 4"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:28:43+09:00",
+            "chat": {
+              "id": 176,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 2,
+              "status": "풀지 않음",
+              "last_answer": null,
+              "problem_info": {
+                "id": "H1-M-018",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "응용 계산",
+                  "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+                  "tags": [
+                    "도형",
+                    "다항식",
+                    "활용"
+                  ],
+                  "hint": "실생활 연계 문제",
+                  "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 2x + 2"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 4x + 4"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "2x² + 4x"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 8x + 4"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "bookmarked_at": "2025-12-09T16:28:41+09:00",
+            "chat": {
+              "id": 176,
+              "has_active_goal": false
+            },
+            "problem": {
+              "number": 1,
+              "status": "복습 완료",
+              "last_answer": "2",
+              "problem_info": {
+                "id": "H1-M-002",
+                "type": "단일선택 객관식",
+                "content": {
+                  "subject": "math",
+                  "grade": 10,
+                  "semester": null,
+                  "level": 2,
+                  "primary": "다항식",
+                  "secondary": "다항식",
+                  "specific": "다항식의 곱셈",
+                  "category": "곱셈 계산",
+                  "problem": "((x + 3)(x + 5))의 전개식은?",
+                  "tags": [
+                    "다항식",
+                    "전개"
+                  ],
+                  "hint": "FOIL 법칙 활용",
+                  "explanation": "(x×x + 5x + 3x + 15)",
+                  "choices": [
+                    {
+                      "no": 1,
+                      "inst": "x² + 15"
+                    },
+                    {
+                      "no": 2,
+                      "inst": "x² + 8x + 15"
+                    },
+                    {
+                      "no": 3,
+                      "inst": "x² + 5x + 8"
+                    },
+                    {
+                      "no": 4,
+                      "inst": "x² + 3x + 15"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "next_cursor": null
+      },
+      "timestamp": 1765269407286
+    }
+  },
+  {
+    "id": "9e6a3956-6527-4e4c-a75b-5f577bef5c8b",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/174",
+      "headers": {},
+      "timestamp": 1765269409263
+    },
+    "totalDuration": 26,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "120",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:49 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": 174,
+        "title": "문제 추천 요청",
+        "subject": "math",
+        "has_problem": true,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1765269409289
+    }
+  },
+  {
+    "id": "af53da75-307b-485c-a088-d39618e728db",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/174/problems/H1-M-018",
+      "headers": {},
+      "timestamp": 1765269410934
+    },
+    "totalDuration": 30,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "679",
+        "content-type": "application/json",
+        "date": "Tue, 09 Dec 2025 08:36:50 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 2,
+        "status": "풀지 않음",
+        "last_answer": null,
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-018",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 2,
+            "primary": "다항식",
+            "secondary": "다항식",
+            "specific": "다항식의 곱셈",
+            "category": "응용 계산",
+            "problem": "정사각형의 한 변의 길이가 ((x + 2))일 때, 정사각형의 넓이는?",
+            "tags": [
+              "도형",
+              "다항식",
+              "활용"
+            ],
+            "hint": "실생활 연계 문제",
+            "explanation": "넓이 = 한 변² → ((x + 2)² = x² + 4x + 4)",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "x² + 2x + 2"
+              },
+              {
+                "no": 2,
+                "inst": "x² + 4x + 4"
+              },
+              {
+                "no": 3,
+                "inst": "2x² + 4x"
+              },
+              {
+                "no": 4,
+                "inst": "x² + 8x + 4"
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1765269410964
+    }
+  }
+]

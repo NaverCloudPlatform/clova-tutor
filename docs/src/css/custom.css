@@ -1,0 +1,136 @@
+/**
+ * CLOVA Tutor
+ * Copyright (c) 2026-present NAVER Cloud Corp.
+ * MIT
+ */
+
+/* Pretendard 폰트 설정 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+/* Tailwind CSS v4 imports - utilities만 사용 (base 제외) */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@import "./scrollbar.css";
+@import "./platte.css" layer(theme);
+@import "./animation.css" layer(utilities);
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is([data-theme="dark"] *));
+
+:root {
+  --background: var(--color-white);
+  --foreground: var(--color-cool-gray-1400);
+  --foreground-weak: var(--color-cool-gray-1150);
+  --card: var(--background);
+  --card-foreground: var(--foreground);
+  --popover: var(--background);
+  --popover-foreground: var(--foreground);
+  --primary: var(--color-accent-blue-600);
+  --primary-foreground: var(--color-white);
+  --secondary: var(--color-cool-gray-200);
+  --secondary-foreground: var(--color-cool-gray-1300);
+  --muted: var(--color-cool-gray-100);
+  --muted-foreground: var(--color-cool-gray-1200);
+  --accent: var(--color-cool-gray-200);
+  --accent-foreground: var(--color-black);
+  --destructive: var(--color-accent-red-600);
+  --destructive-foreground: var(--color-white);
+  --border: var(--color-cool-gray-400);
+  --input: var(--color-cool-gray-400);
+  --ring: var(--color-cool-gray-600);
+
+  /* Docusaurus Infima 변수 오버라이드 */
+  --ifm-color-primary: oklch(0.5758 0.2236 262);
+  --ifm-color-primary-dark: oklch(0.5127 0.1966 262);
+  --ifm-color-primary-darker: oklch(0.4471 0.1671 262);
+  --ifm-color-primary-darkest: oklch(0.3549 0.1274 262);
+  --ifm-color-primary-light: oklch(0.6304 0.1914 262);
+  --ifm-color-primary-lighter: oklch(0.6903 0.1572 263);
+  --ifm-color-primary-lightest: oklch(0.7753 0.1105 264);
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --background: var(--color-cool-gray-1600);
+  --foreground: var(--color-cool-gray-100);
+  --foreground-weak: var(--color-cool-gray-600);
+  --card: var(--background);
+  --card-foreground: var(--foreground);
+  --popover: var(--background);
+  --popover-foreground: var(--foreground);
+  --primary: var(--color-neon-blue-500);
+  --primary-foreground: var(--color-white);
+  --secondary: var(--color-cool-gray-1400);
+  --secondary-foreground: var(--color-cool-gray-300);
+  --muted: var(--color-cool-gray-1500);
+  --muted-foreground: var(--color-cool-gray-600);
+  --accent: var(--color-cool-gray-1300);
+  --accent-foreground: var(--color-white);
+  --destructive: var(--color-accent-red-500);
+  --destructive-foreground: var(--color-white);
+  --border: var(--color-cool-gray-1200);
+  --input: var(--color-cool-gray-1200);
+  --ring: var(--color-cool-gray-1000);
+
+  /* Docusaurus Infima 변수 오버라이드 - 다크모드 */
+  --ifm-color-primary: oklch(0.6685 0.1814 252);
+  --ifm-color-primary-dark: oklch(0.6257 0.2051 255);
+  --ifm-color-primary-darker: oklch(0.5556 0.1807 255);
+  --ifm-color-primary-darkest: oklch(0.4825 0.1542 254);
+  --ifm-color-primary-light: oklch(0.72 0.1523 249);
+  --ifm-color-primary-lighter: oklch(0.7934 0.1103 247);
+  --ifm-color-primary-lightest: oklch(0.8722 0.0666 247);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-foreground-weak: var(--foreground-weak);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    font-family:
+      "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
+      "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  }
+
+  /* Docusaurus 기본 스타일 유지하면서 폰트만 적용 */
+  html[data-theme='light'] {
+    --ifm-background-color: #ffffff;
+    --ifm-navbar-background-color: var(--ifm-background-color);
+    --ifm-footer-background-color: #f7f8fa;
+  }
+
+  html[data-theme='dark'] {
+    --ifm-background-color: #1b1b1d;
+    --ifm-navbar-background-color: var(--ifm-background-color);
+    --ifm-footer-background-color: #242526;
+  }
+}

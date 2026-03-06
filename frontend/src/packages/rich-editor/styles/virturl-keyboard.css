@@ -1,0 +1,104 @@
+/**
+ * CLOVA Tutor
+ * Copyright (c) 2026-present NAVER Cloud Corp.
+ * MIT
+ */
+
+.ML__keyboard {
+  --keyboard-background: var(--color-cool-gray-300);
+  --keyboard-accent-color: var(--color-primary);
+
+  /* 키보드 왼쪽 상단 탭 부분 */
+  --keyboard-toolbar-text: var(--color-foreground);
+  --keyboard-toolbar-text-active: var(--color-primary);
+  --keyboard-toolbar-background: var(--keyboard-background);
+  --keyboard-toolbar-background-hover: var(--color-cool-gray-200);
+  --keyboard-toolbar-background-selected: var(--keyboard-background);
+
+  /* 키캡 배경 관련 색상 */
+  --keycap-background: var(--color-background);
+  --keycap-background-hover: var(--color-cool-gray-100);
+  --keycap-background-active: var(--keycap-background-pressed); /* 키캡 눌려서 popover 메뉴 노출 시 색상 */
+  --keycap-background-pressed: var(--color-accent-blue-100);
+
+  --keycap-secondary-background: var(--color-cool-gray-500);
+  --keycap-secondary-background-hover: var(--color-cool-gray-400);
+
+  /* 키캡 텍스트 관련 색상 */
+  --keycap-text: var(--color-foreground);
+  --keycap-text-active: var(--color-foreground);
+  --keycap-text-hover: var(--color-foreground);
+  --keycap-text-pressed: var(--color-foreground);
+
+  --keycap-secondary-text: var(--color-foreground);
+
+  --keycap-shift-color: var(--color-primary);
+
+  --variant-panel-background: var(--keycap-background);
+  --variant-keycap-text: var(--keycap-text);
+  --variant-keycap-background-active: var(--keycap-background-active);
+  --box-placeholder-color: var(--color-primary);
+  --box-placeholder-pressed-color: var(--color-primary);
+}
+
+/* 다크모드 */
+.dark .ML__keyboard {
+  --keyboard-background: var(--color-cool-gray-1400);
+  --keyboard-accent-color: var(--color-primary);
+
+  /* 키보드 왼쪽 상단 탭 부분 */
+  --keyboard-toolbar-text: var(--color-foreground);
+  --keyboard-toolbar-text-active: var(--color-primary);
+  --keyboard-toolbar-background: var(--keyboard-background);
+  --keyboard-toolbar-background-hover: var(--color-cool-gray-1200);
+  --keyboard-toolbar-background-selected: var(--keyboard-background);
+
+  /* 키캡 배경 관련 색상 */
+  --keycap-background: var(--color-cool-gray-1200);
+  --keycap-background-hover: var(--color-cool-gray-1000);
+  --keycap-background-active: var(--keycap-background-pressed); /* 키캡 눌려서 popover 메뉴 노출 시 색상 */
+  --keycap-background-pressed: var(--color-accent-blue-800);
+
+  --keycap-secondary-background: var(--color-cool-gray-1100);
+  --keycap-secondary-background-hover: var(--color-cool-gray-900);
+
+  /* 키캡 텍스트 관련 색상 */
+  --keycap-text: var(--color-foreground);
+  --keycap-text-active: var(--color-foreground);
+  --keycap-text-hover: var(--color-foreground);
+  --keycap-text-pressed: var(--color-foreground);
+
+  --keycap-shift-color: var(--color-primary);
+
+  --variant-panel-background: var(--keycap-background);
+  --variant-keycap-text: var(--keycap-text);
+  --variant-keycap-background-active: var(--keycap-background-active);
+  --box-placeholder-color: var(--color-primary);
+  --box-placeholder-pressed-color: var(--color-primary);
+}
+
+body > .ML__keyboard.is-visible > .MLK__backdrop {
+  box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.08) !important;
+  border-top: none !important;
+}
+
+.MLK__toolbar > .right {
+  display: none !important;
+}
+
+.MLK__rows > .MLK__row .warning {
+  background: var(--color-accent-red-500) !important;
+}
+
+.caps-lock-indicator {
+  background: var(--color-accent-green-500) !important;
+}
+
+.dark .caps-lock-indicator {
+  background: var(--color-neon-green-500) !important;
+}
+
+/* 가상 키보드 container 영역을 넘어가서 잘리기 때문에 툴팁 제거 */
+.ML__keyboard [data-tooltip]::after {
+  content: none !important;
+}

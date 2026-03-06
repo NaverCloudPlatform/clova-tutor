@@ -1,0 +1,32 @@
+# CLOVA Tutor
+# Copyright (c) 2026-present NAVER Cloud Corp.
+# MIT
+
+update_problem_info:
+  model: hcx-005
+  max_tokens: 2048
+  temperature: 0.1
+update_response_info:
+  temperature: 0.1
+  stop:
+    - "reason:"
+    - "reason :"
+update_response_stepwise_solution:
+  model: hcx-003
+  temperature: 0.1
+update_response_math_concept:
+  model: hcx-003
+  temperature: 0.1
+update_response_completion_feedback_math:
+  model: hcx-003
+  temperature: 0.1
+update_response_grammar:
+  model: hcx-003
+  temperature: 0.1
+tool:
+  model: hcx-005
+  max_tokens: 2048
+  temperature: 0.1
+  disable_streaming: tool_calling
+minimum_temperature:
+  temperature: 0.0

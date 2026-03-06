@@ -1,0 +1,126 @@
+[project]
+name = "edu-max-be"
+version = "0.1.0"
+description = "edu max server"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115.8",
+  "uvloop==0.21.0",
+  "watchfiles==1.0.4", 
+  "grpcio>=1.74.0",
+  "grpcio-tools>=1.74.0",
+  "boto3==1.37.35",
+  "python-multipart>=0.0.20",
+  "pydantic-settings>=2.8.0",
+  "uvicorn>=0.34.0",
+  "sqlalchemy>=2.0.44",
+  "httpx>=0.28.1",
+  "aiomysql>=0.2.0",
+  "greenlet>=3.2.4",
+  "cryptography>=46.0.2",
+  "pyyaml>=6.0.3",
+  "aiohttp>=3.13.2",
+  "redis==5.3.0",
+  "base-repository==1.1.0",
+]
+
+
+[dependency-groups]
+dev = [
+  "pre-commit==4.3.0",
+  "pytest>=8.4.2",
+  "pytest-asyncio>=0.25.3",
+  "anyio>=4.8.0",
+  "mypy>=1.11.2",
+  "ruff>=0.6.9",
+  "black>=24.10.0",
+  "types-boto3",
+  "types-python-dateutil",
+  "fakeredis>=2.32.1",
+  "pytest-xdist>=3.8.0",
+  "alembic>=1.17.2",
+  "mypy-protobuf>=4.0.0",
+  "types-protobuf>=6.32.1.20251210",
+]
+
+setup = [
+  "httpx>=0.28.1",
+  "pandas>=2.3.3",
+  "weaviate-client>=4.18.3",
+]
+
+[tool.uv]
+python-preference = "managed"
+managed = true
+
+
+[tool.ruff]
+target-version = "py311" # Python 버전을 명시합니다.
+line-length = 100 # isort 처럼 100 줄이 넘으면 띄어쓰기를 진행합니다.
+fix = true # 고칠 수 있는 lint 에 대해서는 자동 고침을 진행합니다.
+extend-exclude = ["alembic/**", "scripts/**"]
+force-exclude = true
+
+[tool.ruff.lint]
+select = [
+# https://docs.astral.sh/ruff/rules/#pyflakes-f
+"F", # Pyflakes 린터를 적용합니다.
+# https://docs.astral.sh/ruff/rules/#pycodestyle-e-w
+# PEP 8 스타일 중 오류에 가까운 버그를 감지합니다.
+"E", # pycodestyle
+"W", # Warning
+# 일반적인 안티패턴 등의 에러를 감지합니다.
+"B", # flake8-bugbear,
+# https://docs.astral.sh/ruff/rules/#flake8-comprehensions-c4
+# https://docs.astral.sh/ruff/rules/#mccabe-c90
+# flake8-comprehensions (비효율적인 컴프리헨션)
+"C4",
+# https://docs.astral.sh/ruff/rules/#pyupgrade-up
+"UP", # pyupgrade 를 채택합니다. 이는 최신식의 python 문법을 지향하게 바꿔줍니다. ex) Optional -> | None
+# https://docs.astral.sh/ruff/rules/#isort-i
+"I", # isort 포맷팅을 지원합니다.
+]
+
+ignore = [
+    "E501",  # line too long 에러입니다. Black 포매터에서 다루기 때문에 무시합니다.
+    "B008",  # Function 에 default 값을 명시하지 말라는 에러입니다. FastAPI 특성상 Depends()의 패턴을 쓰기 때문에 무시합니다.
+    "W191",  # Tab 을 사용하지 말라는 에러입니다. 무시합니다.
+    "B904",  # 에러 핸들링 때 반드시 as e 를 붙여야하는 에러입니다. HttpException 등의 사용을 위해 무시합니다.
+]
+
+[tool.ruff.lint.isort]
+lines-between-types = 1 # isort의 lines_between_sections와 비슷합니다.
+
+
+[tool.ruff.lint.per-file-ignores]
+# __init__ 은 현재는 작성 부분이 없지만, 전 프로젝트 공용으로 다음을 추가합니다.
+"__init__.py" = [
+"F401", # unused import
+"F403", # star imports
+]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+warn_unused_configs = true
+ignore_missing_imports = false
+mypy_path = "src"
+explicit_package_bases = true
+disable_error_code = ["import-untyped"]
+exclude = [
+    "scripts/",
+    "alembic/",
+    "test_*.py",
+    "tests/",
+    "src/chats/infra/",
+    "src/common/infra/grpc/grpc_stubs/"
+]
+
+[[tool.mypy.overrides]]
+module = "common.infra.grpc.grpc_stubs.*"
+ignore_errors = true
+
+[[tool.mypy.overrides]]
+module = "chats.infra.assistant.*"
+ignore_errors = true

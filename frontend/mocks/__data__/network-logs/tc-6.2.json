@@ -1,0 +1,100 @@
+[
+  {
+    "id": "de7f93a3-7919-4755-b3c4-f632cb0c2a4f",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/136/messages",
+      "headers": {},
+      "timestamp": 1765160561274
+    },
+    "totalDuration": 35,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "2170",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:22:40 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1230,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:19:44+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-08"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1231,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:19:44+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "consistently의 뜻이 뭐야?"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1232,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:20:01+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "'Consistently'의 뜻에 대해 설명해줄게.\n\n### Consistently의 뜻\n* 'Consistently'는 부사로 '**일관되게**, **한결같이**'라는 뜻을 가지고 있어. \n\n1. **일정한 상태나 정도가 지속되는 것을 의미**\n   - She has performed consistently well in all her exams. \n     - 그녀는 모든 시험에서 꾸준히 잘했다.\n   \n2. **어떤 사람이나 사물의 특징 또는 속성이 변함없이 유지되는 것**\n   - He has consistently supported the project from its inception.\n     - 그는 프로젝트 시작부터 지금까지 쭉 지원해왔다.\n\n3. **믿을 만한 신뢰성을 가진다는 의미**\n   - The company is known for producing products that work consistently.\n     - 그 회사는 제품을 믿을 수 있게 만드는 것으로 유명하다.\n\n이렇게 'consistently'는 주로 어떤 것이 일정하고 변함없는 상태를 유지하는 것을 나타낼 때 사용돼. 이해했길 바라! 더 궁금한 점 있으면 물어봐😉.\n\n> [!TABLE_FETCH]-\n> **consistent** [컨시스턴트]\n> | 뜻 | 품사 | 예문 | 해석 |\n> | :--- | :--- | :--- | :--- |\n> | 일관된, 한결같은 | 형용사 | Her performance has been **consistent** throughout the season. | 그녀의 성적은 시즌 내내 일관되었다. |\n> | (의견, 행동 등이) 일치하는, 조화를 이루는 | 형용사 | His actions are **consistent** with his words. | 그의 행동은 그의 말과 일치한다. |\n"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "eng_voca",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1765160561309
+    }
+  }
+]

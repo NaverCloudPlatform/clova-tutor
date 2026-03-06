@@ -1,0 +1,66 @@
+/**
+ * CLOVA Tutor
+ * Copyright (c) 2026-present NAVER Cloud Corp.
+ * MIT
+ */
+
+@theme {
+  /* 컬러 팔레트 */
+  /* 일반 색상 */
+  --color-black: oklch(0 0 0);
+  --color-white: oklch(1 0 0);
+
+  /* 액센트 블루 */
+  --color-accent-blue-100: oklch(0.9321 0.0309 264);
+  --color-accent-blue-200: oklch(0.8651 0.0629 264);
+  --color-accent-blue-300: oklch(0.7753 0.1105 264);
+  --color-accent-blue-400: oklch(0.6903 0.1572 263);
+  --color-accent-blue-500: oklch(0.6304 0.1914 262);
+  --color-accent-blue-600: oklch(0.5758 0.2236 262);
+  --color-accent-blue-700: oklch(0.5127 0.1966 262);
+  --color-accent-blue-800: oklch(0.4471 0.1671 262);
+
+  /* 액센트 그린 */
+  --color-accent-green-100: oklch(0.9498 0.0386 161);
+  --color-accent-green-200: oklch(0.9 0.0751 160);
+  --color-accent-green-300: oklch(0.8408 0.1219 158);
+  --color-accent-green-400: oklch(0.7887 0.1623 155);
+  --color-accent-green-500: oklch(0.7532 0.1844 153);
+  --color-accent-green-600: oklch(0.725 0.2014 150);
+
+  /* 네온 블루 */
+  --color-neon-blue-100: oklch(0.9368 0.0324 245);
+  --color-neon-blue-200: oklch(0.8722 0.0666 247);
+  --color-neon-blue-300: oklch(0.7934 0.1103 247);
+  --color-neon-blue-400: oklch(0.72 0.1523 249);
+  --color-neon-blue-500: oklch(0.6685 0.1814 252);
+  --color-neon-blue-600: oklch(0.6257 0.2051 255);
+
+  /* 쿨 그레이 */
+  --color-cool-gray-0: oklch(1 0 0);
+  --color-cool-gray-100: oklch(0.9876 0.0017 248);
+  --color-cool-gray-200: oklch(0.9737 0.0026 286);
+  --color-cool-gray-300: oklch(0.9492 0.0042 271);
+  --color-cool-gray-400: oklch(0.9229 0.0082 279);
+  --color-cool-gray-500: oklch(0.898 0.0098 273);
+  --color-cool-gray-600: oklch(0.8459 0.0142 273);
+  --color-cool-gray-700: oklch(0.7932 0.0202 273);
+  --color-cool-gray-800: oklch(0.7394 0.0251 273);
+  --color-cool-gray-900: oklch(0.6838 0.0227 271);
+  --color-cool-gray-1000: oklch(0.6281 0.0215 273);
+  --color-cool-gray-1100: oklch(0.5708 0.0187 275);
+  --color-cool-gray-1150: oklch(0.555 0.0187 275);
+  --color-cool-gray-1200: oklch(0.5111 0.0162 272);
+  --color-cool-gray-1300: oklch(0.451 0.0148 276);
+  --color-cool-gray-1400: oklch(0.3874 0.0121 273);
+  --color-cool-gray-1500: oklch(0.322 0.0089 277);
+  --color-cool-gray-1600: oklch(0.2521 0.0058 271);
+
+  /* 브랜드 */
+  --color-brand-100: oklch(0.9498 0.0386 161);
+  --color-brand-200: oklch(0.9 0.0751 160);
+  --color-brand-300: oklch(0.8408 0.1219 158);
+  --color-brand-400: oklch(0.7887 0.1623 155);
+  --color-brand-500: oklch(0.7532 0.1844 153);
+  --color-brand-600: oklch(0.725 0.2014 150);
+}

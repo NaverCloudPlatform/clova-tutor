@@ -1,0 +1,99 @@
+type StreamCallbacks = {
+  [event: string | 'error']: (data?: unknown | StreamHandlerError) => void;
+};
+
+export class StreamHandlerError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = 'StreamHandlerError';
+  }
+}
+
+export class ReadableStreamHandler {
+  private reader: ReadableStreamDefaultReader<Uint8Array> | null = null;
+  private decoder = new TextDecoder();
+  private buffer = '';
+  private callbacks: StreamCallbacks = {};
+  private isComplete = false;
+  private completionEventType?: string;
+
+  constructor(response: Response, callbacks?: StreamCallbacks, options?: { completionEventType?: string }) {
+    this.reader = response.body?.getReader() ?? null;
+    this.callbacks = callbacks ?? {};
+    this.completionEventType = options?.completionEventType;
+
+    if (this.reader) {
+      this.processStream().catch(this.handleError);
+    } else {
+      this.handleError(new StreamHandlerError('응답에 body가 없습니다.'));
+    }
+  }
+
+  private async processStream() {
+    while (this.reader) {
+      const { done, value } = await this.reader.read();
+      if (done) {
+        // 서버 다운 등으로 인한 조용한 EOF: 완료 이벤트가 도착하지 않았는데 스트림이 끊긴 경우
+        if (this.completionEventType && !this.isComplete) {
+          this.handleError(new StreamHandlerError('스트림이 예상치 못하게 종료되었습니다.'));
+        }
+        break;
+      }
+
+      this.buffer += this.decoder.decode(value, { stream: true });
+      this.processBuffer();
+    }
+  }
+
+  private processBuffer() {
+    const events = this.buffer.split('\n\n');
+    this.buffer = events.pop() || '';
+
+    for (const event of events) {
+      if (!event.trim()) continue;
+
+      const { eventType, dataLine } = this.parseEvent(event);
+      if (!eventType || !dataLine) continue;
+
+      this.dispatchEvent(eventType, dataLine);
+    }
+  }
+
+  private parseEvent(event: string) {
+    const lines = event.split('\n');
+    const eventType = lines
+      .find((line) => line.startsWith('event:'))
+      ?.replace('event:', '')
+      .trim();
+    const dataLine = lines
+      .find((line) => line.startsWith('data:'))
+      ?.replace('data:', '')
+      .trim();
+    return { eventType, dataLine: dataLine || '{}' };
+  }
+
+  private dispatchEvent(eventType: string, dataLine: string) {
+    try {
+      const parsedData = JSON.parse(dataLine);
+
+      // 완료 이벤트 수신 시 플래그 설정
+      if (this.completionEventType && eventType === this.completionEventType) {
+        this.isComplete = true;
+      }
+
+      this.callbacks[eventType]?.(parsedData);
+    } catch (error) {
+      const errorMessage = error instanceof Error ? error.message : 'unknown error';
+      this.handleError(new StreamHandlerError(errorMessage));
+    }
+  }
+
+  private handleError = (error: StreamHandlerError) => {
+    console.error('스트림 처리 중 오류 발생:', error);
+    this.callbacks.error?.(error);
+  };
+
+  public cancel() {
+    this.reader?.cancel();
+  }
+}

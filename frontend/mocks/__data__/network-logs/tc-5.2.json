@@ -1,0 +1,1081 @@
+[
+  {
+    "id": "3cb7d8e3-21ec-4cdb-889e-64b7b5b0a304",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/429",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146284997
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 429,
+        "title": "문제 추천 요청",
+        "subject": "english",
+        "has_problem": true,
+        "has_active_goal": true,
+        "active_goal": {
+          "id": 111,
+          "goal_count": 2,
+          "solved_count": 0
+        }
+      },
+      "timestamp": 1767146285030
+    },
+    "totalDuration": 33.34799999720417
+  },
+  {
+    "id": "7a68d376-b3ad-43b2-aff5-70f2be63b02e",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/429/stream-status",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146285908
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "status": "COMPLETE"
+      },
+      "timestamp": 1767146285943
+    },
+    "totalDuration": 35.383000009460375
+  },
+  {
+    "id": "3773b85b-8b5e-47c1-8c57-f93823e2e5b8",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/429/messages",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146285908
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 3476,
+            "chat_id": 429,
+            "created_at": "2025-12-31T10:57:43+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-31"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3477,
+            "chat_id": 429,
+            "created_at": "2025-12-31T10:57:43+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "문제 추천해줘"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3478,
+            "chat_id": 429,
+            "created_at": "2025-12-31T10:57:48+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "problem_recommended",
+                "value": {
+                  "problem_id": "H1-E-024",
+                  "category": "문법",
+                  "status": "풀지 않음"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "좋아! 너의 학년에 해당하는 문법 문제를 하나 가져왔어! 한번 풀어볼래? 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "recommend_problem",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3479,
+            "chat_id": 429,
+            "created_at": "2025-12-31T10:57:54+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "problem_link",
+                "value": {
+                  "problem_id": "H1-E-024"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "다른 문제 하나 더 추천해줘"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 3480,
+            "chat_id": 429,
+            "created_at": "2025-12-31T10:57:57+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "problem_recommended",
+                "value": {
+                  "problem_id": "H1-E-026",
+                  "category": "문법",
+                  "status": "풀지 않음"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "좋아! 너의 학년에 해당하는 문법 문제를 하나 가져왔어! 한번 풀어볼래? 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "recommend_problem",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1767146285946
+    },
+    "totalDuration": 37.82500000670552
+  },
+  {
+    "id": "9d260e34-33ac-452b-a53b-a97236832dca",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/429/problems",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146285908
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": [
+        {
+          "id": "H1-E-024",
+          "number": 1,
+          "status": "풀지 않음",
+          "category": "문법",
+          "grade": 10,
+          "level": 2
+        },
+        {
+          "id": "H1-E-026",
+          "number": 2,
+          "status": "풀지 않음",
+          "category": "문법",
+          "grade": 10,
+          "level": 2
+        }
+      ],
+      "timestamp": 1767146285943
+    },
+    "totalDuration": 34.87499998300336
+  },
+  {
+    "id": "7781ef02-258f-48a0-8dc7-84c4998e4e43",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/429/problems/H1-E-024",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146285909
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "number": 1,
+        "status": "풀지 않음",
+        "last_answer": null,
+        "is_bookmarked": false,
+        "problem_info": {
+          "id": "H1-E-024",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "english",
+            "grade": 10,
+            "semester": 1,
+            "level": 2,
+            "primary": "문법",
+            "secondary": "명사, 대명사, 형용사, 부사",
+            "specific": "관사, 명사",
+            "category": "문법",
+            "problem": "다음 중 관사의 사용이 올바른 문장을 고르시오.",
+            "tags": [
+              "관사",
+              "명사",
+              "발음 규칙"
+            ],
+            "hint": "관사는 철자가 아니라 ‘발음’이 모음 소리로 시작하는지에 따라 결정됩니다.",
+            "explanation": "‘honest’는 모음 소리로 시작하므로 ‘an’이 알맞으며, 나머지는 발음 규칙상 관사 사용이 잘못되었다.",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "She is an honest person."
+              },
+              {
+                "no": 2,
+                "inst": "He bought a umbrella."
+              },
+              {
+                "no": 3,
+                "inst": "I saw an university student."
+              },
+              {
+                "no": 4,
+                "inst": "She is a engineer."
+              },
+              {
+                "no": 5,
+                "inst": "He wants to be an teacher."
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1767146285944
+    },
+    "totalDuration": 34.99099999316968
+  },
+  {
+    "id": "95a2b66d-ce1f-410a-989a-a4be7190e6e9",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/problem-bookmarks/problem/H1-E-024/check",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146286633
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "status": "unique"
+      },
+      "timestamp": 1767146286651
+    },
+    "totalDuration": 17.919000005349517
+  },
+  {
+    "id": "067754f2-a66d-400c-aefb-3c4922d6e675",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats/429/problems/H1-E-024/submit",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "payload": {
+        "answer": {
+          "type": "단일선택 객관식",
+          "answer": 2
+        }
+      },
+      "timestamp": 1767146365588
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "is_correct": false,
+        "active_goal": null
+      },
+      "timestamp": 1767146365642
+    },
+    "totalDuration": 53.61299999640323
+  },
+  {
+    "id": "89fd8630-2fdc-4eea-869f-0eadd341909b",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/429/problems",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146365644
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": [
+        {
+          "id": "H1-E-024",
+          "number": 1,
+          "status": "오답",
+          "category": "문법",
+          "grade": 10,
+          "level": 2
+        },
+        {
+          "id": "H1-E-026",
+          "number": 2,
+          "status": "풀지 않음",
+          "category": "문법",
+          "grade": 10,
+          "level": 2
+        }
+      ],
+      "timestamp": 1767146365663
+    },
+    "totalDuration": 18.67399999173358
+  },
+  {
+    "id": "cc269070-d7f8-43e8-bd03-5aa0aa52052e",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/429/problems/H1-E-024",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146365644
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "number": 1,
+        "status": "오답",
+        "last_answer": "2",
+        "is_bookmarked": false,
+        "problem_info": {
+          "id": "H1-E-024",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "english",
+            "grade": 10,
+            "semester": 1,
+            "level": 2,
+            "primary": "문법",
+            "secondary": "명사, 대명사, 형용사, 부사",
+            "specific": "관사, 명사",
+            "category": "문법",
+            "problem": "다음 중 관사의 사용이 올바른 문장을 고르시오.",
+            "tags": [
+              "관사",
+              "명사",
+              "발음 규칙"
+            ],
+            "hint": "관사는 철자가 아니라 ‘발음’이 모음 소리로 시작하는지에 따라 결정됩니다.",
+            "explanation": "‘honest’는 모음 소리로 시작하므로 ‘an’이 알맞으며, 나머지는 발음 규칙상 관사 사용이 잘못되었다.",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "She is an honest person."
+              },
+              {
+                "no": 2,
+                "inst": "He bought a umbrella."
+              },
+              {
+                "no": 3,
+                "inst": "I saw an university student."
+              },
+              {
+                "no": 4,
+                "inst": "She is a engineer."
+              },
+              {
+                "no": 5,
+                "inst": "He wants to be an teacher."
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1767146365677
+    },
+    "totalDuration": 32.739000001361596
+  },
+  {
+    "id": "6ef3dd2a-cf63-4a16-b3e4-3ff3b005ef02",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/problem-bookmarks/problem/H1-E-024/check",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146365644
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "status": "unique"
+      },
+      "timestamp": 1767146365677
+    },
+    "totalDuration": 33.023999994965266
+  },
+  {
+    "id": "e5731430-2644-43e6-be35-38b877c1ab6f",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats/429/problems/H1-E-024/submit",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "payload": {
+        "answer": {
+          "type": "단일선택 객관식",
+          "answer": 1
+        }
+      },
+      "timestamp": 1767146371004
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "is_correct": true,
+        "active_goal": {
+          "id": 111,
+          "goal_count": 2,
+          "solved_count": 1
+        }
+      },
+      "timestamp": 1767146371046
+    },
+    "totalDuration": 42.445000010300426
+  },
+  {
+    "id": "4f025632-32eb-4fdb-a260-f55430c292fc",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/429",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146371048
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 429,
+        "title": "문제 추천 요청",
+        "subject": "english",
+        "has_problem": true,
+        "has_active_goal": true,
+        "active_goal": {
+          "id": 111,
+          "goal_count": 2,
+          "solved_count": 1
+        }
+      },
+      "timestamp": 1767146371066
+    },
+    "totalDuration": 18.110000004526228
+  },
+  {
+    "id": "78ade947-7e1b-4ba4-8c44-e6b6f63f4684",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/429/problems",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146371048
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": [
+        {
+          "id": "H1-E-024",
+          "number": 1,
+          "status": "복습 완료",
+          "category": "문법",
+          "grade": 10,
+          "level": 2
+        },
+        {
+          "id": "H1-E-026",
+          "number": 2,
+          "status": "풀지 않음",
+          "category": "문법",
+          "grade": 10,
+          "level": 2
+        }
+      ],
+      "timestamp": 1767146371093
+    },
+    "totalDuration": 45.41400000676326
+  },
+  {
+    "id": "0200ce92-5339-4293-b210-28cfdd113519",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/429/problems/H1-E-024",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146371048
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "number": 1,
+        "status": "복습 완료",
+        "last_answer": "1",
+        "is_bookmarked": false,
+        "problem_info": {
+          "id": "H1-E-024",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "english",
+            "grade": 10,
+            "semester": 1,
+            "level": 2,
+            "primary": "문법",
+            "secondary": "명사, 대명사, 형용사, 부사",
+            "specific": "관사, 명사",
+            "category": "문법",
+            "problem": "다음 중 관사의 사용이 올바른 문장을 고르시오.",
+            "tags": [
+              "관사",
+              "명사",
+              "발음 규칙"
+            ],
+            "hint": "관사는 철자가 아니라 ‘발음’이 모음 소리로 시작하는지에 따라 결정됩니다.",
+            "explanation": "‘honest’는 모음 소리로 시작하므로 ‘an’이 알맞으며, 나머지는 발음 규칙상 관사 사용이 잘못되었다.",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "She is an honest person."
+              },
+              {
+                "no": 2,
+                "inst": "He bought a umbrella."
+              },
+              {
+                "no": 3,
+                "inst": "I saw an university student."
+              },
+              {
+                "no": 4,
+                "inst": "She is a engineer."
+              },
+              {
+                "no": 5,
+                "inst": "He wants to be an teacher."
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1767146371094
+    },
+    "totalDuration": 45.911000007668505
+  },
+  {
+    "id": "0a168a1b-7b1b-4f17-be71-3dcf727fb438",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/problem-bookmarks/problem/H1-E-024/check",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146371048
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "status": "unique"
+      },
+      "timestamp": 1767146371094
+    },
+    "totalDuration": 45.590000006783754
+  },
+  {
+    "id": "6a238c26-8d77-4224-9c33-945c85b41e42",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/429/problems/H1-E-026",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146374424
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "number": 2,
+        "status": "풀지 않음",
+        "last_answer": null,
+        "is_bookmarked": false,
+        "problem_info": {
+          "id": "H1-E-026",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "english",
+            "grade": 10,
+            "semester": 1,
+            "level": 2,
+            "primary": "문법",
+            "secondary": "명사, 대명사, 형용사, 부사",
+            "specific": "대명사, 재귀대명사",
+            "category": "문법",
+            "problem": "다음 중 재귀대명사가 올바르게 사용된 문장을 고르시오.",
+            "tags": [
+              "재귀대명사",
+              "대명사",
+              "문장 구조"
+            ],
+            "hint": "주어가 스스로 어떤 행동을 할 때 재귀대명사를 사용합니다.",
+            "explanation": "재귀대명사는 주어와 목적어가 동일할 때 사용되며, ‘She enjoyed herself’는 올바른 형태이다.",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "She enjoyed herself at the party."
+              },
+              {
+                "no": 2,
+                "inst": "He cut him when he was cooking."
+              },
+              {
+                "no": 3,
+                "inst": "They did the work by theirs."
+              },
+              {
+                "no": 4,
+                "inst": "I taught me how to swim."
+              },
+              {
+                "no": 5,
+                "inst": "We introduced each other ourselves."
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1767146374450
+    },
+    "totalDuration": 25.78600001288578
+  },
+  {
+    "id": "eae44963-cf00-480e-a589-3054e75293f6",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/problem-bookmarks/problem/H1-E-026/check",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146374455
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "status": "unique"
+      },
+      "timestamp": 1767146374475
+    },
+    "totalDuration": 20.05500000086613
+  },
+  {
+    "id": "ed619016-5ca9-4cc1-b2b4-c85f0e90d62c",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats/429/problems/H1-E-026/submit",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "payload": {
+        "answer": {
+          "type": "단일선택 객관식",
+          "answer": 1
+        }
+      },
+      "timestamp": 1767146394429
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "is_correct": true,
+        "active_goal": {
+          "id": 111,
+          "goal_count": 2,
+          "solved_count": 2
+        }
+      },
+      "timestamp": 1767146394488
+    },
+    "totalDuration": 59.17799999588169
+  },
+  {
+    "id": "18149cc5-ba87-4cb0-91e5-8421481aa35b",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/429",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146394490
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": 429,
+        "title": "문제 추천 요청",
+        "subject": "english",
+        "has_problem": true,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1767146394512
+    },
+    "totalDuration": 21.818999986862764
+  },
+  {
+    "id": "29715314-fba6-4461-876f-fafa2dc48328",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/429/problems",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146394490
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": [
+        {
+          "id": "H1-E-024",
+          "number": 1,
+          "status": "복습 완료",
+          "category": "문법",
+          "grade": 10,
+          "level": 2
+        },
+        {
+          "id": "H1-E-026",
+          "number": 2,
+          "status": "정답",
+          "category": "문법",
+          "grade": 10,
+          "level": 2
+        }
+      ],
+      "timestamp": 1767146394528
+    },
+    "totalDuration": 38.23399999169447
+  },
+  {
+    "id": "3b5f6297-eb63-44f0-87c1-6002f3057cf8",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/429/problems/H1-E-026",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146394490
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "number": 2,
+        "status": "정답",
+        "last_answer": "1",
+        "is_bookmarked": false,
+        "problem_info": {
+          "id": "H1-E-026",
+          "type": "단일선택 객관식",
+          "content": {
+            "subject": "english",
+            "grade": 10,
+            "semester": 1,
+            "level": 2,
+            "primary": "문법",
+            "secondary": "명사, 대명사, 형용사, 부사",
+            "specific": "대명사, 재귀대명사",
+            "category": "문법",
+            "problem": "다음 중 재귀대명사가 올바르게 사용된 문장을 고르시오.",
+            "tags": [
+              "재귀대명사",
+              "대명사",
+              "문장 구조"
+            ],
+            "hint": "주어가 스스로 어떤 행동을 할 때 재귀대명사를 사용합니다.",
+            "explanation": "재귀대명사는 주어와 목적어가 동일할 때 사용되며, ‘She enjoyed herself’는 올바른 형태이다.",
+            "choices": [
+              {
+                "no": 1,
+                "inst": "She enjoyed herself at the party."
+              },
+              {
+                "no": 2,
+                "inst": "He cut him when he was cooking."
+              },
+              {
+                "no": 3,
+                "inst": "They did the work by theirs."
+              },
+              {
+                "no": 4,
+                "inst": "I taught me how to swim."
+              },
+              {
+                "no": 5,
+                "inst": "We introduced each other ourselves."
+              }
+            ]
+          }
+        }
+      },
+      "timestamp": 1767146394529
+    },
+    "totalDuration": 38.9350000020992
+  },
+  {
+    "id": "c8c2d5ec-e794-4b06-b978-d74fa993a328",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/problem-bookmarks/problem/H1-E-026/check",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1767146394490
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "status": "unique"
+      },
+      "timestamp": 1767146394528
+    },
+    "totalDuration": 37.90000000959076
+  }
+]

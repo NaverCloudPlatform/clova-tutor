@@ -1,0 +1,195 @@
+[
+  {
+    "id": "a2534e61-5d9f-4d2f-8146-e8e0ef8faa51",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users",
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766125077666
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": [
+        {
+          "id": "627facc9-caeb-4a6b-8001-518c777f84de",
+          "name": "ㅎㅇㅌ",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-12-15T12:25:37+09:00",
+          "updated_at": "2025-12-15T12:25:37+09:00"
+        },
+        {
+          "id": "6c0e6a25-2117-44fb-9ddf-5f4ebbc347fe",
+          "name": "ㅌㄱㅎㄹ",
+          "grade": 3,
+          "memo": null,
+          "created_at": "2025-12-04T10:54:48+09:00",
+          "updated_at": "2025-12-04T10:54:48+09:00"
+        },
+        {
+          "id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+          "name": "e2e-playwright",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-12-03T15:54:17+09:00",
+          "updated_at": "2025-12-03T16:15:51+09:00"
+        },
+        {
+          "id": "245e3731-1617-49eb-8a33-1f65a65cb8b0",
+          "name": "김민지",
+          "grade": 3,
+          "memo": null,
+          "created_at": "2025-12-02T14:43:23+09:00",
+          "updated_at": "2025-12-02T14:43:23+09:00"
+        },
+        {
+          "id": "77a17712-d2f9-424b-8a20-3bf0e6dff96e",
+          "name": "김민수",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-11-19T17:19:21+09:00",
+          "updated_at": "2025-12-01T18:57:55+09:00"
+        },
+        {
+          "id": "76484212-1b62-4f7d-b99e-0e5e84a3428f",
+          "name": "김민서",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-11-26T18:11:22+09:00",
+          "updated_at": "2025-11-26T18:11:22+09:00"
+        },
+        {
+          "id": "f0104cd0-0936-4e06-b707-7ce1ab287536",
+          "name": "김민석",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-11-26T18:09:13+09:00",
+          "updated_at": "2025-11-26T18:09:13+09:00"
+        }
+      ],
+      "timestamp": 1766125077697
+    },
+    "totalDuration": 30.849000000120604
+  },
+  {
+    "id": "2f0bcf5c-d525-461d-a4e4-82488e6cbe17",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users",
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766125080199
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": [
+        {
+          "id": "627facc9-caeb-4a6b-8001-518c777f84de",
+          "name": "ㅎㅇㅌ",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-12-15T12:25:37+09:00",
+          "updated_at": "2025-12-15T12:25:37+09:00"
+        },
+        {
+          "id": "6c0e6a25-2117-44fb-9ddf-5f4ebbc347fe",
+          "name": "ㅌㄱㅎㄹ",
+          "grade": 3,
+          "memo": null,
+          "created_at": "2025-12-04T10:54:48+09:00",
+          "updated_at": "2025-12-04T10:54:48+09:00"
+        },
+        {
+          "id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+          "name": "e2e-playwright",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-12-03T15:54:17+09:00",
+          "updated_at": "2025-12-03T16:15:51+09:00"
+        },
+        {
+          "id": "245e3731-1617-49eb-8a33-1f65a65cb8b0",
+          "name": "김민지",
+          "grade": 3,
+          "memo": null,
+          "created_at": "2025-12-02T14:43:23+09:00",
+          "updated_at": "2025-12-02T14:43:23+09:00"
+        },
+        {
+          "id": "77a17712-d2f9-424b-8a20-3bf0e6dff96e",
+          "name": "김민수",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-11-19T17:19:21+09:00",
+          "updated_at": "2025-12-01T18:57:55+09:00"
+        },
+        {
+          "id": "76484212-1b62-4f7d-b99e-0e5e84a3428f",
+          "name": "김민서",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-11-26T18:11:22+09:00",
+          "updated_at": "2025-11-26T18:11:22+09:00"
+        },
+        {
+          "id": "f0104cd0-0936-4e06-b707-7ce1ab287536",
+          "name": "김민석",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-11-26T18:09:13+09:00",
+          "updated_at": "2025-11-26T18:09:13+09:00"
+        }
+      ],
+      "timestamp": 1766125080237
+    },
+    "totalDuration": 37.536000000070786
+  },
+  {
+    "id": "677dfe8c-1b57-4106-8e70-55cc27d36115",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users/452395d2-8832-41d5-976f-857e9ad2dcb8",
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766125080200
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "name": "e2e-playwright",
+        "grade": 10,
+        "memo": null,
+        "created_at": "2025-12-03T15:54:17+09:00",
+        "updated_at": "2025-12-03T16:15:51+09:00"
+      },
+      "timestamp": 1766125080256
+    },
+    "totalDuration": 55.66499999986263
+  }
+]

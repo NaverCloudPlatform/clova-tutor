@@ -1,0 +1,90 @@
+[
+  {
+    "id": "bd36d6c3-b75b-4f05-80ad-5213c5baeda6",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users",
+      "headers": {},
+      "timestamp": 1764739070936
+    },
+    "totalDuration": 33,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "855",
+        "content-type": "application/json",
+        "date": "Wed, 03 Dec 2025 05:17:50 GMT",
+        "server": "uvicorn"
+      },
+      "body": [
+        {
+          "id": "18bf7830-5cb8-4e6e-8779-cb9d66a19ede",
+          "name": "e2e-playwright",
+          "grade": 10,
+          "memo": null,
+          "created_at": "2025-12-03T14:16:57+09:00",
+          "updated_at": "2025-12-03T14:16:57+09:00"
+        }
+      ],
+      "timestamp": 1764739070969
+    }
+  },
+  {
+    "id": "1f18f122-d15a-4e36-80cb-4d5dc5fbaa76",
+    "version": "1.1",
+    "request": {
+      "method": "DELETE",
+      "url": "/api/v1/users/18bf7830-5cb8-4e6e-8779-cb9d66a19ede",
+      "headers": {},
+      "timestamp": 1764739076863
+    },
+    "totalDuration": 52,
+    "response": {
+      "mode": "single",
+      "status": 204,
+      "statusText": "No Content",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "date": "Wed, 03 Dec 2025 05:17:56 GMT",
+        "server": "uvicorn"
+      },
+      "body": [],
+      "timestamp": 1764739076915
+    }
+  },
+  {
+    "id": "b83459bc-d755-4c5e-b4e9-ff93f6124ba8",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users",
+      "headers": {},
+      "timestamp": 1764739076917
+    },
+    "totalDuration": 18,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "680",
+        "content-type": "application/json",
+        "date": "Wed, 03 Dec 2025 05:17:56 GMT",
+        "server": "uvicorn"
+      },
+      "body": [],
+      "timestamp": 1764739076935
+    }
+  }
+]

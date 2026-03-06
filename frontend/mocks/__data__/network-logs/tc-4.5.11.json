@@ -1,0 +1,172 @@
+[
+  {
+    "id": "677dfe8c-1b57-4106-8e70-55cc27d36115",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/users/452395d2-8832-41d5-976f-857e9ad2dcb8",
+      "headers": {
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766125080200
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "name": "e2e-playwright",
+        "grade": 10,
+        "memo": null,
+        "created_at": "2025-12-03T15:54:17+09:00",
+        "updated_at": "2025-12-03T16:15:51+09:00"
+      },
+      "timestamp": 1766125080256
+    },
+    "totalDuration": 55.66499999986263
+  },
+  {
+    "id": "0a1ce87e-d1ad-48ac-a201-ca4538795d4a",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats?subject=math&size=10",
+      "headers": {
+        "X-User-Id": "452395d2-8832-41d5-976f-857e9ad2dcb8",
+        "accept": "application/json",
+        "content-type": "application/json"
+      },
+      "timestamp": 1766456428846
+    },
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "items": [
+          {
+            "id": 390,
+            "title": "문제 추천 요청",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-22T18:47:41+09:00"
+          },
+          {
+            "id": 347,
+            "title": "문제 유형: 테스트 메시지 작성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-19T16:36:13+09:00"
+          },
+          {
+            "id": 375,
+            "title": "개념: 일차함수 그래프",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": true,
+            "latest_used_at": "2025-12-19T11:46:22+09:00"
+          },
+          {
+            "id": 335,
+            "title": "문제: 이차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": true,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T12:52:36+09:00"
+          },
+          {
+            "id": 334,
+            "title": "문제: 일차방정식 대입",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-18T10:55:39+09:00"
+          },
+          {
+            "id": 268,
+            "title": "개념: 이차함수 꼭짓점 중요성",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-16T14:42:55+09:00"
+          },
+          {
+            "id": 258,
+            "title": "문제: 일차방정식 해 구하기",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T20:23:23+09:00"
+          },
+          {
+            "id": 257,
+            "title": "문제: 일차부등식 풀이",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T17:59:40+09:00"
+          },
+          {
+            "id": 252,
+            "title": "개념: 이차방정식 해의 개수",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T16:46:11+09:00"
+          },
+          {
+            "id": 256,
+            "title": "문제: 일차부등식 풀이",
+            "subject": "math",
+            "has_problem": false,
+            "has_active_goal": false,
+            "latest_used_at": "2025-12-15T13:38:33+09:00"
+          }
+        ],
+        "next_cursor": "eyJsYXRlc3RfdXNlZF9hdCI6IjIwMjUtMTItMTVUMTM6Mzg6MzMiLCJpZCI6MjU2fQ=="
+      },
+      "timestamp": 1766456428878
+    },
+    "totalDuration": 32.20500001043547
+  },
+  {
+    "id": "50bae44b-0295-4c57-8e6b-d5d5d3e12896",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/uploads",
+      "headers": {},
+      "timestamp": 1765180229828
+    },
+    "totalDuration": 48,
+    "response": {
+      "mode": "single",
+      "status": 500,
+      "statusText": "Created",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "528",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 07:50:29 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "presigned_url": "https://kr.object.ncloudstorage.com/edu-bucket/chat-upload/retry-test-image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=2oeWi5zPIrTmdREEj95L%2F20251208%2Fkr-standard%2Fs3%2Faws4_request&X-Amz-Date=20251208T075029Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=content-type%3Bhost%3Bx-amz-acl&X-Amz-Signature=a00f5e659396d641a4aa8a838bf9c901f2d509f3a30536531b160324a1516d10",
+        "file_url": "https://kr.object.ncloudstorage.com/edu-bucket/chat-upload/retry-test-image.png"
+      },
+      "timestamp": 1765180229876
+    }
+  }
+]

@@ -1,0 +1,3076 @@
+[
+  {
+    "id": "c5a6f456-1e47-4736-9065-39e256d3829d",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/136/messages",
+      "headers": {},
+      "timestamp": 1765160921608
+    },
+    "totalDuration": 36,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "2170",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:28:41 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1230,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:19:44+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-08"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1231,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:19:44+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "consistently의 뜻이 뭐야?"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1232,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:20:01+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "'Consistently'의 뜻에 대해 설명해줄게.\n\n### Consistently의 뜻\n* 'Consistently'는 부사로 '**일관되게**, **한결같이**'라는 뜻을 가지고 있어. \n\n1. **일정한 상태나 정도가 지속되는 것을 의미**\n   - She has performed consistently well in all her exams. \n     - 그녀는 모든 시험에서 꾸준히 잘했다.\n   \n2. **어떤 사람이나 사물의 특징 또는 속성이 변함없이 유지되는 것**\n   - He has consistently supported the project from its inception.\n     - 그는 프로젝트 시작부터 지금까지 쭉 지원해왔다.\n\n3. **믿을 만한 신뢰성을 가진다는 의미**\n   - The company is known for producing products that work consistently.\n     - 그 회사는 제품을 믿을 수 있게 만드는 것으로 유명하다.\n\n이렇게 'consistently'는 주로 어떤 것이 일정하고 변함없는 상태를 유지하는 것을 나타낼 때 사용돼. 이해했길 바라! 더 궁금한 점 있으면 물어봐😉.\n\n> [!TABLE_FETCH]-\n> **consistent** [컨시스턴트]\n> | 뜻 | 품사 | 예문 | 해석 |\n> | :--- | :--- | :--- | :--- |\n> | 일관된, 한결같은 | 형용사 | Her performance has been **consistent** throughout the season. | 그녀의 성적은 시즌 내내 일관되었다. |\n> | (의견, 행동 등이) 일치하는, 조화를 이루는 | 형용사 | His actions are **consistent** with his words. | 그의 행동은 그의 말과 일치한다. |\n"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "eng_voca",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1765160921644
+    }
+  },
+  {
+    "id": "5d7fc0b0-883b-482d-85bd-84542baffbac",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats/136/messages",
+      "headers": {},
+      "timestamp": 1765160928989
+    },
+    "totalDuration": 14136,
+    "response": {
+      "mode": "event-stream",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "text/event-stream",
+        "cache-control": "no-cache",
+        "connection": "keep-alive"
+      },
+      "body": [
+        {
+          "event": "message_start",
+          "data": {
+            "id": -1,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:28:57+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "eng_voca",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          },
+          "delay": 8828
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "'"
+          },
+          "delay": 7
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "Cons"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "ist"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "ently"
+          },
+          "delay": 72
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "'"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "의"
+          },
+          "delay": 4
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 유의"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "어"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "로는"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 다음과"
+          },
+          "delay": 151
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 같은"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 것들이"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있어"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!\n\n"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "1"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " **"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "Constant"
+          },
+          "delay": 4
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "ly"
+          },
+          "delay": 168
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ":**"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 지속적으로"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 끊임없이"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\n"
+          },
+          "delay": 4
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "  "
+          },
+          "delay": 121
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " -"
+          },
+          "delay": 6
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " She"
+          },
+          "delay": 4
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " constantly"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " checks"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " her"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " phone"
+          },
+          "delay": 165
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " throughout"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " the"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " day"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ".\n"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "     \n"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "2"
+          },
+          "delay": 83
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " **"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "Un"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "vary"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "ingly"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ":**"
+          },
+          "delay": 125
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 항상"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 동일"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하게"
+          },
+          "delay": 6
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 변화가"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 없이"
+          },
+          "delay": 236
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\n"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "  "
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " -"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " He"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " approaches"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " his"
+          },
+          "delay": 150
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " work"
+          },
+          "delay": 4
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " un"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "vary"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "ingly"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " every"
+          },
+          "delay": 9
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " morning"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ".\n"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "     \n"
+          },
+          "delay": 4
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "3"
+          },
+          "delay": 74
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " **"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "Rel"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "i"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "ably"
+          },
+          "delay": 9
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ":**"
+          },
+          "delay": 78
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 믿을"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있게"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          },
+          "delay": 9
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 확실"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하게"
+          },
+          "delay": 228
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\n"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "  "
+          },
+          "delay": 10
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " -"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " We"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " need"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " a"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " partner"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " who"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " can"
+          },
+          "delay": 210
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " reliably"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " deliver"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " on"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " time"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ".\n"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "     \n"
+          },
+          "delay": 62
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "4"
+          },
+          "delay": 6
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " **"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "St"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "ead"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "ily"
+          },
+          "delay": 6
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ":**"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 꾸"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "준"
+          },
+          "delay": 117
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "히"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 안정"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "적으로"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\n"
+          },
+          "delay": 281
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "  "
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " -"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " The"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " economy"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " grew"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " steadily"
+          },
+          "delay": 5
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " over"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " the"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " past"
+          },
+          "delay": 107
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " decade"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ".\n"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "     \n"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "5"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " **"
+          },
+          "delay": 117
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "Uniform"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "ly"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ":**"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 균"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "일"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하게"
+          },
+          "delay": 7
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 똑"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "같이"
+          },
+          "delay": 191
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "\n"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "  "
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " -"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " The"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " temperature"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " was"
+          },
+          "delay": 122
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " uniformly"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " distributed"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " across"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " the"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " region"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ".\n\n"
+          },
+          "delay": 169
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이러한"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 단어"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "들은"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 모두"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 일관"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "성"
+          },
+          "delay": 7
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있는"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 행"
+          },
+          "delay": 141
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "동"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이나"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 상태를"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 나타내는"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 의미를"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 포함"
+          },
+          "delay": 107
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하고"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있어서"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 상황에"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 맞게"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 선택"
+          },
+          "delay": 104
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하여"
+          },
+          "delay": 13
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 사용할"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있어"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 예를"
+          },
+          "delay": 180
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 들어"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " '"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "cons"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "ist"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "ently"
+          },
+          "delay": 107
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "'"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 대신"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " '"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "const"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "antly"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "'"
+          },
+          "delay": 127
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "를"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 사용하면"
+          },
+          "delay": 4
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 좀"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 더"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 빈"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "번"
+          },
+          "delay": 195
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하거나"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 지속적인"
+          },
+          "delay": 4
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 동작"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "을"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 강조"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "하는"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 느낌을"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 줄"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 수"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있지"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 도움이"
+          },
+          "delay": 5
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 되었"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "으면"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 좋"
+          },
+          "delay": 4
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "겠"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "어"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 😊"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_end",
+          "data": {
+            "id": -1,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:29:03+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "'Consistently'의 유의어로는 다음과 같은 것들이 있어!\n\n1. **Constantly:** 지속적으로, 끊임없이\n   - She constantly checks her phone throughout the day.\n     \n2. **Unvaryingly:** 항상 동일하게, 변화가 없이\n   - He approaches his work unvaryingly every morning.\n     \n3. **Reliably:** 믿을 수 있게, 확실하게\n   - We need a partner who can reliably deliver on time.\n     \n4. **Steadily:** 꾸준히, 안정적으로\n   - The economy grew steadily over the past decade.\n     \n5. **Uniformly:** 균일하게, 똑같이\n   - The temperature was uniformly distributed across the region.\n\n이러한 단어들은 모두 일관성 있는 행동이나 상태를 나타내는 의미를 포함하고 있어서, 상황에 맞게 선택하여 사용할 수 있어. 예를 들어, 'consistently' 대신 'constantly'를 사용하면 좀 더 빈번하거나 지속적인 동작을 강조하는 느낌을 줄 수 있지. 도움이 되었으면 좋겠어! 😊"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "eng_voca",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          },
+          "delay": 1056
+        }
+      ],
+      "timestamp": 1765160943205
+    }
+  },
+  {
+    "id": "d5bc3008-ca2a-46be-bd45-d179822f464f",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/136/messages",
+      "headers": {},
+      "timestamp": 1765160943655
+    },
+    "totalDuration": 27,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "3652",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:29:03 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1230,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:19:44+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-08"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1231,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:19:44+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "consistently의 뜻이 뭐야?"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1232,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:20:01+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "'Consistently'의 뜻에 대해 설명해줄게.\n\n### Consistently의 뜻\n* 'Consistently'는 부사로 '**일관되게**, **한결같이**'라는 뜻을 가지고 있어. \n\n1. **일정한 상태나 정도가 지속되는 것을 의미**\n   - She has performed consistently well in all her exams. \n     - 그녀는 모든 시험에서 꾸준히 잘했다.\n   \n2. **어떤 사람이나 사물의 특징 또는 속성이 변함없이 유지되는 것**\n   - He has consistently supported the project from its inception.\n     - 그는 프로젝트 시작부터 지금까지 쭉 지원해왔다.\n\n3. **믿을 만한 신뢰성을 가진다는 의미**\n   - The company is known for producing products that work consistently.\n     - 그 회사는 제품을 믿을 수 있게 만드는 것으로 유명하다.\n\n이렇게 'consistently'는 주로 어떤 것이 일정하고 변함없는 상태를 유지하는 것을 나타낼 때 사용돼. 이해했길 바라! 더 궁금한 점 있으면 물어봐😉.\n\n> [!TABLE_FETCH]-\n> **consistent** [컨시스턴트]\n> | 뜻 | 품사 | 예문 | 해석 |\n> | :--- | :--- | :--- | :--- |\n> | 일관된, 한결같은 | 형용사 | Her performance has been **consistent** throughout the season. | 그녀의 성적은 시즌 내내 일관되었다. |\n> | (의견, 행동 등이) 일치하는, 조화를 이루는 | 형용사 | His actions are **consistent** with his words. | 그의 행동은 그의 말과 일치한다. |\n"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "eng_voca",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1233,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:28:49+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "이 단어의 유의어는 뭐가 있을까?"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1234,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:29:03+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "'Consistently'의 유의어로는 다음과 같은 것들이 있어!\n\n1. **Constantly:** 지속적으로, 끊임없이\n   - She constantly checks her phone throughout the day.\n     \n2. **Unvaryingly:** 항상 동일하게, 변화가 없이\n   - He approaches his work unvaryingly every morning.\n     \n3. **Reliably:** 믿을 수 있게, 확실하게\n   - We need a partner who can reliably deliver on time.\n     \n4. **Steadily:** 꾸준히, 안정적으로\n   - The economy grew steadily over the past decade.\n     \n5. **Uniformly:** 균일하게, 똑같이\n   - The temperature was uniformly distributed across the region.\n\n이러한 단어들은 모두 일관성 있는 행동이나 상태를 나타내는 의미를 포함하고 있어서, 상황에 맞게 선택하여 사용할 수 있어. 예를 들어, 'consistently' 대신 'constantly'를 사용하면 좀 더 빈번하거나 지속적인 동작을 강조하는 느낌을 줄 수 있지. 도움이 되었으면 좋겠어! 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "eng_voca",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1765160943682
+    }
+  },
+  {
+    "id": "df683cd3-b1d3-48bf-94af-95757eeef8f6",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/136",
+      "headers": {},
+      "timestamp": 1765160943660
+    },
+    "totalDuration": 44,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "131",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:29:03 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": 136,
+        "title": "단어 의미: consistently",
+        "subject": "english",
+        "has_problem": false,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1765160943704
+    }
+  },
+  {
+    "id": "5b69162e-4069-4abb-bfe9-4662ad628019",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/136/messages",
+      "headers": {},
+      "timestamp": 1765160943660
+    },
+    "totalDuration": 51,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "3652",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:29:03 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1230,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:19:44+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-08"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1231,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:19:44+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "consistently의 뜻이 뭐야?"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1232,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:20:01+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "'Consistently'의 뜻에 대해 설명해줄게.\n\n### Consistently의 뜻\n* 'Consistently'는 부사로 '**일관되게**, **한결같이**'라는 뜻을 가지고 있어. \n\n1. **일정한 상태나 정도가 지속되는 것을 의미**\n   - She has performed consistently well in all her exams. \n     - 그녀는 모든 시험에서 꾸준히 잘했다.\n   \n2. **어떤 사람이나 사물의 특징 또는 속성이 변함없이 유지되는 것**\n   - He has consistently supported the project from its inception.\n     - 그는 프로젝트 시작부터 지금까지 쭉 지원해왔다.\n\n3. **믿을 만한 신뢰성을 가진다는 의미**\n   - The company is known for producing products that work consistently.\n     - 그 회사는 제품을 믿을 수 있게 만드는 것으로 유명하다.\n\n이렇게 'consistently'는 주로 어떤 것이 일정하고 변함없는 상태를 유지하는 것을 나타낼 때 사용돼. 이해했길 바라! 더 궁금한 점 있으면 물어봐😉.\n\n> [!TABLE_FETCH]-\n> **consistent** [컨시스턴트]\n> | 뜻 | 품사 | 예문 | 해석 |\n> | :--- | :--- | :--- | :--- |\n> | 일관된, 한결같은 | 형용사 | Her performance has been **consistent** throughout the season. | 그녀의 성적은 시즌 내내 일관되었다. |\n> | (의견, 행동 등이) 일치하는, 조화를 이루는 | 형용사 | His actions are **consistent** with his words. | 그의 행동은 그의 말과 일치한다. |\n"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "eng_voca",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1233,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:28:49+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "이 단어의 유의어는 뭐가 있을까?"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1234,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:29:03+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "'Consistently'의 유의어로는 다음과 같은 것들이 있어!\n\n1. **Constantly:** 지속적으로, 끊임없이\n   - She constantly checks her phone throughout the day.\n     \n2. **Unvaryingly:** 항상 동일하게, 변화가 없이\n   - He approaches his work unvaryingly every morning.\n     \n3. **Reliably:** 믿을 수 있게, 확실하게\n   - We need a partner who can reliably deliver on time.\n     \n4. **Steadily:** 꾸준히, 안정적으로\n   - The economy grew steadily over the past decade.\n     \n5. **Uniformly:** 균일하게, 똑같이\n   - The temperature was uniformly distributed across the region.\n\n이러한 단어들은 모두 일관성 있는 행동이나 상태를 나타내는 의미를 포함하고 있어서, 상황에 맞게 선택하여 사용할 수 있어. 예를 들어, 'consistently' 대신 'constantly'를 사용하면 좀 더 빈번하거나 지속적인 동작을 강조하는 느낌을 줄 수 있지. 도움이 되었으면 좋겠어! 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "eng_voca",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1765160943711
+    }
+  },
+  {
+    "id": "9af45ba6-becf-4e63-807d-13fa23e1a57b",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/136/problems",
+      "headers": {},
+      "timestamp": 1765160943660
+    },
+    "totalDuration": 44,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "2",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:29:03 GMT",
+        "server": "uvicorn"
+      },
+      "body": [],
+      "timestamp": 1765160943704
+    }
+  },
+  {
+    "id": "7c8e8a8d-b45d-4ec4-ad31-bd192e0f2fd5",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/136",
+      "headers": {},
+      "timestamp": 1765161405562
+    },
+    "totalDuration": 33,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "131",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:36:44 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": 136,
+        "title": "단어 의미: consistently",
+        "subject": "english",
+        "has_problem": false,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1765161405595
+    }
+  },
+  {
+    "id": "dff6a721-6e1b-4e98-a643-3cfb601ec772",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/136",
+      "headers": {},
+      "timestamp": 1765161410681
+    },
+    "totalDuration": 103,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "131",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:36:49 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": 136,
+        "title": "단어 의미: consistently",
+        "subject": "english",
+        "has_problem": false,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1765161410784
+    }
+  },
+  {
+    "id": "c291cca5-9c3f-45a4-9cad-f50ebb839bb0",
+    "version": "1.1",
+    "request": {
+      "method": "POST",
+      "url": "/api/v1/chats/136/messages",
+      "headers": {},
+      "timestamp": 1765161410683
+    },
+    "totalDuration": 4705,
+    "response": {
+      "mode": "event-stream",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-type": "text/event-stream",
+        "cache-control": "no-cache",
+        "connection": "keep-alive"
+      },
+      "body": [
+        {
+          "event": "message_start",
+          "data": {
+            "id": -1,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:36:53+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "eng_voca",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          },
+          "delay": 2760
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "그래"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "?"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 그럼"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 다른"
+          },
+          "delay": 3
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 주"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "제에"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 대"
+          },
+          "delay": 182
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "해서"
+          },
+          "delay": 5
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이야기"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "해보"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "자"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "!"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 우리가"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 방"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "금"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "까지"
+          },
+          "delay": 155
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 배운"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " consistent"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "의"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 유의"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "어들"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 있"
+          },
+          "delay": 139
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "잖"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "아"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "~"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 그것"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "들을"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 활용"
+          },
+          "delay": 137
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "해서"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 문"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "장을"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 만들어"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "보는"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "건"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 어때"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "?"
+          },
+          "delay": 250
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 예를"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 들면"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ","
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " \""
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "He"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " works"
+          },
+          "delay": 91
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " ___"
+          },
+          "delay": 11
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " ("
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " )"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " to"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " improve"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " his"
+          },
+          "delay": 325
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " skills"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": ".\""
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이런"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "식으로"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 말"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "이야"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "."
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 이걸"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "로"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 복"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "습"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "도"
+          },
+          "delay": 2
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 되고"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 재미"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "있을"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "거"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "같은"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "데"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 한번"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 해"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "볼"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "래"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": "?"
+          },
+          "delay": 1
+        },
+        {
+          "event": "message_delta",
+          "data": {
+            "text": " 😊"
+          },
+          "delay": 0
+        },
+        {
+          "event": "message_end",
+          "data": {
+            "id": -1,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:36:55+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "그래? 그럼 다른 주제에 대해서 이야기해보자! 우리가 방금까지 배운 consistent의 유의어들 있잖아~ 그것들을 활용해서 문장을 만들어보는건 어때? 예를 들면, \"He works ___ ( ) to improve his skills.\" 이런식으로 말이야. 이걸로 복습도 되고 재미있을거같은데 한번 해볼래? 😊"
+                }
+              },
+              {
+                "m_type": "text",
+                "value": {
+                  "text": ""
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "eng_voca",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          },
+          "delay": 599
+        }
+      ],
+      "timestamp": 1765161415489
+    }
+  },
+  {
+    "id": "aab6b9e4-7990-4cae-9813-9293f4de38aa",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/136/messages",
+      "headers": {},
+      "timestamp": 1765161415647
+    },
+    "totalDuration": 33,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "4461",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:36:54 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1230,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:19:44+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-08"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1231,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:19:44+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "consistently의 뜻이 뭐야?"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1232,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:20:01+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "'Consistently'의 뜻에 대해 설명해줄게.\n\n### Consistently의 뜻\n* 'Consistently'는 부사로 '**일관되게**, **한결같이**'라는 뜻을 가지고 있어. \n\n1. **일정한 상태나 정도가 지속되는 것을 의미**\n   - She has performed consistently well in all her exams. \n     - 그녀는 모든 시험에서 꾸준히 잘했다.\n   \n2. **어떤 사람이나 사물의 특징 또는 속성이 변함없이 유지되는 것**\n   - He has consistently supported the project from its inception.\n     - 그는 프로젝트 시작부터 지금까지 쭉 지원해왔다.\n\n3. **믿을 만한 신뢰성을 가진다는 의미**\n   - The company is known for producing products that work consistently.\n     - 그 회사는 제품을 믿을 수 있게 만드는 것으로 유명하다.\n\n이렇게 'consistently'는 주로 어떤 것이 일정하고 변함없는 상태를 유지하는 것을 나타낼 때 사용돼. 이해했길 바라! 더 궁금한 점 있으면 물어봐😉.\n\n> [!TABLE_FETCH]-\n> **consistent** [컨시스턴트]\n> | 뜻 | 품사 | 예문 | 해석 |\n> | :--- | :--- | :--- | :--- |\n> | 일관된, 한결같은 | 형용사 | Her performance has been **consistent** throughout the season. | 그녀의 성적은 시즌 내내 일관되었다. |\n> | (의견, 행동 등이) 일치하는, 조화를 이루는 | 형용사 | His actions are **consistent** with his words. | 그의 행동은 그의 말과 일치한다. |\n"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "eng_voca",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1233,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:28:49+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "이 단어의 유의어는 뭐가 있을까?"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1234,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:29:03+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "'Consistently'의 유의어로는 다음과 같은 것들이 있어!\n\n1. **Constantly:** 지속적으로, 끊임없이\n   - She constantly checks her phone throughout the day.\n     \n2. **Unvaryingly:** 항상 동일하게, 변화가 없이\n   - He approaches his work unvaryingly every morning.\n     \n3. **Reliably:** 믿을 수 있게, 확실하게\n   - We need a partner who can reliably deliver on time.\n     \n4. **Steadily:** 꾸준히, 안정적으로\n   - The economy grew steadily over the past decade.\n     \n5. **Uniformly:** 균일하게, 똑같이\n   - The temperature was uniformly distributed across the region.\n\n이러한 단어들은 모두 일관성 있는 행동이나 상태를 나타내는 의미를 포함하고 있어서, 상황에 맞게 선택하여 사용할 수 있어. 예를 들어, 'consistently' 대신 'constantly'를 사용하면 좀 더 빈번하거나 지속적인 동작을 강조하는 느낌을 줄 수 있지. 도움이 되었으면 좋겠어! 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "eng_voca",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1235,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:36:51+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "다른 공부할래"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1236,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:36:55+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "그래? 그럼 다른 주제에 대해서 이야기해보자! 우리가 방금까지 배운 consistent의 유의어들 있잖아~ 그것들을 활용해서 문장을 만들어보는건 어때? 예를 들면, \"He works ___ ( ) to improve his skills.\" 이런식으로 말이야. 이걸로 복습도 되고 재미있을거같은데 한번 해볼래? 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "eng_voca",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1765161415680
+    }
+  },
+  {
+    "id": "a4541365-ad55-4110-9277-0bf512287639",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/136",
+      "headers": {},
+      "timestamp": 1765161415661
+    },
+    "totalDuration": 43,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "131",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:36:54 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "id": 136,
+        "title": "단어 의미: consistently",
+        "subject": "english",
+        "has_problem": false,
+        "has_active_goal": false,
+        "active_goal": null
+      },
+      "timestamp": 1765161415704
+    }
+  },
+  {
+    "id": "ddcc37d3-ece1-44be-bff5-ec02bc46bce6",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/136/messages",
+      "headers": {},
+      "timestamp": 1765161415661
+    },
+    "totalDuration": 43,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "4461",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:36:54 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "data": [
+          {
+            "id": 1230,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:19:44+09:00",
+            "type": "system",
+            "author": {
+              "role": "system"
+            },
+            "contents": [
+              {
+                "m_type": "date",
+                "value": {
+                  "text": "2025-12-08"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1231,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:19:44+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "consistently의 뜻이 뭐야?"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1232,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:20:01+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "'Consistently'의 뜻에 대해 설명해줄게.\n\n### Consistently의 뜻\n* 'Consistently'는 부사로 '**일관되게**, **한결같이**'라는 뜻을 가지고 있어. \n\n1. **일정한 상태나 정도가 지속되는 것을 의미**\n   - She has performed consistently well in all her exams. \n     - 그녀는 모든 시험에서 꾸준히 잘했다.\n   \n2. **어떤 사람이나 사물의 특징 또는 속성이 변함없이 유지되는 것**\n   - He has consistently supported the project from its inception.\n     - 그는 프로젝트 시작부터 지금까지 쭉 지원해왔다.\n\n3. **믿을 만한 신뢰성을 가진다는 의미**\n   - The company is known for producing products that work consistently.\n     - 그 회사는 제품을 믿을 수 있게 만드는 것으로 유명하다.\n\n이렇게 'consistently'는 주로 어떤 것이 일정하고 변함없는 상태를 유지하는 것을 나타낼 때 사용돼. 이해했길 바라! 더 궁금한 점 있으면 물어봐😉.\n\n> [!TABLE_FETCH]-\n> **consistent** [컨시스턴트]\n> | 뜻 | 품사 | 예문 | 해석 |\n> | :--- | :--- | :--- | :--- |\n> | 일관된, 한결같은 | 형용사 | Her performance has been **consistent** throughout the season. | 그녀의 성적은 시즌 내내 일관되었다. |\n> | (의견, 행동 등이) 일치하는, 조화를 이루는 | 형용사 | His actions are **consistent** with his words. | 그의 행동은 그의 말과 일치한다. |\n"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "eng_voca",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1233,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:28:49+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "이 단어의 유의어는 뭐가 있을까?"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1234,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:29:03+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "'Consistently'의 유의어로는 다음과 같은 것들이 있어!\n\n1. **Constantly:** 지속적으로, 끊임없이\n   - She constantly checks her phone throughout the day.\n     \n2. **Unvaryingly:** 항상 동일하게, 변화가 없이\n   - He approaches his work unvaryingly every morning.\n     \n3. **Reliably:** 믿을 수 있게, 확실하게\n   - We need a partner who can reliably deliver on time.\n     \n4. **Steadily:** 꾸준히, 안정적으로\n   - The economy grew steadily over the past decade.\n     \n5. **Uniformly:** 균일하게, 똑같이\n   - The temperature was uniformly distributed across the region.\n\n이러한 단어들은 모두 일관성 있는 행동이나 상태를 나타내는 의미를 포함하고 있어서, 상황에 맞게 선택하여 사용할 수 있어. 예를 들어, 'consistently' 대신 'constantly'를 사용하면 좀 더 빈번하거나 지속적인 동작을 강조하는 느낌을 줄 수 있지. 도움이 되었으면 좋겠어! 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "eng_voca",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1235,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:36:51+09:00",
+            "type": "chat",
+            "author": {
+              "role": "user"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "다른 공부할래"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [],
+              "system_hints": null
+            }
+          },
+          {
+            "id": 1236,
+            "chat_id": 136,
+            "created_at": "2025-12-08T11:36:55+09:00",
+            "type": "chat",
+            "author": {
+              "role": "assistant"
+            },
+            "contents": [
+              {
+                "m_type": "text",
+                "value": {
+                  "text": "그래? 그럼 다른 주제에 대해서 이야기해보자! 우리가 방금까지 배운 consistent의 유의어들 있잖아~ 그것들을 활용해서 문장을 만들어보는건 어때? 예를 들면, \"He works ___ ( ) to improve his skills.\" 이런식으로 말이야. 이걸로 복습도 되고 재미있을거같은데 한번 해볼래? 😊"
+                }
+              }
+            ],
+            "metadata": {
+              "tools": [
+                {
+                  "name": "eng_voca",
+                  "value": {}
+                }
+              ],
+              "system_hints": null
+            }
+          }
+        ]
+      },
+      "timestamp": 1765161415704
+    }
+  },
+  {
+    "id": "c278a1d7-d97c-4a5b-bdd9-f90afa01a234",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/136/problems",
+      "headers": {},
+      "timestamp": 1765161415661
+    },
+    "totalDuration": 43,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "2",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 02:36:54 GMT",
+        "server": "uvicorn"
+      },
+      "body": [],
+      "timestamp": 1765161415704
+    }
+  }
+]

@@ -1,0 +1,55 @@
+[
+  {
+    "requestId": "k9bafbka6z",
+    "type": "http-rest",
+    "request": {
+      "method": "POST",
+      "url": "http://10.113.184.21:8000/api/v1/uploads",
+      "headers": {},
+      "timestamp": 1765180229828
+    },
+    "response": {
+      "status": 201,
+      "statusText": "Created",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "528",
+        "content-type": "application/json",
+        "date": "Mon, 08 Dec 2025 07:50:29 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "presigned_url": "https://kr.object.ncloudstorage.com/edu-bucket/chat-upload/0e1d87c4-1663-4175-ac3a-32fff5b50489.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=2oeWi5zPIrTmdREEj95L%2F20251208%2Fkr-standard%2Fs3%2Faws4_request&X-Amz-Date=20251208T075029Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=content-type%3Bhost%3Bx-amz-acl&X-Amz-Signature=a00f5e659396d641a4aa8a838bf9c901f2d509f3a30536531b160324a1516d10",
+        "file_url": "https://kr.object.ncloudstorage.com/edu-bucket/chat-upload/0e1d87c4-1663-4175-ac3a-32fff5b50489.png"
+      },
+      "timestamp": 1765180229876
+    },
+    "totalDuration": 48
+  },
+  {
+    "requestId": "6063i2bcvgh",
+    "type": "http-rest",
+    "request": {
+      "method": "PUT",
+      "url": "https://kr.object.ncloudstorage.com/edu-bucket/chat-upload/{data}",
+      "headers": {
+        "Content-Type": "image/png",
+        "x-amz-acl": "public-read"
+      },
+      "body": "[Unknown body type]",
+      "timestamp": 1765180229878
+    },
+    "response": {
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "content-length": "0",
+        "etag": "\"da836f7a4d4a95257b85fd2ac7646acf\""
+      },
+      "timestamp": 1765180230003
+    },
+    "totalDuration": 125
+  }
+]

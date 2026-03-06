@@ -1,0 +1,21 @@
+/**
+ * CLOVA Tutor
+ * Copyright (c) 2026-present NAVER Cloud Corp.
+ * MIT
+ */
+
+@layer utilities {
+  @keyframes pulse-scale {
+    0%,
+    100% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+
+  .animate-pulse-scale {
+    animation: pulse-scale 1s ease-in-out infinite;
+  }
+}

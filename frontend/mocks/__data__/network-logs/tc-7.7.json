@@ -1,0 +1,84 @@
+[
+  {
+    "id": "eae99f09-494d-4bbd-bf77-0c098dc4242c",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/problem-bookmarks/problem/H1-M-093/check",
+      "headers": {},
+      "timestamp": 1765353156860
+    },
+    "totalDuration": 27,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "22",
+        "content-type": "application/json",
+        "date": "Wed, 10 Dec 2025 07:52:36 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "status": "duplicate"
+      },
+      "timestamp": 1765353156887
+    }
+  },
+  {
+    "id": "346a3686-3efb-4820-b795-f2dd76177dab",
+    "version": "1.1",
+    "request": {
+      "method": "GET",
+      "url": "/api/v1/chats/129/problems/H1-M-093",
+      "headers": {},
+      "timestamp": 1765353166598
+    },
+    "totalDuration": 41,
+    "response": {
+      "mode": "single",
+      "status": 200,
+      "statusText": "OK",
+      "headers": {
+        "access-control-allow-credentials": "true",
+        "access-control-allow-origin": "*",
+        "access-control-expose-headers": "*",
+        "content-length": "529",
+        "content-type": "application/json",
+        "date": "Wed, 10 Dec 2025 07:52:45 GMT",
+        "server": "uvicorn"
+      },
+      "body": {
+        "number": 7,
+        "status": "풀지 않음",
+        "last_answer": "$ y=\\frac{x+6}{3} $",
+        "is_bookmarked": true,
+        "problem_info": {
+          "id": "H1-M-093",
+          "type": "단일응답 주관식",
+          "content": {
+            "subject": "math",
+            "grade": 10,
+            "semester": null,
+            "level": 3,
+            "primary": "함수와 그래프",
+            "secondary": "함수",
+            "specific": "역함수",
+            "category": "역함수 구하기",
+            "problem": "y=3x−6의 역함수를 구하시오.",
+            "tags": [
+              "역함수",
+              "변환"
+            ],
+            "hint": "역함수는 x와 y를 바꾼 뒤 풀면 됩니다.",
+            "explanation": "x↔y 바꾸고 y에 대해 정리."
+          }
+        }
+      },
+      "timestamp": 1765353166639
+    }
+  }
+]

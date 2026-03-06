@@ -1,0 +1,17 @@
+# CLOVA Tutor
+# Copyright (c) 2026-present NAVER Cloud Corp.
+# MIT
+
+hcx-005:
+  api_key: ${HCX_API_KEY}
+  model: HCX-005
+
+redis-cluster:
+  seed_url: redis:6379
+  password: local_password
+
+api-server:
+  data-server-url: ${DATA_SERVER_URL:-http://localhost:8001/api/v1}
+  be-server-url: ${BE_SERVER_URL:-http://localhost:8000/api/v1}
+
+HCX_OPENAI_BASE_URL: https://clovastudio.stream.ntruss.com/v1/openai/

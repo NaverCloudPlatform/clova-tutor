@@ -1,0 +1,64 @@
+# CLOVA Tutor
+# Copyright (c) 2026-present NAVER Cloud Corp.
+# MIT
+
+voca_basic:
+  template: |
+    **{voca}** [{pronunciation}]
+    | 뜻 | 품사 | 예문 | 해석 |
+    | :--- | :--- | :--- | :--- |
+    {rows}
+  row: |
+    | {definition} | {part_of_speech} | {example} | {interpretation} |
+voca_synonym: 
+  template: |
+    ### {voca}의 유의어
+    | 단어 | 뜻 | 예문 | 해석 |
+    | :--- | :--- | :--- | :--- |
+    {synonym_rows}
+  row: |
+    | {voca} | {definition} | {example} | {interpretation} |
+voca_antonym: 
+  template: |
+    ### {voca}의 반의어
+    | 단어 | 뜻 | 예문 | 해석 |
+    | :--- | :--- | :--- | :--- |
+    {antonym_rows}
+  row: |
+    | {voca} | {definition} | {example} | {interpretation} |
+voca_origin:
+  template: |
+    ## {voca}의 어원
+
+    ### 1. {voca}의 뜻
+    {definitions}
+
+    ### 2. {voca}의 어원
+    {origin}
+
+    {morpheme_table}
+  morpheme_table: |
+    ### 3. {voca}의 형태소
+    | 형태소 | 종류 | 뜻 | 동의어 |
+    | :--- | :--- | :--- | :--- |
+    {morpheme_rows}
+  morpheme_row: |
+    | {voca} | {type} | {definition} | {synonyms} |
+voca_inflection:
+  template: |
+    ### {voca}의 변화형
+
+    | 변화형 | 단어 | 예문 | 해석 |
+    | :--- | :--- | :--- | :--- |
+    {rows}
+  row: |
+    | {type} | {voca} | {example} | {interpretation} |
+voca_idiom:
+  template: |
+    ### {voca}의 관용구
+
+    | 관용구 | 뜻 | 예문 | 해석 |
+    | :--- | :--- | :--- | :--- |
+    {rows}
+  row: |
+    | {idiom} | {definition} | {example} | {interpretation} |
