@@ -15,14 +15,14 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-org.github.io',
+  url: 'https://NaverCloudPlatform.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub Pages project sites, this is typically '/<projectName>/'
   baseUrl: '/clova-tutor/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Digital-Healthcare-LAB', // Usually your GitHub org/user name.
+  organizationName: 'NaverCloudPlatform', // Usually your GitHub org/user name.
   projectName: 'clova-tutor', // Usually your repo name.
 
   onBrokenLinks: 'warn', // 'throw'에서 'warn'으로 변경하여 빌드가 실패하지 않도록 함
@@ -43,7 +43,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl:
-            'https://github.com/your-org/clova-tutor/edit/main/',
+            'https://github.com/NaverCloudPlatform/clova-tutor/edit/main/docs/',
         },
         blog: false,
         theme: {
@@ -96,7 +96,7 @@ const config: Config = {
           label: '언어',
         },
         {
-          href: 'https://github.com/your-org/clova-tutor',
+          href: 'https://github.com/NaverCloudPlatform/clova-tutor',
           label: 'GitHub',
           position: 'right',
         },
@@ -119,11 +119,11 @@ const config: Config = {
           items: [
             {
               label: 'Repository',
-              href: 'https://github.com/your-org/clova-tutor',
+              href: 'https://github.com/NaverCloudPlatform/clova-tutor',
             },
             {
               label: 'Issues',
-              href: 'https://github.com/your-org/clova-tutor/issues',
+              href: 'https://github.com/NaverCloudPlatform/clova-tutor/issues',
             },
           ],
         },
