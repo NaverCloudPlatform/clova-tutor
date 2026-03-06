@@ -11,7 +11,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
 
-[**Documentation**](https://your-docs-url.com) · [**Quick Start**](#quick-start) · [**Demo**](#demo)
+[**Documentation**](https://navercloudplatform.github.io/clova-tutor/) · [**Quick Start**](#quick-start) · [**Demo**](#demo)
 
 </div>
 
@@ -107,7 +107,7 @@ cd model-server && make setup
 - **Web UI**: http://localhost:3000
 - **API Docs**: http://localhost:8000/docs
 
-> 상세한 설정 방법은 [Documentation](https://your-docs-url.com)을 참고하세요.
+> 상세한 설정 방법은 [Documentation](https://navercloudplatform.github.io/clova-tutor/)을 참고하세요.
 
 ---
 
@@ -115,10 +115,10 @@ cd model-server && make setup
 
 자세한 내용은 문서를 참고하세요:
 
-- [프로젝트 개요](https://your-docs-url.com/docs/introduction/overview)
-- [사용자 가이드](https://your-docs-url.com/docs/user-guide/start)
-- [개발자 가이드](https://your-docs-url.com/docs/dev-guide/quick-start)
-- [환경 변수 설정](https://your-docs-url.com/docs/dev-guide/environment-variables)
+- [프로젝트 개요](https://navercloudplatform.github.io/clova-tutor/docs/introduction/overview)
+- [사용자 가이드](https://navercloudplatform.github.io/clova-tutor/docs/user-guide/start)
+- [개발자 가이드](https://navercloudplatform.github.io/clova-tutor/docs/dev-guide/quick-start)
+- [환경 변수 설정](https://navercloudplatform.github.io/clova-tutor/docs/dev-guide/environment-variables)
 
 ---
 
